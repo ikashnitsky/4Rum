@@ -1,0 +1,577 @@
+ident,name,title,email,phone,kontor,team
+NJL,Nikolaj Larsen,Programmør/planlægg.,njl@dst.dk,21 15 00 56,01,
+PVJ,Peter Vig Jensen,Kontorchef,pvj@dst.dk,23 11 35 13,01,Kontorets ledelse og fællesopgaver
+CVI,Christian Vittrup,Ledende chefkonsulent,cvi@dst.dk,24 46 89 90,01,Kontorets ledelse og fællesopgaver
+LHB,Lisbeth Harbo,Chefkonsulent,lhb@dst.dk,20 58 64 08,01,Befolkning
+AKF,Annika Klintefelt,Chefkonsulent,akf@dst.dk,23 31 14 33,01,Befolkning
+JKP,Jørn Korsbø Petersen,Chefkonsulent,jkp@dst.dk,20 11 68 64,01,Befolkning
+MSW,Marcin Jan Stonawski,Chefkonsulent,msw@dst.dk,81 44 25 38,01,Befolkning
+LPC,Lars Peter Smed Christensen,Specialkonsulent,lpc@dst.dk,20 42 35 51,01,Befolkning
+ALO,Annemette Lindhardt Olsen,Specialkonsulent,alo@dst.dk,20 59 02 47,01,Befolkning
+DLA,Dorthe Larsen,Afdelingsleder,dla@dst.dk,23 49 83 26,01,Befolkning
+CBN,Connie Østberg,Kontorfuldmægtig,cbn@dst.dk,23 60 19 14,01,Befolkning
+JBE,Jens Bjerre,Chefkonsulent,jbe@dst.dk,29 16 99 21,01,Børnepasning
+LNM,Lisbeth Nørgaard Møller,Specialkonsulent,lnm@dst.dk,21 45 23 83,01,Børnepasning
+RIE,Annemarie Schriver,Specialkonsulent,rie@dst.dk,40 18 43 54,01,Børnepasning
+LDM,Lau Dam Mortensen,Fuldmægtig,ldm@dst.dk,40 38 65 21,01,Børnepasning
+JBU,Jamila Buzquurz,Afdelingsleder,jbu@dst.dk,21 13 40 31,01,Børnepasning
+JOE,Jonas Ellemand,Fuldmægtig,joe@dst.dk,24 90 74 98,01,Kriminalitet
+IPE,Iben Birgitte Pedersen,Afdelingsleder,ipe@dst.dk,23 60 37 11,01,Kriminalitet
+EDG,Emilia  Nielsen,Studerende,edg@dst.dk,20 31 92 36,01,Kriminalitet
+KLR,Klaus Rasmussen,Chefkonsulent,klr@dst.dk,29 67 80 47,01,Uddannelse
+SMS,Susanne Mainz Sørensen,Chefkonsulent,sms@dst.dk,20 34 51 79,01,Uddannelse
+EBR,Eva Lotti Hansen,Specialkonsulent,ebr@dst.dk,21 59 99 06,01,Uddannelse
+APF,Alexander Pfeiffer Cappelen,Fuldmægtig,apf@dst.dk,23 63 72 52,01,Uddannelse
+HRS,Martin Herskind,Fuldmægtig,hrs@dst.dk,21 34 03 31,01,Uddannelse
+NML,Nanna Maria Kerlauge,Fuldmægtig,nml@dst.dk,61 63 06 57,01,Uddannelse
+ALG,Asger Bromose Langgaard,Fuldmægtig,alg@dst.dk,21 59 96 46,01,Uddannelse
+MNO,Martin Nørskov,Fuldmægtig,mno@dst.dk,40 47 39 37,01,Uddannelse
+MPS,Mikkel Jonasson Pedersen,Fuldmægtig,mps@dst.dk,23 60 42 07,01,Uddannelse
+LRI,Lene Riberholdt,Fuldmægtig,lri@dst.dk,23 60 62 18,01,Uddannelse
+ARO,Arancha F. Romero,Bachelor,aro@dst.dk,23 46 02 12,01,Uddannelse
+AGG,Agge Nørreslet,Studerende,agg@dst.dk,23 65 41 60,01,Uddannelse
+HBG,Henrik Bang,Chefkonsulent,hbg@dst.dk,24 27 45 15,01,Verdensmål
+ATA,Agnes Tassy,Chefkonsulent,ata@dst.dk,24 81 48 78,01,Verdensmål
+CEI,Clara Hartmann Eilerskov Jensen,Studerende,cei@dst.dk,20 29 61 53,01,Verdensmål
+SRI,SÃ¸ren Rich,Specialkonsulent,sri@dst.dk,23 74 44 02,02,
+CAW,Casper Winther,Kontorchef,caw@dst.dk,22 68 14 32,02,Kontorledelse
+MJP,Maria JosÃ© Alvarez Pelaez,Chefkonsulent,mjp@dst.dk,30 66 03 21,02,Betalingsbalance
+KSW,Kirstine Sewohl,Specialkonsulent,ksw@dst.dk,40 13 18 62,02,Team formidling og analyse
+ANU,Agnes Nansen Urup,FuldmÃ¦gtig,anu@dst.dk,40 13 62 87,02,Team formidling og analyse
+MML,Mads MÃ¸ller Liedig,Afdelingsleder,mml@dst.dk,40 12 97 72,02,Team formidling og analyse
+PIN,Pia Nielsen,Afdelingsleder,pin@dst.dk,30 61 93 05,02,Team formidling og analyse
+EMF,Emil Flyger Andersen,FuldmÃ¦gtig,emf@dst.dk,24 52 43 08,02,Team indsamling og fejlsÃ¸gning
+ABT,Aron Tsegay Besrat,FuldmÃ¦gtig,abt@dst.dk,21 84 82 78,02,Team indsamling og fejlsÃ¸gning
+MTF,Mai Tham Bech FanÃ¸e,FuldmÃ¦gtig,mtf@dst.dk,20 26 15 34,02,Team indsamling og fejlsÃ¸gning
+PLH,Pernille Leth Hougaard,FuldmÃ¦gtig,plh@dst.dk,20 34 26 74,02,Team indsamling og fejlsÃ¸gning
+CJA,Caroline Amalie Jakobsen,FuldmÃ¦gtig,cja@dst.dk,24 46 80 61,02,Team indsamling og fejlsÃ¸gning
+OEK,Ãzge Burcu KÃ¶prÃ¼lÃ¼,FuldmÃ¦gtig,oek@dst.dk,20 34 45 55,02,Team indsamling og fejlsÃ¸gning
+ASO,Albana Sopa,Bachelor,aso@dst.dk,20 41 39 93,02,Team indsamling og fejlsÃ¸gning
+HPJ,Henriette Matje Jensen,KontorfuldmÃ¦gtig,hpj@dst.dk,24 92 68 92,02,Team indsamling og fejlsÃ¸gning
+HMK,Helle Maria Krag,KontorfuldmÃ¦gtig,hmk@dst.dk,24 92 53 69,02,Team indsamling og fejlsÃ¸gning
+SBU,SÃ¸ren Burman,Chefkonsulent,sbu@dst.dk,30 51 45 62,02,Team udvikling
+SMU,Selma Mustafic Mulalic,Specialkonsulent,smu@dst.dk,23 69 46 64,02,Udenrigshandel med tjenester
+SFB,Stefan Gottschalck Anbro,Chefkonsulent,sfb@dst.dk,51 60 58 46,02,Udenrigshandel med varer
+TPD,Troels Pade,Kontorchef,tpd@dst.dk,29 12 04 77,03,Kontorets ledelse og fÃ¦llesopgaver
+CHH,Charlotte Spliid Hansen,Chefkonsulent,chh@dst.dk,29 41 97 76,03,"Regnskabsstatistik, fiskeri og akvakultur"
+MIB,Michael Brogaard,FuldmÃ¦gtig,mib@dst.dk,51 62 70 89,03,"Regnskabsstatistik, fiskeri og akvakultur"
+LCR,Lisbeth Elin Lakjer Christensen,FuldmÃ¦gtig,lcr@dst.dk,21 77 74 20,03,"Regnskabsstatistik, fiskeri og akvakultur"
+HPE,Henrik Bolding Pedersen,Chefkonsulent,hpe@dst.dk,20 57 88 87,03,"Regnskabsstatistik, jordbrug"
+CFS,Charlotte Filt Slothuus,Specialkonsulent,cfs@dst.dk,24 26 05 58,03,"Regnskabsstatistik, jordbrug"
+MJS,Martin Brandt Jepsen,Specialkonsulent,mjs@dst.dk,24 99 89 11,03,"Regnskabsstatistik, jordbrug"
+DMH,Dorte HÃ¦kkerup,FuldmÃ¦gtig,dmh@dst.dk,40 35 67 73,03,"Regnskabsstatistik, jordbrug"
+CWB,Charlotte Wind von Bennigsen,FuldmÃ¦gtig,cwb@dst.dk,24 21 42 30,03,"Regnskabsstatistik, jordbrug"
+MLU,Martin LundÃ¸,Chefkonsulent,mlu@dst.dk,51 46 15 12,03,"Struktur, Produktion og Ãkologi"
+MLA,Mona Larsen,Specialkonsulent,mla@dst.dk,24 81 68 47,03,"Struktur, Produktion og Ãkologi"
+MHG,Mads Haaning Andersen,FuldmÃ¦gtig,mhg@dst.dk,51 85 76 27,03,"Struktur, Produktion og Ãkologi"
+KKL,Karsten Kjeld Larsen,FuldmÃ¦gtig,kkl@dst.dk,21 29 55 76,03,"Struktur, Produktion og Ãkologi"
+SIT,Simone Thun,FuldmÃ¦gtig,sit@dst.dk,51 36 92 51,03,"Struktur, Produktion og Ãkologi"
+DPA,Ditte Puk Andersen,Afdelingsleder,dpa@dst.dk,40 43 41 97,03,"Struktur, Produktion og Ãkologi"
+KKB,Kurt-Kristian Bech,Afdelingsleder,kkb@dst.dk,51 16 91 99,03,"Struktur, Produktion og Ãkologi"
+MSO,Marianne SÃ¸rensen,Afdelingsleder,mso@dst.dk,41 31 74 01,03,"Struktur, Produktion og Ãkologi"
+MCA,Mikkel Ole Carstad,Kontorassistent,mca@dst.dk,23 82 03 56,03,"Struktur, Produktion og Ãkologi"
+TBI,Thomas Bie,Kontorchef,tbi@dst.dk,41 19 87 10,04,Kontorets ledelse og fællesopgaver
+JMN,Jesper Moltrup-Nielsen,Ledende chefkonsulent,jmn@dst.dk,24 81 16 97,04,Kontorets ledelse og fællesopgaver
+DFG,Daniel F. Gustafsson,Chefkonsulent,dfg@dst.dk,20 51 64 72,04,AKU og SILC
+IFM,Ida Frederikke Mathiesen,Fuldmægtig,ifm@dst.dk,21 49 48 53,04,AKU og SILC
+MFS,Martin Faris Sawaed Nielsen,Fuldmægtig,mfs@dst.dk,23 69 90 67,04,AKU og SILC
+TIA,Tina Dorthe Andersen,Afdelingsleder,tia@dst.dk,29 33 75 67,04,AKU og SILC
+WTA,Wendy Takacs Jensen,Afdelingsleder,wta@dst.dk,5179 4714,04,AKU og SILC
+AGP,Annette Gewecke Nancke,Kontorfuldmægtig,agp@dst.dk,30 60 41 75,04,AKU og SILC
+MKU,Mediha Kurtevski,Overassistent,mku@dst.dk,23 69 77 12,04,AKU og SILC
+DSB,Dines Skafte Böttcher,Programmør/planlægg.,dsb@dst.dk,21 14 76 92,04,AKU og SILC
+MZI,Mikkel Zimmermann,Chefkonsulent,mzi@dst.dk,51 44 98 37,04,Arbejdsmarkedets udkant
+TLU,Torben Lundsvig,Fuldmægtig,tlu@dst.dk,30 86 46 43,04,Arbejdsmarkedets udkant
+AOM,Anna Skovbæk Mortensen,Fuldmægtig,aom@dst.dk,21 77 67 54,04,Arbejdsmarkedets udkant
+CAN,Carsten Bo Nielsen,Afdelingsleder,can@dst.dk,23 74 60 17,04,Arbejdsmarkedets udkant
+JET,Jesper Truelsen,Programmør/planlægg.,jet@dst.dk,30 34 78 10,04,Arbejdsmarkedets udkant
+PSD,Pernille Stender,Chefkonsulent,psd@dst.dk,24 92 12 33,04,Beskæftigelse og Arbejdsmarkedsregnskab
+TST,Thomas Thorsen,Chefkonsulent,tst@dst.dk,23 69 94 27,04,Beskæftigelse og Arbejdsmarkedsregnskab
+MHU,Mads Housø Hansen,Specialkonsulent,mhu@dst.dk,24 43 40 61,04,Beskæftigelse og Arbejdsmarkedsregnskab
+JAQ,Jarl Christian Quitzau,Chefkonsulent,jaq@dst.dk,23 42 35 03,04,Indkomst og Formue
+UWP,Uwe Pedersen,Specialkonsulent,uwp@dst.dk,23 72 65 69,04,Indkomst og Formue
+MRT,	Morten Steenbjerg Kristensen,Fuldmægtig,mrt@dst.dk,20 40 38 73,04,Indkomst og Formue
+EVB,Eva Borg,Specialkonsulent,evb@dst.dk,24 78 53 57,04,Løn og Fravær
+BCD,Bao Chau Do,Specialkonsulent,bcd@dst.dk,30 62 50 74,04,Løn og Fravær
+SLB,Sam Blanch,Fuldmægtig,slb@dst.dk,23 63 60 44,04,Løn og Fravær
+MWC,Monica Wiese Christensen,Fuldmægtig,mwc@dst.dk,21 73 34 69,04,Løn og Fravær
+SCO,Summer Cook,Fuldmægtig,sco@dst.dk,30 68 39 52,04,Løn og Fravær
+NDN,Nete Nielsen,Fuldmægtig,ndn@dst.dk,40 10 48 87,04,Løn og Fravær
+SYR,Sysette Holde Rasmussen,Fuldmægtig,syr@dst.dk,40 27 21 96,04,Løn og Fravær
+LKS,Lars Svenningsen,Afdelingsleder,lks@dst.dk,24 81 25 98,04,Løn og Fravær
+IJK,Iman Khazendar,Kontorfuldmægtig,ijk@dst.dk,40 23 13 63,04,Løn og Fravær
+IVS,Yulia Sotirova,Kontorfuldmægtig,ivs@dst.dk,30 57 69 27,04,Løn og Fravær
+TOL,Thomas Andriianets-Olsen,Kontorchef,tol@dst.dk,21 14 80 64,05,Kontorets ledelse og fællesopgaver
+BIO,Birthe Moltrup-Nielsen,Ledende chefkonsulent,bio@dst.dk,22 16 94 83,05,Kontorets ledelse og fællesopgaver
+MRA,Martin Rune Rasmussen,Chefkonsulent,mra@dst.dk,24 77 42 71,05,Offentlig forvaltning og service I
+JEF,Jesper Lillebro Feddersen,Specialkonsulent,jef@dst.dk,20 51 61 92,05,Offentlig forvaltning og service I
+MJH,Maximilian Jerome Hueg,Fuldmægtig,mjh@dst.dk,21 47 14 23,05,Offentlig forvaltning og service I
+ILR,Ida Balle Rohde,Fuldmægtig,ilr@dst.dk,61 24 24 85,05,Offentlig forvaltning og service I
+BCH,Bente Juul,Afdelingsleder,bch@dst.dk,21 54 41 63,05,Offentlig forvaltning og service I
+LEK,Louise Kristensen,Afdelingsleder,lek@dst.dk,40 26 71 43,05,Offentlig forvaltning og service I
+PSV,Per Svensson,Afdelingsleder,psv@dst.dk,20 56 93 96,05,Offentlig forvaltning og service I
+JFJ,Jeppe Føge Jensen,Overassistent,jfj@dst.dk,40 22 58 23,05,Offentlig forvaltning og service I
+HGJ,Helene Gjermansen,Fuldmægtig,hgj@dst.dk,24 76 70 09,05,Offentlig forvaltning og service II
+MNM,Marianne Ahle Møller,Fuldmægtig,mnm@dst.dk,24 66 00 28,05,Offentlig forvaltning og service II
+RAF,Ralf Frimand,Afdelingsleder,raf@dst.dk,29 39 42 73,05,Offentlig forvaltning og service II
+MBN,Martin Fuglsang,Afdelingsleder,mbn@dst.dk,24 76 16 62,05,Offentlig forvaltning og service II
+IBL,Ivanna Blagova,Specialkonsulent,ibl@dst.dk,30 34 41 52,05,Sektorregnskaber
+JSD,Jesper Søgaard Dreesen,Specialkonsulent,jsd@dst.dk,51 64 92 61,05,Sektorregnskaber
+MEG,Marta Klara Egstrup,Fuldmægtig,meg@dst.dk,61 20 26 28,05,Sektorregnskaber
+URJ,Ulla Ryder Jørgensen,Fuldmægtig,urj@dst.dk,51 49 92 62,05,Sektorregnskaber
+COB,Jacob König,Fuldmægtig,cob@dst.dk,40 40 58 41,05,Sektorregnskaber
+STO,Stefan Koch Olsen,Fuldmægtig,sto@dst.dk,51 23 92 17,05,Sektorregnskaber
+MIT,Mikkel Bjerre Trolle,Fuldmægtig,mit@dst.dk,29 36 68 25,05,Sektorregnskaber
+HSS,Henrik Sejerbo SÃ¸rensen,Kontorchef,hss@dst.dk,61 46 44 06,06,Kontorets ledelse og fÃ¦llesopgaver
+INV,Ingeborg Vind,Kontorchef,inv@dst.dk,24 83 51 49,06,Kontorets ledelse og fÃ¦llesopgaver
+MNN,Maria Nilsson,Ledende chefkonsulent,mnn@dst.dk,61 50 49 65,06,Kontorets ledelse og fÃ¦llesopgaver
+OGP,Ole GravgÃ¥rd Pedersen,Chefkonsulent,ogp@dst.dk,30 89 28 39,06,GrÃ¸nt nationalregnskab
+ASA,Asger Andersen,Specialkonsulent,asa@dst.dk,24 75 24 15,06,GrÃ¸nt nationalregnskab
+TME,Thomas Eisler,Specialkonsulent,tme@dst.dk,20 56 92 83,06,GrÃ¸nt nationalregnskab
+LHF,Leif Hoffmann,Specialkonsulent,lhf@dst.dk,23 69 58 63,06,GrÃ¸nt nationalregnskab
+PRJ,Peter RÃ¸rmose Jensen,Specialkonsulent,prj@dst.dk,40 13 51 26,06,GrÃ¸nt nationalregnskab
+SRS,Sara Elisabet Svantesson,Specialkonsulent,srs@dst.dk,30 46 42 06,06,GrÃ¸nt nationalregnskab
+MBR,Michael Berg Rasmussen,FuldmÃ¦gtig,mbr@dst.dk,51 46 23 15,06,GrÃ¸nt nationalregnskab
+JFS,Jonas Foged Svendsen,FuldmÃ¦gtig,jfs@dst.dk,21 34 73 19,06,GrÃ¸nt nationalregnskab
+MIZ,Michael ZÃ¶rner,FuldmÃ¦gtig,miz@dst.dk,24 41 73 66,06,GrÃ¸nt nationalregnskab
+MFE,Mette Ferslev,Afdelingsleder,mfe@dst.dk,24 79 33 96,06,"Inddata, Publicering og Administration"
+BSM,Bo Siemsen,Afdelingsleder,bsm@dst.dk,21 57 97 24,06,"Inddata, Publicering og Administration"
+NDM,Nadiia Mamikonian,KontorfuldmÃ¦gtig,ndm@dst.dk,40 16 89 17,06,"Inddata, Publicering og Administration"
+JOP,Jonas Dan Petersen,Chefkonsulent,jop@dst.dk,30 57 18 26,06,Kvartalsvise nationalregnskab
+BDU,Bahar Dudus Celik,FuldmÃ¦gtig,bdu@dst.dk,24 78 48 23,06,Kvartalsvise nationalregnskab
+SHG,SÃ¸ren Havn Gjedsted,FuldmÃ¦gtig,shg@dst.dk,30 45 28 67,06,Kvartalsvise nationalregnskab
+HJG,Henning Elberg JÃ¸rgensen,FuldmÃ¦gtig,hjg@dst.dk,21 78 12 42,06,Kvartalsvise nationalregnskab
+KRM,Kristian Mortensen,FuldmÃ¦gtig,krm@dst.dk,21 33 95 67,06,Kvartalsvise nationalregnskab
+IDR,Ina Drabsch Rasmussen,FuldmÃ¦gtig,idr@dst.dk,21 34 45 24,06,Kvartalsvise nationalregnskab
+ONS,Oliver Nygaard SÃ¸rensen,FuldmÃ¦gtig,ons@dst.dk,51 83 40 39,06,Kvartalsvise nationalregnskab
+MVT,Marianne Vester,Afdelingsleder,mvt@dst.dk,51 66 72 91,06,Kvartalsvise nationalregnskab
+MCR,Maria Skytte Christiansen,Studerende,mcr@dst.dk,24 25 42 07,06,Kvartalsvise nationalregnskab
+KRG,Kasper Rugaard Lund,Studerende,krg@dst.dk,30 62 30 97,06,Kvartalsvise nationalregnskab
+DKN,Dan Knudsen,Chefkonsulent,dkn@dst.dk,21 84 95 96,06,Ãkonomiske Modeller
+TMK,Tony Maarsleth Kristensen,Chefkonsulent,tmk@dst.dk,40 20 47 89,06,Ãkonomiske Modeller
+JAO,Jes Asger Olsen,Chefkonsulent,jao@dst.dk,24 26 54 49,06,Ãkonomiske Modeller
+MOL,Michael Osterwald-Lenum,Chefkonsulent,mol@dst.dk,20 57 01 29,06,Ãkonomiske Modeller
+KSL,Karen Skriver Lauger,Chefkonsulent,ksl@dst.dk,51 49 86 87,06,Ãkonomiske Modeller
+DSI,Dawit Sisay Temere,Specialkonsulent,dsi@dst.dk,24 92 95 89,06,Ãkonomiske Modeller
+MBL,Martin Birger Larsen,Chefkonsulent,mbl@dst.dk,61 15 15 43,06,Ãrlige nationalregnskab
+BSU,Brian SÃ¼del,Chefkonsulent,bsu@dst.dk,21 83 60 64,06,Ãrlige nationalregnskab
+ATH,Annette Thomsen,Chefkonsulent,ath@dst.dk,22 16 62 51,06,Ãrlige nationalregnskab
+CJB,Christina Just Brandstrup,Specialkonsulent,cjb@dst.dk,21 45 52 79,06,Ãrlige nationalregnskab
+BRN,Martin  Brandstrup,Specialkonsulent,brn@dst.dk,23 80 57 50,06,Ãrlige nationalregnskab
+RBJ,Ralph BÃ¸ge Jensen,Specialkonsulent,rbj@dst.dk,21 33 67 84,06,Ãrlige nationalregnskab
+MCB,Mercedes Sophie Louise  Bech,FuldmÃ¦gtig,mcb@dst.dk,51 53 61 56,06,Ãrlige nationalregnskab
+MBE,Magnus BÃ¸rre Eriksen,FuldmÃ¦gtig,mbe@dst.dk,29 12 27 56,06,Ãrlige nationalregnskab
+TVM,Tetiana Melnyk,FuldmÃ¦gtig,tvm@dst.dk,21 83 36 07,06,Ãrlige nationalregnskab
+JJN,Jonas Johansen NÃ¦sby,FuldmÃ¦gtig,jjn@dst.dk,29 44 68 24,06,Ãrlige nationalregnskab
+ADP,Alex Dyrhauge Halberg Petersen,IT-Supporterelev,adp@dst.dk,21 79 41 93,07,
+JBV,Jakob Vestergaard,CFO,jbv@dst.dk,20 20 18 38,07,Kontorets ledelse og fÃ¦llesopgaver
+HTH,Helle Thejn,Chefkonsulent,hth@dst.dk,21 52 82 40,07,HR
+RLV,Rikke Lovmand Vistisen,Chefkonsulent,rlv@dst.dk,20 15 37 48,07,HR
+LWM,Laura Winther Milde,Specialkonsulent,lwm@dst.dk,20 16 27 63,07,HR
+LKC,Line  Christiansen,FuldmÃ¦gtig,lkc@dst.dk,21 67 52 96,07,HR
+KJJ,Kim Juul,Afdelingsleder,kjj@dst.dk,20 46 27 18,07,HR
+LJV,Linda Juvald,Afdelingsleder,ljv@dst.dk,21 19 62 18,07,HR
+SBA,Sonja Tesch,Afdelingsleder,sba@dst.dk,24 37 26 17,07,HR
+PKR,Pia Kraag KrÃ¼ger,Afdelingsleder,pkr@dst.dk,24 25 95 07,07,HR
+KLS,Kuluk Steffensen,Afdelingsleder,kls@dst.dk,23 74 79 29,07,HR
+AEH,Anne Engholm Jelby,Ledende chefkonsulent,aeh@dst.dk,21 47 36 26,07,HR
+NLZ,Nanna ElkjÃ¦r Lorenzen,Overassistent,nlz@dst.dk,51 68 09 94,07,HR
+GPT,Gitte  Hansson,Afdelingsleder,gpt@dst.dk,22 26 70 04,07,Intern service
+HSE,Helle  Schandorff Eriksen,Kontorelev,hse@dst.dk,24 49 12 01,07,Kontorelever
+MOE,Malene Boie Simonsen,Kontorelev,moe@dst.dk,21 44 34 78,07,Kontorelever
+KHH,Katrine Houbak Hertel,Specialkonsulent,khh@dst.dk,23 71 13 08,07,Udvikling og resultater
+ATB,Anette BjÃ¸rsted,FuldmÃ¦gtig,atb@dst.dk,20 47 21 46,07,Udvikling og resultater
+MNU,Malene  Nygaard Uldahl,Chefkonsulent,mnu@dst.dk,20 40 33 14,07,Ãkonomi
+EBB,Edyta Beata Banas Hansen,Specialkonsulent,ebb@dst.dk,21 16 85 34,07,Ãkonomi
+HRT,Jasper JÃ¸rgensen,Specialkonsulent,hrt@dst.dk,40 29 47 60,07,Ãkonomi
+HLA,Helle Kofoed Larsen,Specialkonsulent,hla@dst.dk,20 47 87 23,07,Ãkonomi
+PGR,Pernille Gregersen,Afdelingsleder,pgr@dst.dk,40 13 85 96,07,Ãkonomi
+BJN,Bodil Jonasen,Afdelingsleder,bjn@dst.dk,20 47 77 52,07,Ãkonomi
+AAK,Anita  Kristensen,Afdelingsleder,aak@dst.dk,20 47 35 43,07,Ãkonomi
+SLF,Sofie Lionet Faxholm,Bachelor,slf@dst.dk,20 18 41 09,07,Ãkonomi
+SHC,Susanne Clausen,Ledende chefkonsulent,shc@dst.dk,20 16 14 17,07,Ãkonomi
+MWR,Mette Kjeldahl Wrona,Overassistent,mwr@dst.dk,23 32 53 97,07,Ãkonomi
+MMT,Mattias NÃ¸rgaard Matsushita,Studerende,mmt@dst.dk,20 21 87 90,07,Ãkonomi
+SKA,Søren Kühl Andersen,Kontorchef,ska@dst.dk,22 26 04 36,08,Kontorets ledelse og fællesopgaver
+KFR,Kasper Emil Dueholm Freiman,Specialkonsulent,kfr@dst.dk,23 45 47 32,08,"Bygge og anlægsstatistik, indeks, BBR mv."
+KJS,Kari Anne Janisse Arildsen,Fuldmægtig,kjs@dst.dk,40 43 38 12,08,Detailomsætningsindeks
+LIP,Lina Pedersen,Chefkonsulent,lip@dst.dk,51 68 72 80,08,Firmaernes køb og salg (FIKS) og Detailomsætningsindeks (DOI)
+KIL,Kim Larsen,Afdelingsleder,kil@dst.dk,81 75 12 42,08,Firmaernes køb og salg (FIKS) og Detailomsætningsindeks (DOI)
+MDB,Mathias Dybdahl Bluhme,Specialkonsulent,mdb@dst.dk,40 22 56 37,08,Industri
+SBH,Simon Bolding Halifax,Specialkonsulent,sbh@dst.dk,51 29 21 91,08,Industri
+MSL,Morten Skovrider Kollerup,Fuldmægtig,msl@dst.dk,24 52 61 68,08,Industri
+BHE,Bo Eriksen,Afdelingsleder,bhe@dst.dk,61 50 41 27,08,Industri
+IHA,Inger Hansen,Afdelingsleder,iha@dst.dk,40 23 78 84,08,Industri
+HSN,Heidi Sørensen,Afdelingsleder,hsn@dst.dk,24 79 86 81,08,Industri
+MBJ,Majbrit Holst,Afdelingsleder,mbj@dst.dk,24 94 08 24,08,"Kontorsekretær, Turisme"
+POT,Peter Ottosen,Chefkonsulent,pot@dst.dk,30 42 91 91,08,Transport og køretøjer
+GUZ,Gustav Zachariassen,Fuldmægtig,guz@dst.dk,20 27 98 75,08,Transport og køretøjer
+KAM,Karina Moric Ingemann,Afdelingsleder,kam@dst.dk,24 78 42 12,08,Transport og køretøjer
+HEE,Henriette Erichsen,Kontorfuldmægtig,hee@dst.dk,29 77 56 38,08,Transport og køretøjer
+SDA,Søren Dalbro,Timekonsulent,sda@dst.dk,29 35 74 60,08,Transport og køretøjer
+NIO,Nanna Nikander Nonboe-Nygaard,Specialkonsulent,nio@dst.dk,20 56 39 57,08,Turisme
+AST,Annie Stahel,Timekonsulent,ast@dst.dk,,09,
+MKK,Maja Kirchhoff Krølner,Chefkonsulent,mkk@dst.dk,21 76 67 79,09,Dataindsamlingssystemer
+NIZ,Nicolai Zangenberg,Chefkonsulent,niz@dst.dk,23 37 34 51,09,Dataindsamlingssystemer
+HNG,Henning Tornhøj Christensen,Specialkonsulent,hng@dst.dk,20 43 95 31,09,Dataindsamlingssystemer
+KNH,Knud Wharton Hammerich,Specialkonsulent,knh@dst.dk,21 53 80 35,09,Dataindsamlingssystemer
+MBU,Mikkel Baand Rasmussen,Fuldmægtig,mbu@dst.dk,21 59 30 22,09,Dataindsamlingssystemer
+JEA,Jens Schouv Andersen,Programmør/planlægg.,jea@dst.dk,40 10 80 75,09,Dataindsamlingssystemer
+MKJ,Mikala Kjellerup,Programmør/planlægg.,mkj@dst.dk,40 13 69 38,09,Dataindsamlingssystemer
+LBM,Leif Bochis Madsen,Programmør/planlægg.,lbm@dst.dk,24 81 67 05,09,Dataindsamlingssystemer
+JNI,John Hertz Nielsen,Programmør/planlægg.,jni@dst.dk,20 41 49 05,09,Dataindsamlingssystemer
+JOS,Jan Ole Nørregård Sørensen,Programmør/planlægg.,jos@dst.dk,23 64 18 01,09,Dataindsamlingssystemer
+PFM,Peter Filtenborg Madsen,Kontorchef,pfm@dst.dk,20 35 30 16,09,It-ledelsen
+CZO,Carsten Zornig,Kontorchef,czo@dst.dk,25 17 03 13,09,It-ledelsen
+FAH,Frank Holdt,Ledende chefkonsulent,fah@dst.dk,27 51 18 31,09,It-ledelsen
+BGC,Bo Guldager Clausen,Vicekontorchef,bgc@dst.dk,28 14 38 15,09,It-ledelsen
+KBK,NA,,kbk@dst.dk,22 87 18 71,09,RS Team CZO
+LAL,Leif Aller,Programmør/planlægg.,lal@dst.dk,23 47 09 10,09,RS Team CZO
+BAN,Bo Antvorskov,Programmør/planlægg.,ban@dst.dk,40 22 92 87,09,RS Team CZO
+MGR,Morten Schou Gross,Programmør/planlægg.,mgr@dst.dk,21 62 86 23,09,RS Team CZO
+MRC,Marcel Kristensen,Programmør/planlægg.,mrc@dst.dk,21 62 56 19,09,RS Team CZO
+TJA,Tommy Jacobsen,Fuldmægtig,tja@dst.dk,23 36 47 67,09,RS Team PGL
+HAS,Hans Henrik Andersen,Systemkonsulent,has@dst.dk,53 57 08 03 (pr,09,RS Team PGL
+ALJ,Allan Bo Jørgensen,Plan./prog leder,alj@dst.dk,51 71 57 35,09,RS Team PGL
+JSH,Jesper Skibber Hansen,Programmør/planlægg.,jsh@dst.dk,23 27 36 39,09,RS Team PGL
+KJE,Kim Jepsen,Programmør/planlægg.,kje@dst.dk,21 69 74 78,09,RS Team PGL
+TOJ,Torben Andreas Jessen,Programmør/planlægg.,toj@dst.dk,23 48 19 99,09,RS Team PGL
+FFS,Flemming Fogh Simbold,Programmør/planlægg.,ffs@dst.dk,24 49 35 23,09,RS Team PGL
+NJN,Niels Jespersen,Chefkonsulent,njn@dst.dk,42 42 93 73,09,Servicedesk
+CFJ,Carsten Frank Jørgensen,Systemkonsulent,cfj@dst.dk,29 36 13 59,09,Servicedesk
+HPH,Henrik Philip Jørgensen,Systemkonsulent,hph@dst.dk,28 14 38 17,09,Servicedesk
+LRO,Lars Roediger,Systemkonsulent,lro@dst.dk,53 27 11 10,09,Servicedesk
+PII,Pia Isaksen,Assistent,pii@dst.dk,23 80 01 67,09,Servicedesk
+JPR,Jesper Korsgaard Jensen,Bachelor,jpr@dst.dk,40 22 75 65,09,Servicedesk
+JVI,Jan Vibe,EDB Konsulent,jvi@dst.dk,30 69 52 15,09,Servicedesk
+MLI,Mette Lisberg,Plan./prog leder,mli@dst.dk,41 17 90 60,09,Servicedesk
+PSM,Patrick Søbjerg Andersen,Programmør/planlægg.,psm@dst.dk,21 17 64 51,09,Servicedesk
+MBT,Marianne Blom,Programmør/planlægg.,mbt@dst.dk,24 67 74 68,09,Servicedesk
+LDO,Lars Dohn,Programmør/planlægg.,ldo@dst.dk,28 83 49 52,09,Servicedesk
+BTI,Betina Hansen,Programmør/planlægg.,bti@dst.dk,30 54 75 53,09,Servicedesk
+HKJ,Henrik Kjær,Programmør/planlægg.,hkj@dst.dk,21 24 02 90,09,Servicedesk
+KMI,Kristian Kassø Meier,Programmør/planlægg.,kmi@dst.dk,21 18 24 11,09,Servicedesk
+MRO,Mark Rørvig,Programmør/planlægg.,mro@dst.dk,24 61 61 54,09,Servicedesk
+HBO,Hanne Birgitte Vanmann Olsen,Programmør/planlægg.,hbo@dst.dk,21 34 89 67,09,Servicedesk
+JNH,Jeanne Camilla Hellemose Henriksen,Chefkonsulent,jnh@dst.dk,91 37 67 73,09,"Strategi, Arkitektur, Governance og Sikkerhed"
+SVN,Sanne Vestergaard Nielsen,Chefkonsulent,svn@dst.dk,24 63 22 60,09,"Strategi, Arkitektur, Governance og Sikkerhed"
+CMS,Cajsa  Mølskov,Specialkonsulent,cms@dst.dk,61 15 38 41,09,"Strategi, Arkitektur, Governance og Sikkerhed"
+SRY,Sara Rytter Nielsen,Fuldmægtig,sry@dst.dk,41 43 64 48,09,"Strategi, Arkitektur, Governance og Sikkerhed"
+SGS,Simon Gyldendal Svensson,Bachelor,sgs@dst.dk,31 36 72 86,09,"Strategi, Arkitektur, Governance og Sikkerhed"
+AHR,Allan Henrik Rasmussen,Plan./prog leder,ahr@dst.dk,21 19 55 69,09,Team InFlow
+CAG,Catharina Agger,Programmør/planlægg.,cag@dst.dk,91 37 64 11,09,Team InFlow
+TBN,Thomas Bo Nielsen,Programmør/planlægg.,tbn@dst.dk,21 19 46 39,09,Team InFlow
+SJG,Stefan Jul Gunnersen,Chefkonsulent,sjg@dst.dk,21 45 47 04,09,Team META-KOM
+PMS,Peter Sandager,Chefkonsulent,pms@dst.dk,20 61 49 14,09,Team META-KOM
+GTA,Giovanni Tagliaferri,Chefkonsulent,gta@dst.dk,29 21 63 70,09,Team META-KOM
+SBC,Simon Christiansen,Specialkonsulent,sbc@dst.dk,21 59 36 68,09,Team META-KOM
+FDA,Flemming Dannevang,Specialkonsulent,fda@dst.dk,40 40 56 06,09,Team META-KOM
+DOP,Dorthe Helstrup Poulsen,Specialkonsulent,dop@dst.dk,40 23 52 29,09,Team META-KOM
+FCH,Flemming Dahl Christiansen,Fuldmægtig,fch@dst.dk,21 34 40 75,09,Team META-KOM
+NLK,Nanna Laksø,Fuldmægtig,nlk@dst.dk,20 55 73 12,09,Team META-KOM
+RLU,Rasmus Ludvigsen,Fuldmægtig,rlu@dst.dk,23 69 67 77,09,Team META-KOM
+MIW,Michael Wiingaard,Fuldmægtig,miw@dst.dk,23 43 70 76,09,Team META-KOM
+AIB,Anders Ibsen,Bachelor,aib@dst.dk,30 89 40 66,09,Team META-KOM
+MEB,Mike Elkjær Barbré,Plan./prog leder,meb@dst.dk,23 27 75 59,09,Team META-KOM
+MIN,Michael Nielsen,Plan./prog leder,min@dst.dk,29 60 36 27,09,Team META-KOM
+KDB,Kim Duncan-Bendix,Programmør/planlægg.,kdb@dst.dk,29 36 59 72,09,Team META-KOM
+JHG,Jens Erik Hagedorn,Programmør/planlægg.,jhg@dst.dk,23 11 83 75,09,Team META-KOM
+JTJ,Jakob Traun Jørgensen,Programmør/planlægg.,jtj@dst.dk,30 46 33 15,09,Team META-KOM
+ARW,Arne Würtz,Programmør/planlægg.,arw@dst.dk,40 35 99 56,09,Team META-KOM
+MIP,Michael Pedersen,Timekonsulent,mip@dst.dk,41 19 10 51,09,Team META-KOM
+MSE,Mikkel Illum Svendsen,Fuldmægtig,mse@dst.dk,30 89 40 55,09,Team Registre
+JGK,Josefine Gløerfeldt Kjæmpe,Fuldmægtig,jgk@dst.dk,20 55 83 51,09,Team Registre
+NEU,Astrid Neumann,Fuldmægtig,neu@dst.dk,30 62 40 24,09,Team Registre
+AWD,Albert Elias Öhrman Wellendorf,Fuldmægtig,awd@dst.dk,21 19 78 33,09,Team Registre
+CHB,Christian Flies Bendtsen,Programmør/planlægg.,chb@dst.dk,51 48 61 49,09,Team Registre
+JLU,Jan Lundø,Programmør/planlægg.,jlu@dst.dk,23 63 57 38,09,Team Registre
+LTA,Lise Tanghus,Programmør/planlægg.,lta@dst.dk,21 72 75 68,09,Team Registre
+KMS,Kirsten Hoo-Mi Sloth,Kontorchef,kms@dst.dk,24 76 65 67,10,Kontorledelse
+HRA,Hanne Rasmussen,Ledende chefkonsulent,hra@dst.dk,20 58 30 63,10,Kontorledelse
+CNN,Cathrine Pagh Nielsen,Programmør/planlægg.,cnn@dst.dk,24 67 07 20,10,Kontorledelse
+SBS,Sofie Biering-Sørensen,Chefkonsulent,sbs@dst.dk,21 19 91 35,10,"Sundhed, handicap og stofmisbrug"
+KLU,Klaus Birch Lundgaard,Chefkonsulent,klu@dst.dk,51 14 62 78,10,"Sundhed, handicap og stofmisbrug"
+PTK,Peter Krogh,Specialkonsulent,ptk@dst.dk,2015 8311,10,"Sundhed, handicap og stofmisbrug"
+LHA,Line Neerup Handlos,Specialkonsulent,lha@dst.dk,26 64 03 00,10,"Sundhed, handicap og stofmisbrug"
+CNL,Camilla Østerballe Nielsen,Specialkonsulent,cnl@dst.dk,20 28 52 49,10,"Sundhed, handicap og stofmisbrug"
+BBN,Benedikte Beckman Nygaard,Fuldmægtig,bbn@dst.dk,21 19 10 53,10,"Sundhed, handicap og stofmisbrug"
+RAS,Jonas Kirchheiner-Rasmussen,Fuldmægtig,ras@dst.dk,61 50 23 80,10,"Sundhed, handicap og stofmisbrug"
+CML,Clara Matilde Møgelmose Larsen,Fuldmægtig,cml@dst.dk,30 45 88 23,10,"Sundhed, handicap og stofmisbrug"
+JJP,Jonas Junker Pedersen,Fuldmægtig,jjp@dst.dk,51 72 01 30,10,"Sundhed, handicap og stofmisbrug"
+KWN,Karsten Werner Nielsen,Afdelingsleder,kwn@dst.dk,30 45 69 04,10,"Sundhed, handicap og stofmisbrug"
+VNO,Vibeke Nordrum,Afdelingsleder,vno@dst.dk,24 94 35 52,10,"Sundhed, handicap og stofmisbrug"
+COJ,Claus Østberg,Afdelingsleder,coj@dst.dk,51 79 31 58,10,"Sundhed, handicap og stofmisbrug"
+SFH,Sofie Mandrup Hansen,Chefkonsulent,sfh@dst.dk,24 43 54 57,10,Udsatte børn og unge
+JNC,Jane Christensen,Specialkonsulent,jnc@dst.dk,20 58 42 40,10,Udsatte børn og unge
+ATD,Ane Theodora Sørensen,Specialkonsulent,atd@dst.dk,40 35 08 30,10,Udsatte børn og unge
+RWJ,Rasmus Waagø Jacobsen,Fuldmægtig,rwj@dst.dk,61 50 93 37,10,Udsatte børn og unge
+JJG,Johanna Jallberg,Fuldmægtig,jjg@dst.dk,40 48 07 76,10,Udsatte børn og unge
+CEK,Cecilie Katholm,Fuldmægtig,cek@dst.dk,21 45 33 42,10,Udsatte børn og unge
+MMC,Marko Malic,Fuldmægtig,mmc@dst.dk,51 70 56 95,10,Udsatte børn og unge
+AEM,Anne Morsing,Fuldmægtig,aem@dst.dk,21 82 17 60,10,Udsatte børn og unge
+BBO,Bente Ottosen,Afdelingsleder,bbo@dst.dk,41 31 74 23,10,Udsatte børn og unge
+CCC,Chris Cornelia Friis Christiansen,Specialkonsulent,ccc@dst.dk,23 13 05 91,10,Ældre og udsatte voksne
+SEN,Siri Dencker,Specialkonsulent,sen@dst.dk,21 45 34 92,10,Ældre og udsatte voksne
+SAK,Sille Amalie Aagaard Kristensen,Fuldmægtig,sak@dst.dk,20 11 52 16,10,Ældre og udsatte voksne
+MGA,Marie Borring  Klitgaard,Fuldmægtig,mga@dst.dk,21 55 83 71,10,Ældre og udsatte voksne
+BLS,Birgitte Lundstrøm,Fuldmægtig,bls@dst.dk,24 21 39 65,10,Ældre og udsatte voksne
+STR,Silas Turner,Fuldmægtig,str@dst.dk,21 54 42 57,10,Ældre og udsatte voksne
+LAH,Lina Agerskov Hansen,Afdelingsleder,lah@dst.dk,30 57 73 44,10,Ældre og udsatte voksne
+RAI,Ramije Idrizi,Afdelingsleder,rai@dst.dk,20 57 99 53,10,Ældre og udsatte voksne
+MAU,Martin Ausker,Kontorchef,mau@dst.dk,42 16 82 16,11,Kontorets ledelse og fællesopgaver
+JMO,Jon Mortensen,Chefkonsulent,jmo@dst.dk,23 69 32 37,11,FKV
+FHN,Flemming Houge Nielsen,Specialkonsulent,fhn@dst.dk,24 47 27 53,11,FKV
+DPI,Dennis Pipenbring,Specialkonsulent,dpi@dst.dk,51 49 18 45,11,FKV
+MTY,Mads Tygesen,Specialkonsulent,mty@dst.dk,29 62 28 87,11,FKV
+KHS,Kalle Emil Holst Hansen,Chefkonsulent,khs@dst.dk,21 58 48 87,11,Globalisering og firmastatistik
+EBM,Emil Tappe Bang-Mortensen,Fuldmægtig,ebm@dst.dk,24 67 85 25,11,Globalisering og firmastatistik
+AGC,Alina Grecu,Fuldmægtig,agc@dst.dk,30 55 18 24,11,Globalisering og firmastatistik
+AHM,Asbjørn Hviid Mikkelsen,Fuldmægtig,ahm@dst.dk,29 42 68 36,11,Globalisering og firmastatistik
+JCK,Julie Cathrine Krabek Sørensen,Fuldmægtig,jck@dst.dk,23 66 46 60,11,Globalisering og firmastatistik
+KEA,Kamilla Elkjær,Afdelingsleder,kea@dst.dk,23 45 44 37,11,Globalisering og firmastatistik
+CSI,Colette Sonja Albright,Kontorfuldmægtig,csi@dst.dk,21 78 29 53,11,Globalisering og firmastatistik
+PBN,Peter Bøegh Nielsen,Timekonsulent,pbn@dst.dk,41 10 31 41,11,Globalisering og firmastatistik
+JHR,Jeppe Strandgaard Herring,Specialkonsulent,jhr@dst.dk,24 44 43 06,11,Regnskabsstatistik
+TNJ,Tanja Jørgensen,Afdelingsleder,tnj@dst.dk,24 87 75 92,11,Regnskabsstatistik
+MVN,Maiken van Hauen Nielsen,Afdelingsleder,mvn@dst.dk,21 34 91 21,11,Regnskabsstatistik
+IAA,Iben Amalie Arce,Kontorfuldmægtig,iaa@dst.dk,20 55 19 86,11,Regnskabsstatistik
+APR,Annette  Rasmussen,Kontorfuldmægtig,apr@dst.dk,24 87 73 22,11,Regnskabsstatistik
+TON,Tonia  Shcheglova,Overassistent,ton@dst.dk,30 58 51 29,11,Regnskabsstatistik
+APD,Andreas Strøander Pedersen,Fuldmægtig,apd@dst.dk,23 25 00 78,12,
+KMO,Katja Møller Hjelvang,Kontorchef,kmo@dst.dk,28 18 48 47,12,Kontorets ledelse og fællesopgaver
+SLR,A Solange Lohmann Rasmussen,Specialkonsulent,slr@dst.dk,61 15 17 93,12,Forbrugsundersøgelsen
+CTI,Christine Petersen,Fuldmægtig,cti@dst.dk,23 66 09 93,12,Forbrugsundersøgelsen
+DOH,Dorthe Jensen,Afdelingsleder,doh@dst.dk,23 11 15 62,12,Forbrugsundersøgelsen
+SJA,Stella Dam Jensen,Afdelingsleder,sja@dst.dk,30 62 54 58,12,Forbrugsundersøgelsen
+MKP,Mette Kaas Pedersen,Kontorfuldmægtig,mkp@dst.dk,21 62 44 73,12,Forbrugsundersøgelsen
+ZBO,Zdravka Bosanac,Specialkonsulent,zbo@dst.dk,61 15 16 74,12,Priser
+JHO,Jakob Holmgaard,Specialkonsulent,jho@dst.dk,24 87 64 56,12,Priser
+SIJ,Sigrid Krogstrup Jensen,Specialkonsulent,sij@dst.dk,61 15 29 82,12,Priser
+MNE,Martin Sædholm Nielsen,Specialkonsulent,mne@dst.dk,24 49 72 81,12,Priser
+NEL,Nicklas Milton Elversøe,Fuldmægtig,nel@dst.dk,61 15 35 98,12,Priser
+PFJ,Peter Fink-Jensen,Fuldmægtig,pfj@dst.dk,21 34 76 92,12,Priser
+MLY,Malene Lysdahl,Fuldmægtig,mly@dst.dk,40 38 37 54,12,Priser
+BNN,Bjørn Nørgaard Nielsen,Fuldmægtig,bnn@dst.dk,20 40 29 37,12,Priser
+CNI,Connie Havsager Andersen,Afdelingsleder,cni@dst.dk,61 15 33 43,12,Priser
+MDR,Maya Drewsen,Afdelingsleder,mdr@dst.dk,20 36 69 89,12,Priser
+CHL,Christian Lindeskov,Afdelingsleder,chl@dst.dk,21 22 28 57,12,Priser
+ATT,Annette Walther Nielsen,Afdelingsleder,att@dst.dk,20 37 79 11,12,Priser
+LIC,Linda Christensen,Kontorfuldmægtig,lic@dst.dk,51 81 46 15,12,Priser
+THM,Theis Hagedorn Michaelsen,Overassistent,thm@dst.dk,24 48 80 75,12,Priser
+SHI,Sabrina Hilstrøm,Specialkonsulent,shi@dst.dk,20 14 16 71,13,
+LTL,Lukas Treppendahl,Studerende,ltl@dst.dk,21 57 44 70,13,
+NBU,Nikolaj Borg Burmeister,Kontorchef,nbu@dst.dk,29 47 58 06,13,Kontorets ledelse og fællesopgaver
+ABB,Anette Björnsson,Specialkonsulent,abb@dst.dk,29 32 70 66,13,Kontorets ledelse og fællesopgaver
+AEI,Ane  Eiðisgarð,Afdelingsleder,aei@dst.dk,21 33 71 48,13,Kontorets ledelse og fællesopgaver
+LES,Lene Eddy Stegemüller,Afdelingsleder,les@dst.dk,24 94 02 83,13,Kontorets ledelse og fællesopgaver
+EAF,Erica Born Ahrenfeldt,Ledende chefkonsulent,eaf@dst.dk,24 79 31 84,13,Kontorets ledelse og fællesopgaver
+ETM,Eva Thorborg Mørk,Ledende chefkonsulent,etm@dst.dk,21 12 12 58,13,Kontorets ledelse og fællesopgaver
+LEI,Leif Jensen,Chefkonsulent,lei@dst.dk,51 68 99 87,13,Forskningsservice
+CLR,Charlotte Leolnar Reif,Chefkonsulent,clr@dst.dk,24 60 34 73,13,Forskningsservice
+HWK,Helle Wallach Kildemoes,Chefkonsulent,hwk@dst.dk,21 43 61 85,13,Forskningsservice
+KAE,Karin Ørum Elwert,Specialkonsulent,kae@dst.dk,29 32 96 12,13,Forskningsservice
+OEN,Oskar Enghoff,Specialkonsulent,oen@dst.dk,20 14 58 38,13,Forskningsservice
+TCE,Thomas Christian Lauterbach,Specialkonsulent,tce@dst.dk,24 92 62 69,13,Forskningsservice
+HON,Anne-Louise Hother Nielsen,Specialkonsulent,hon@dst.dk,21 77 83 62,13,Forskningsservice
+SBV,Susanne Vind,Specialkonsulent,sbv@dst.dk,29 17 86 77,13,Forskningsservice
+KLE,Morten Winkler,Specialkonsulent,kle@dst.dk,24 78 53 49,13,Forskningsservice
+MIA,Marianne Andresen,Fuldmægtig,mia@dst.dk,29 67 53 13,13,Forskningsservice
+NDI,Nanna Dietrich,Fuldmægtig,ndi@dst.dk,21 17 56 44,13,Forskningsservice
+MRB,Malthe Frøkjær-Rubbås,Fuldmægtig,mrb@dst.dk,21 14 53 48,13,Forskningsservice
+MMK,Maria Rudkjær Henriksen,Fuldmægtig,mmk@dst.dk,29 61 79 12,13,Forskningsservice
+BHO,Birgitte Hollegaard,Fuldmægtig,bho@dst.dk,40 18 46 33,13,Forskningsservice
+MAE,Maya Hussain-Engberg,Fuldmægtig,mae@dst.dk,21 44 06 76,13,Forskningsservice
+LBY,Lasse Hørby Madsen,Fuldmægtig,lby@dst.dk,21 13 85 12,13,Forskningsservice
+MOV,Mark Ove Jensen,Fuldmægtig,mov@dst.dk,23 66 37 19,13,Forskningsservice
+JRU,Jon Runar Jensen Larsen,Fuldmægtig,jru@dst.dk,20 37 17 97,13,Forskningsservice
+NIC,Nikola Nedic,Fuldmægtig,nic@dst.dk,21 44 01 67,13,Forskningsservice
+JUI,Julie Nielsen,Fuldmægtig,jui@dst.dk,20 37 02 74,13,Forskningsservice
+NRA,Naghmeh Rahmanfard,Fuldmægtig,nra@dst.dk,29 39 17 44,13,Forskningsservice
+MCZ,Carolina Rizzato,Fuldmægtig,mcz@dst.dk,20 11 54 49,13,Forskningsservice
+FAS,Faten Saleh,Fuldmægtig,fas@dst.dk,21 43 20 42,13,Forskningsservice
+BPD,Berit Taul,Fuldmægtig,bpd@dst.dk,24 52 21 02,13,Forskningsservice
+AGV,Amanda Grønbjerg Vrå,Fuldmægtig,agv@dst.dk,23 29 13 73,13,Forskningsservice
+NEO,Nicolai Østenlund,Fuldmægtig,neo@dst.dk,30 36 34 95,13,Forskningsservice
+ROA,Ronaldas Aliubavicius,Bachelor,roa@dst.dk,30 58 06 71,13,Forskningsservice
+TJH,Tina Jeannette Hagendam,Programmør/planlægg.,tjh@dst.dk,20 41 49 28,13,Forskningsservice
+NKJ,Nicolai Jacob Kofod-Jensen,Programmør/planlægg.,nkj@dst.dk,21 84 69 90,13,Forskningsservice
+MTL,Morten Lindboe,Programmør/planlægg.,mtl@dst.dk,51 72 33 20,13,Forskningsservice
+MIK,Mikael Skovbo,Kontorchef,mik@dst.dk,41 31 74 27,15,Kontorets ledelse og fællesopgaver
+VHF,Vivian Hofverberg Flindt,Afdelingsleder,vhf@dst.dk,31 16 42 28,15,Kontorets ledelse og fællesopgaver
+AMI,Asger Bjerre Mikkelsen,Specialkonsulent,ami@dst.dk,23 30 39 14,15,Administration og Markedsføring
+CFL,Claus Flyger,Fuldmægtig,cfl@dst.dk,30 55 09 32,15,Administration og Markedsføring
+JPO,Jesper Povlsen,Fuldmægtig,jpo@dst.dk,,15,Administration og Markedsføring
+TRN,Thomas Rune Nielsen,Afdelingsleder,trn@dst.dk,23 69 06 68,15,Administration og Markedsføring
+KVN,Kira Vest Lyberth Nielsen,Overassistent,kvn@dst.dk,20 26 19 40,15,Administration og Markedsføring
+LLJ,Lucero Jønsson,Programmør/planlægg.,llj@dst.dk,23 66 36 33,15,Administration og Markedsføring
+AMF,Amy Frølander,Specialkonsulent,amf@dst.dk,29 46 73 77,15,Datakonsulenterne
+ETH,Emil Thranholm,Specialkonsulent,eth@dst.dk,29 63 22 97,15,Datakonsulenterne
+GAN,Gustav Andersen,Fuldmægtig,gan@dst.dk,29 33 70 04,15,Datakonsulenterne
+SND,Sarah Neisig Andersen,Fuldmægtig,snd@dst.dk,20 35 32 12,15,Datakonsulenterne
+DCH,Doaa El-Chamma,Fuldmægtig,dch@dst.dk,21 36 66 29,15,Datakonsulenterne
+REN,Rebecca Enslev,Fuldmægtig,ren@dst.dk,21 15 71 21,15,Datakonsulenterne
+HNN,Allan Hansen,Fuldmægtig,hnn@dst.dk,23 24 93 58,15,Datakonsulenterne
+LNJ,Lonnie Graversgaard Jensen,Fuldmægtig,lnj@dst.dk,30 35 72 92,15,Datakonsulenterne
+LMI,Laurits Mikkelsen,Fuldmægtig,lmi@dst.dk,23 62 39 79,15,Datakonsulenterne
+BOO,Bodil Birkebæk Olesen,Fuldmægtig,boo@dst.dk,23 29 35 25,15,Datakonsulenterne
+NAV,Nanta Veliovits,Fuldmægtig,nav@dst.dk,21 20 98 79,15,Datakonsulenterne
+OWY,Oliver Wyckoff,Fuldmægtig,owy@dst.dk,24 87 01 35,15,Datakonsulenterne
+TRG,Timmi Rølle Graversen,Chefkonsulent,trg@dst.dk,21 59 63 41,15,International Rådgivning
+KMH,Klaus Munch Haagensen,Chefkonsulent,kmh@dst.dk,22 41 71 82,15,International Rådgivning
+JEJ,Jesper Ellemose Skou Jensen,Chefkonsulent,jej@dst.dk,40 51 30 56,15,International Rådgivning
+LKE,Linnea Lue Kessing,Specialkonsulent,lke@dst.dk,23 35 20 89,15,International Rådgivning
+CLN,Charlotte Nielsen,Specialkonsulent,cln@dst.dk,40 24 89 19,15,Udstationeret (RTA)
+NIM,Niels Madsen,Phare-Ekspert,nim@dst.dk,21 26 77 29,15,Udstationeret (RTA)
+SDP,Steen Dahl Pedersen,Kontorchef,sdp@dst.dk,24 27 47 25,16,Kontorets ledelse og fællesopgaver
+MMA,Marianne Kjær Mackie,Specialkonsulent,mma@dst.dk,30 46 18 41,16,Publicering og Presse
+AMU,Anne Marie Underbjerg,Specialkonsulent,amu@dst.dk,40 16 46 98,16,Publicering og Presse
+SFN,Sigrid Friis Neergaard,Fuldmægtig,sfn@dst.dk,23 27 18 33,16,Publicering og Presse
+MGS,Marianne Stryhn,Fuldmægtig,mgs@dst.dk,21 77 69 87,16,Publicering og Presse
+TRH,Katrine Tranberg-Hansen,Fuldmægtig,trh@dst.dk,21 43 95 29,16,Publicering og Presse
+PDF,Pia Dyrby Poulin,Afdelingsleder,pdf@dst.dk,40 49 29 72,16,Publicering og Presse
+PKY,Pia Klinkby,Grafisk Designer,pky@dst.dk,41 57 01 78,16,Publicering og Presse
+MLV,Mette Løvgren,Journalist,mlv@dst.dk,40 45 88 72,16,Publicering og Presse
+SHZ,Karina Schultz,Journalist,shz@dst.dk,23 27 98 45,16,Publicering og Presse
+MLE,Majken Lenskjold,Pressechef,mle@dst.dk,22 42 07 48,16,Publicering og Presse
+LAK,Lars Knudsen,Chefkonsulent,lak@dst.dk,22 80 03 18,16,Statistikbank og Informationsservice
+TIB,Tina Benn,Specialkonsulent,tib@dst.dk,24 92 48 93,16,Statistikbank og Informationsservice
+MJK,Mette-Line Jakobsen,Specialkonsulent,mjk@dst.dk,29 31 75 05,16,Statistikbank og Informationsservice
+JCS,Jacob Christian Solander,Specialkonsulent,jcs@dst.dk,29 17 94 25,16,Statistikbank og Informationsservice
+SSD,Sofie Solvang Dalum,Fuldmægtig,ssd@dst.dk,23 28 78 40,16,Statistikbank og Informationsservice
+JCB,Joachim Haugbølle,Fuldmægtig,jcb@dst.dk,30 68 39 80,16,Statistikbank og Informationsservice
+AWL,Agnete Wagtberg Ilsøe,Fuldmægtig,awl@dst.dk,20 49 27 84,16,Statistikbank og Informationsservice
+ARM,Anni Renner Mortensen,Fuldmægtig,arm@dst.dk,23 27 59 84,16,Statistikbank og Informationsservice
+ALA,Anne Larsen,Chefkonsulent,ala@dst.dk,51 14 83 25,16,Webteam
+SHN,Sofia Meyling Honoré,Specialkonsulent,shn@dst.dk,29 79 08 37,16,Webteam
+KMT,Kristine Stoltz Tønnesen,Fuldmægtig,kmt@dst.dk,23 82 18 53,16,Webteam
+MPB,Margrethe Pihl Bisgaard,Afdelingsleder,mpb@dst.dk,29 31 05 83,16,Webteam
+ABH,Anders Bloch Hansen,Afdelingsleder,abh@dst.dk,23 35 40 38,16,Webteam
+NBC,Nicoline Buur Christiansen,Studerende,nbc@dst.dk,,17,
+JMS,Josephine Louise Mattsson,Studerende,jms@dst.dk,20 45 80 12,17,
+MFU,Marie Fuglsang,Kontorchef,mfu@dst.dk,20 35 39 25,17,Kontorets ledelse og fællesopgaver
+MOM,Monika Klingsbjerg-Besrechel,Chefkonsulent,mom@dst.dk,27 14 71 82,17,Besøgsinterviewer team
+THB,Thomas Bonde,Specialkonsulent,thb@dst.dk,20 59 25 86,17,Besøgsinterviewer team
+NNE,Ninette Alsted Nielsson,Fuldmægtig,nne@dst.dk,20 47 84 59,17,Besøgsinterviewer team
+LFJ,Lotte Fischer Jensen,Afdelingsleder,lfj@dst.dk,91 37 64 14,17,Besøgsinterviewer team
+MPA,Merete Panum,Afdelingsleder,mpa@dst.dk,25 67 25 91,17,Besøgsinterviewer team
+HEF,Annarosa Winnifred Rosabella Karlsen,Kontorassistent,hef@dst.dk,21 54 31 61,17,Besøgsinterviewer team
+BBI,Bo Lønberg Bilde,Chefkonsulent,bbi@dst.dk,91 37 64 26,17,Konsulentteam
+MAF,Martine Friisenbach,Chefkonsulent,maf@dst.dk,28 18 69 64,17,Konsulentteam
+NGE,Nils Galberg Enoksen,Specialkonsulent,nge@dst.dk,29 34 09 44,17,Konsulentteam
+MJB,Morten Jacobsen,Specialkonsulent,mjb@dst.dk,51 68 78 56,17,Konsulentteam
+LYJ,Lotte Yssing Jakobsen,Specialkonsulent,lyj@dst.dk,21 47 43 98,17,Konsulentteam
+NES,Nethe Cecilie Eskildsen,Fuldmægtig,nes@dst.dk,29 60 59 52,17,Konsulentteam
+IKA,Ida Karlsson,Fuldmægtig,ika@dst.dk,29 77 67 52,17,Konsulentteam
+AVK,Avin Khalil,Fuldmægtig,avk@dst.dk,29 39 65 49,17,Konsulentteam
+CST,Casper Sten Larsen,Fuldmægtig,cst@dst.dk,29 34 12 60,17,Konsulentteam
+JOA,Joakim Schollert Larsen,Fuldmægtig,joa@dst.dk,22 27 80 48,17,Konsulentteam
+TGL,Trine Mosgaard Lavrsen,Fuldmægtig,tgl@dst.dk,20 28 76 09,17,Konsulentteam
+MRL,Mette Rønnelund,Afdelingsleder,mrl@dst.dk,20 58 64 25,17,Konsulentteam
+PJV,Poul Juhl Vestergaard,Chefkonsulent,pjv@dst.dk,24 81 42 20,17,Pop/Stik team
+MBD,Martine Bech Diederichsen,Fuldmægtig,mbd@dst.dk,51 15 12 92,17,Pop/Stik team
+NLL,Ninna Linde,Fuldmægtig,nll@dst.dk,20 59 02 62,17,Pop/Stik team
+NBN,Nikolaj Beck Nielsen,Fuldmægtig,nbn@dst.dk,24 94 57 19,17,Pop/Stik team
+JCH,Jesper Christensen,Programmør/planlægg.,jch@dst.dk,41 17 93 43,17,Pop/Stik team
+LPJ,Lars Peter Jørgensen,Programmør/planlægg.,lpj@dst.dk,24 48 59 37,17,Pop/Stik team
+NPE,Nuri Peker,Programmør/planlægg.,npe@dst.dk,27 14 82 97,17,Pop/Stik team
+NEP,Nina Egelund Petersen,Afdelingsleder,nep@dst.dk,23 43 09 94,17,Økonomiteam
+HAK,Hakima Kaabony,Kontorfuldmægtig,hak@dst.dk,20 56 95 77,17,Økonomiteam
+HOH,Holger Rank Hassing,Studerende,hoh@dst.dk,20 23 96 92,18,
+SMP,Stine   Mørch Pedersen,Studerende,smp@dst.dk,23 30 96 29,18,
+CWA,Claus Werner Andersen,Kontorchef,cwa@dst.dk,91 37 64 04.,18,Kontorets ledelse og fællesopgaver
+AVJ,Anne Vibeke Jacobsen,Chefkonsulent,avj@dst.dk,20 14 84 28,18,Digital Økonomi
+AEL,Anton Lyngvold Erenbjerg,Fuldmægtig,ael@dst.dk,20 14 57 90,18,Digital Økonomi
+ASF,Anne Sofie Hummelmose,Fuldmægtig,asf@dst.dk,21 15 35 55,18,Digital Økonomi
+PSR,Peter Søndergaard Rasmussen,Afdelingsleder,psr@dst.dk,23 47 20 06,18,Digital Økonomi
+DBY,David Boysen Jensen,Specialkonsulent,dby@dst.dk,61 50 73 82,18,Forskning og Udvikling
+STK,Sara Tvile Marker,Specialkonsulent,stk@dst.dk,2374 2836,18,Forskning og Udvikling
+ASD,Anne-Sofie Dam Bjørkman,Fuldmægtig,asd@dst.dk,20 37 54 60,18,Forskning og Udvikling
+JGM,Julius Gotthardt Møller,Fuldmægtig,jgm@dst.dk,23 74 66 48,18,Forskning og Udvikling
+MWP,Mille Wilhjelm Poulsen,Fuldmægtig,mwp@dst.dk,40 18 78 40,18,Forskning og Udvikling
+MTT,Mads Otto Lind Rasmussen,Fuldmægtig,mtt@dst.dk,23 74 35 79,18,Forskning og Udvikling
+HEJ,Helle Månsson,Timekonsulent,hej@dst.dk,23 47 32 96,18,Forskning og Udvikling
+CBF,Cecilie Bryld Fjællegaard,Specialkonsulent,cbf@dst.dk,51 27 86 09,18,Kultur
+SRB,Søren Østerballe,Specialkonsulent,srb@dst.dk,23 42 32 97,18,Kultur
+AYB,Anders Yde Bentsen,Fuldmægtig,ayb@dst.dk,40 33 68 81,18,Kultur
+IMC,Isabel Maria dos Santos Cardoso,Fuldmægtig,imc@dst.dk,61 50 11 61,18,Kultur
+TSN,Trine Jensen,Fuldmægtig,tsn@dst.dk,20 13 88 17,18,Kultur
+CHT,Christian Max Gustaf Törnfelt,Fuldmægtig,cht@dst.dk,21 63 60 20,18,Kultur
+HHU,Henrik Huusom,Specialkonsulent,hhu@dst.dk,40 38 36 43,18,Miljø og Energi
+OLO,Ole Olsen,Specialkonsulent,olo@dst.dk,29 77 14 98,18,Miljø og Energi
+STG,Susanne Maibom Theilgaard,Afdelingsleder,stg@dst.dk,29 44 66 10,18,Miljø og Energi
+MUJ,Martin Ulrik Jensen,Rigsstatistiker,muj@dst.dk,21 22 08 77,21,
+SSA,Søren Schiønning Andersen,Afdelingsdirektør,ssa@dst.dk,41 63 75 45,21,Afdelingsdirektørerne
+KBA,Kirsten Balling,Afdelingsdirektør,kba@dst.dk,41 18 95 97,21,Afdelingsdirektørerne
+JSJ,Jonas Schytz Juul,Afdelingsdirektør,jsj@dst.dk,30 29 11 07,21,Afdelingsdirektørerne
+TUS,Torben Ulrich Søborg,Afdelingsdirektør,tus@dst.dk,40 62 38 36,21,Afdelingsdirektørerne
+CUZ,Carsten Ulrik Zangenberg,Afdelingsdirektør,cuz@dst.dk,28 35 30 51,21,Afdelingsdirektørerne
+SHS,Simon Haas Svith,Kontorchef,shs@dst.dk,21 69 59 05,21,Direktionssekretariatet
+TPA,Tjanna Liv Pauli,Specialkonsulent,tpa@dst.dk,26 46 80 10,21,Direktionssekretariatet
+CLP,Charlotte Langhoff Poulsen,Specialkonsulent,clp@dst.dk,20 26 42 70,21,Direktionssekretariatet
+TOC,Tobias Hoffmann Carstensen,Fuldmægtig,toc@dst.dk,20 52 31 79,21,Direktionssekretariatet
+STI,Stine Gøral-Larsen,Fuldmægtig,sti@dst.dk,30 35 55 38,21,Direktionssekretariatet
+CLK,Camilla Lund Knudsen,Fuldmægtig,clk@dst.dk,20 15 09 27,21,Direktionssekretariatet
+MRY,Mikkel Rygaard Hansen,Fuldmægtig,mry@dst.dk,20 15 91 72,21,Direktionssekretariatet
+APS,Amalie Pilgaard Stubdrup,Fuldmægtig,aps@dst.dk,20 55 44 70,21,Direktionssekretariatet
+BSB,Bettina Steen Brix,Afdelingsleder,bsb@dst.dk,41 31 74 22,21,Direktionssekretariatet
+PBV,Pia Bettina Vendelbo,Afdelingsleder,pbv@dst.dk,20 58 96 59,21,Direktionssekretariatet
+CBU,Camilla  Buch,Studerende,cbu@dst.dk,21 63 06 87,21,Direktionssekretariatet
+EWM,Ewa Møller,Chefkonsulent,ewm@dst.dk,50 92 58 70,21,Porteføljesekretariatet
+MSP,Michael Specht,Chefkonsulent,msp@dst.dk,23 47 13 72,21,Porteføljesekretariatet
+PSL,Peter Tibert Stoltze,Kontorchef,psl@dst.dk,26 74 35 83,22,Kontorets ledelse og fællesopgaver
+FSM,Fenja Søndergaard Møller,Chefkonsulent,fsm@dst.dk,23 62 62 99,22,Analyse
+AKE,Aske Skov Andersen,Fuldmægtig,ake@dst.dk,20 28 51 37,22,Analyse
+MNT,Magnus Nørtoft,Journalist,mnt@dst.dk,42 46 19 45,22,Analyse
+LHM,Laust Hvas Mortensen,Chefkonsulent,lhm@dst.dk,91 37 64 21,22,Data Science Lab
+EHE,Emilie Rune Hegelund,Specialkonsulent,ehe@dst.dk,20 56 47 11,22,Data Science Lab
+IKX,Ilya Kashnitsky,Specialkonsulent,ikx@dst.dk,21 13 09 82,22,Data Science Lab
+MZL,Milla Zacho Lessel,Bachelor,mzl@dst.dk,2380 5626,22,Data Science Lab
+SDN,Signe Dueholm  Nielsen,Bachelor,sdn@dst.dk,42 26 22 27,22,Data Science Lab
+AKA,Anne Kaag Andersen,Chefkonsulent,aka@dst.dk,91 37 64 25,22,Kvalitet
+KWB,Karin Wenche Schytte Blix,Chefkonsulent,kwb@dst.dk,40 55 38 67,22,Kvalitet
+SKR,Søren Kristensen,Chefkonsulent,skr@dst.dk,20 51 64 42,22,Kvalitet
+OSC,Ole Schnor,Chefkonsulent,osc@dst.dk,52 50 77 37,22,Kvalitet
+RJD,Rohan James Draper,Specialkonsulent,rjd@dst.dk,21 33 89 16,22,Kvalitet
+ABN,Anna Dorthe Bracht Nielsen,Fuldmægtig,abn@dst.dk,29 33 59 20,22,Kvalitet
+ALU,Anette Nymand Rasmussen,Afdelingsleder,alu@dst.dk,23 70 86 66,22,Kvalitet
+HFE,Helene Birgitte Feveile,Chefkonsulent,hfe@dst.dk,21 34 72 18,22,Metode
+JOC,Jolien Cremers,Specialkonsulent,joc@dst.dk,24 66 81 33,22,Metode
+MIM,Mikkel Mollerup,Specialkonsulent,mim@dst.dk,23 35 55 08,22,Metode
+GPM,Georg Paludan-Müller,Specialkonsulent,gpm@dst.dk,51 53 13 84,22,Metode
+JHD,Johan Andresen,Fuldmægtig,jhd@dst.dk,23 74 62 13,22,Metode
+MZP,Maria Porsman,Fuldmægtig,mzp@dst.dk,21 78 39 97,22,Metode
+PHP,Philip Porter,Bachelor,php@dst.dk,20 48 26 53,22,Metode
+HPS,Hanne-Pernille Stax,Kontorchef,hps@dst.dk,28 40 66 14,23,Kontorets ledelse og fællesopgaver
+SEJ,Steen  Eiberg-Jørgensen,Vicekontorchef,sej@dst.dk,41 31 74 18,23,Kontorets ledelse og fællesopgaver
+PSB,Peter Starch Brandt,Chefkonsulent,psb@dst.dk,61 13 70 42,23,EI-Drift
+AWH,Anders Wykow Hansen,Fuldmægtig,awh@dst.dk,40 24 05 70,23,EI-Drift
+MTJ,Morten Bo Jakobsen,Fuldmægtig,mtj@dst.dk,24 66 42 68,23,EI-Drift
+MJL,Maria Lopez Juhl,Fuldmægtig,mjl@dst.dk,30 62 53 05,23,EI-Drift
+LTV,Lisa Tofte Vardrup,Fuldmægtig,ltv@dst.dk,30 91 40 54,23,EI-Drift
+LJC,Lise Stahl Jacobsen,Specialkonsulent,ljc@dst.dk,24 82 62 43,23,Eksterne løsninger
+SST,Sigge Stenild,Specialkonsulent,sst@dst.dk,20 49 09 94,23,Eksterne løsninger
+EBA,Emil Bajlum,Fuldmægtig,eba@dst.dk,21 44 72 19,23,Eksterne løsninger
+MTV,Maria Maj Tofte Møllgaard,Fuldmægtig,mtv@dst.dk,30 89 55 61,23,Eksterne løsninger
+PIT,Pia Thomsen,Fuldmægtig,pit@dst.dk,51 68 92 50,23,Eksterne løsninger
+SAZ,Saliha Zayoum,Programmør/planlægg.,saz@dst.dk,20 52 04 83,23,Eksterne løsninger
+HKC,Henrik Michele Kock,Chefkonsulent,hkc@dst.dk,30 46 81 09,23,GEO Basisregistre
+LLF,Linea Løfqvist,Specialkonsulent,llf@dst.dk,24 76 43 54,23,GEO Basisregistre
+JEL,Jesper Lauritzen,Fuldmægtig,jel@dst.dk,40 40 34 61,23,GEO Basisregistre
+MPR,Merete Iisager,Afdelingsleder,mpr@dst.dk,21 42 83 47,23,Indberetning
+CIH,Carina Ivanhoe,Kontorfuldmægtig,cih@dst.dk,23 69 64 88,23,Indberetning
+DJH,Dorthe B. Johansen,Kontorfuldmægtig,djh@dst.dk,29 43 49 78,23,Indberetning
+SHU,Sille Mæhle,Overassistent,shu@dst.dk,23 35 56 46,23,Indberetning
+FDB,Frank de Wett Brodersen,Afdelingsleder,fdb@dst.dk,24 41 21 31,23,Interne systemer - Udvikling
+KSN,Karina Leander,Afdelingsleder,ksn@dst.dk,24 75 37 02,23,Interne systemer - Udvikling
+CGO,Claus Gottlob,Afdelingsleder,cgo@dst.dk,81 72 94 15,23,Interne systemer - Vedligehold og test
+BSN,Bettina Schandorff Svanum,Afdelingsleder,bsn@dst.dk,51 42 76 28,23,Interne systemer - Vedligehold og test
+BMA,Bjørn Rundal Madsen,Kontorfuldmægtig,bma@dst.dk,29 40 37 88,23,Interne systemer - Vedligehold og test
+KAR,Karen Thuse Rasmussen,Kontorfuldmægtig,kar@dst.dk,24 75 04 71,23,Interne systemer - Vedligehold og test
+BGN,Birgit Nielsen,Specialkonsulent,bgn@dst.dk,20 51 69 67,23,Koncerner og ESR kvalitet
+JCR,Jens Christian Ring,Specialkonsulent,jcr@dst.dk,29 42 37 45,23,Koncerner og ESR kvalitet
+MKG,Michael Lützhøft Kongsted,Fuldmægtig,mkg@dst.dk,24 64 96 80,23,Koncerner og ESR kvalitet
+SVM,Sarah Valentina Møller,Fuldmægtig,svm@dst.dk,20 13 06 26,23,Koncerner og ESR kvalitet
+BJH,Bjarne C. Hansen,Kontorfuldmægtig,bjh@dst.dk,20 35 71 11,23,Virk og Idep Support
+NIN,Ninnie Hansen,Kontorfuldmægtig,nin@dst.dk,51 85 76 18,23,Virk og Idep Support
+AMO,Alina Mortensen,Kontorfuldmægtig,amo@dst.dk,29 47 87 26,23,Virk og Idep Support
+DUY,Duygu Yildirim,Kontorfuldmægtig,duy@dst.dk,21 33 62 44,23,Virk og Idep Support
