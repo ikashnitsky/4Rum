@@ -83,3 +83,10 @@ idents <- ls() |>
 
 armen <- dst_contacts |>
     filter(ident %in% idents)
+
+# save the latest list
+save(armen, file = "participants/armen.rda")
+
+# save a timestamped copy for archiving
+# UPDATE THE DATE PART
+write_csv(armen, "participants/archive/armen-250516.csv")
