@@ -1,0 +1,38 @@
+---
+title: "250808-issue-01-invite-to-250822"
+format: html
+---
+
+Dear all,
+
+As the summer is nearing its end, I'm very excited to invite you to the next meeting of 4R/um, the R discussion club.  
+
+# Next meeting
+
+The meeting will take place on Friday 22nd August at 10:30 in Skak Nielsen (3338), the large meeting room. I will present some features of Quarto (https://quarto.org), the powerful cross-language publishing environment. 
+
+# BASIC INFO on 4R/um:
+- meetings are planned to be held on the 4th Friday of each month at 10:30--11:30 at Skak Nielsen meeting room (3338)
+- the materials for the meeting are shared via the repository at "Q:/Rforum" 
+- unless clearly mentioned in the call for the next meeting, no deep prior knowledge of R is expectedd or needed -- everyone interested in R is welcome!
+
+# NewsletteR
+
+I will aim to include several exciting resources in each letter that announced the next meeting.
+
+* https://hadley.github.io/25-tidyverse-history -- Hadely Wickham is for sure the most influential developer in R world. In his recent long interview he reflocts on his professional path and the development of tidyverse
+
+* https://r-consortium.org/posts/r_plus_ai_call_for_proposals/index.html#rai-november-12-13-2025 -- there will be a curious online conference, 12--13 November 2025, organized by R Consortium to discuss AI developments in R ecosystem. Until 5th September 2025, you can propose topics to be discussed there.
+
+* https://ces0491.github.io/rbr -- A beautiful book was published in summer by Cesaire Tobias that is aimed at the heavy users of R who may have missed some crucial training in the basics of proper computer science workflows and environment setup
+
+* https://www.tidyverse.org/blog/2025/07/purrr-1-1-0-parallel -- recently a huge update happened to {purrr} that introduced a drop=in zero-cost parallelization in main tidyverse pipelines
+
+* https://positron.posit.co/release-notes.html -- after more than a year in Beta testing, Positron (a new VS Code based IDE from Posit, focused on data analysis in python and R) is now fullyb released
+
+* https://www.linkedin.com/posts/jakub-sobolewski-r_rstats-rdevelopment-opensource-activity-7348682381156913154-8rv4 -- since some of us at DST are developing/maintaining own R packages, I wanted to share this post on the modern tools for code coverage and testing
+
+* https://luisdva.github.io/llmsr-book -- for anyone interested in learining how LLMs may be utilised in R, this constantly updated book is a gem
+ 
+Cordially,
+Ilya
