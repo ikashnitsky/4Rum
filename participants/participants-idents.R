@@ -61,6 +61,10 @@ library(httr)
 dst_contacts <- read_csv("participants/dst-all-contacts.csv")
 
 
+# additional -- people asked to be included via email ---------------------
+
+idents_via_email_requests <- c("RIE", "SLF")
+
 
 # 2025-05-16 meeting ------------------------------------------------------
 
@@ -89,4 +93,4 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-250516.csv")
+write_csv(armen, "participants/archive/armen-250915.csv")
