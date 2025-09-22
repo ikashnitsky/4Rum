@@ -63,7 +63,7 @@ load("participants/dst-all-contacts.rda")
 
 # additional -- people asked to be included via email ---------------------
 
-idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "AKA", "JPM", "KWB")
+idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "AKA", "GPM", "KWB")
 
 
 # additional -- R course participants -------------------------------------
