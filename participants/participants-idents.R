@@ -63,7 +63,7 @@ load("participants/dst-all-contacts.rda")
 
 # additional -- people asked to be included via email ---------------------
 
-idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "AKA", "GPM", "KWB")
+idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "GPM")
 
 
 # additional -- R course participants -------------------------------------
@@ -71,9 +71,15 @@ idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", 
 idents_r_course <- c("SMU", "DCH", "IMC", "JKP", "CJA", "PLH", "EMF", "ABT", "OEK")
 
 
-# 2025-05-16 meeting ------------------------------------------------------
+# 2025-05-16 meeting MNT maps ------------------------------------------------------
 
-idents_250516 <- c("MZP", "MHG", "HNN", "LMI", "GAN", "LNJ", "BOO", "MIM", "EBA", "HFE", "FSM", "JHD", "MBD", "PJV", "SVM", "AWH", "KLE", "JGM", "ASF", "AYB", "HKC", "JCK", "AMF", "PHP")
+idents_250516 <- c("MZP", "MHG", "HNN", "LMI", "GAN", "LNJ", "BOO", "MIM", "EBA", "HFE", "FSM", "JHD", "MBD", "PJV", "SVM", "AWH", "KLE",
+
+
+# 2025-09-26 meeting IKX quarto -------------------------------------------
+
+idents_250926 <- c("IKX", "ETH", "AEL", "JGM", "HOH", "PHP", "AYB", "CJA", "EMF", "LMI", "SND", "DCH", "ATB", "EBM", "JCK", "HFE", "LNJ", "AWH", "AMF", "GAN", "MNT", "MIM")
+
 
 
 
@@ -98,7 +104,7 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-250915.csv")
+write_csv(armen, "participants/archive/armen-250926.csv")
 
 # copy emails to clipboard
 armen |>
