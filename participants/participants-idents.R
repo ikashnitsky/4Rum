@@ -71,14 +71,15 @@ idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", 
 idents_r_course <- c("SMU", "DCH", "IMC", "JKP", "CJA", "PLH", "EMF", "ABT", "OEK")
 
 
-# 2025-05-16 meeting MNT maps ------------------------------------------------------
+# 2025-05-16 meeting ------------------------------------------------------
 
-idents_250516 <- c("MZP", "MHG", "HNN", "LMI", "GAN", "LNJ", "BOO", "MIM", "EBA", "HFE", "FSM", "JHD", "MBD", "PJV", "SVM", "AWH", "KLE",
-
+idents_250516 <- c("MZP", "MHG", "HNN", "LMI", "GAN", "LNJ", "BOO", "MIM", "EBA", "HFE", "FSM", "JHD", "MBD", "PJV", "SVM", "AWH", "KLE", "JGM", "ASF", "AYB", "HKC", "JCK", "AMF", "PHP")
 
 # 2025-09-26 meeting IKX quarto -------------------------------------------
 
 idents_250926 <- c("IKX", "ETH", "AEL", "JGM", "HOH", "PHP", "AYB", "CJA", "EMF", "LMI", "SND", "DCH", "ATB", "EBM", "JCK", "HFE", "LNJ", "AWH", "AMF", "GAN", "MNT", "MIM")
+
+
 
 
 
