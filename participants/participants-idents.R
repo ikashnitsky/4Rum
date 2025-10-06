@@ -55,15 +55,18 @@ library(httr)
 #
 # # Scrape all offices from 01 to 23, 14, 19 and 20 do not exist
 # dst_contacts <- map_dfr(c(1:13, 15:18, 21:23), scrape_dst_office)
-
+#
 # save(dst_contacts, file =  "participants/dst-all-contacts.rda")
+# # save a timestamped copy for archiving
+# # UPDATE THE DATE PART
+# write_csv(dst_contacts, "participants/archive/dst-all-contacts-251006.csv")
 
 load("participants/dst-all-contacts.rda")
 
 
 # additional -- people asked to be included via email ---------------------
 
-idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "GPM", "OWY")
+idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "GPM", "OWY", "JAM", "LWH")
 
 
 # additional -- R course participants -------------------------------------
@@ -105,7 +108,7 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-250926.csv")
+write_csv(armen, "participants/archive/armen-251006.csv")
 
 # copy emails to clipboard
 armen |>
