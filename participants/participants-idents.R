@@ -59,7 +59,7 @@ library(httr)
 # save(dst_contacts, file =  "participants/dst-all-contacts.rda")
 # # save a timestamped copy for archiving
 # # UPDATE THE DATE PART
-# write_csv(dst_contacts, "participants/archive/dst-all-contacts-251006.csv")
+# write_csv(dst_contacts, "participants/archive/dst-all-contacts-251024.csv")
 
 load("participants/dst-all-contacts.rda")
 
@@ -84,6 +84,10 @@ idents_250926 <- c("IKX", "ETH", "AEL", "JGM", "HOH", "PHP", "AYB", "CJA", "EMF"
 
 
 
+#  2025-10-24 meeting JHD vsc + AYB round ---------------------------------
+
+idents_251024 <- c("IKX", "MZP", "GPM", "JCK", "EBM", "MNT", "MHG", "JAM", "LWH", "JOC", "PHP", "SVM", "OWY", "DCH", "SND", "ETH", "EMF", "AYB", "IMC", "GAN", "LNJ")
+
 
 
 
@@ -97,18 +101,24 @@ idents <- ls() |>
     unname() |>
     unique()
 
-
 # participants ------------------------------------------------------------
 
 armen <- dst_contacts |>
     filter(ident %in% idents)
+
+
+# anti_join(
+#     tibble(ident = idents),
+#     armen |> select(ident),
+#     by = "ident"
+# )
 
 # save the latest list
 save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-251006.csv")
+write_csv(armen, "participants/archive/armen-251024.csv")
 
 # copy emails to clipboard
 armen |>
