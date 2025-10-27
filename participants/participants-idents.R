@@ -89,6 +89,8 @@ idents_250926 <- c("IKX", "ETH", "AEL", "JGM", "HOH", "PHP", "AYB", "CJA", "EMF"
 idents_251024 <- c("IKX", "MZP", "GPM", "JCK", "EBM", "MNT", "MHG", "JAM", "LWH", "JOC", "PHP", "SVM", "OWY", "DCH", "SND", "ETH", "EMF", "AYB", "IMC", "GAN", "LNJ")
 
 
+# no longer at DST --------------------------------------------------------
+idents_left <- c("SMU", "ATB")
 
 
 # common idents -----------------------------------------------------------
@@ -101,10 +103,12 @@ idents <- ls() |>
     unname() |>
     unique()
 
+
 # participants ------------------------------------------------------------
 
 armen <- dst_contacts |>
-    filter(ident %in% idents)
+    filter(ident %in% idents) |>
+    filter(!ident %in% idents_left)
 
 
 # anti_join(
