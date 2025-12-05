@@ -89,6 +89,11 @@ idents_250926 <- c("IKX", "ETH", "AEL", "JGM", "HOH", "PHP", "AYB", "CJA", "EMF"
 idents_251024 <- c("IKX", "MZP", "GPM", "JCK", "EBM", "MNT", "MHG", "JAM", "LWH", "JOC", "PHP", "SVM", "OWY", "DCH", "SND", "ETH", "EMF", "AYB", "IMC", "GAN", "LNJ")
 
 
+# 2025-11-28 meeting PHP DSTmetadata --------------------------------------
+
+idents_251128 <- c("PHP", "IKX", "JCK", , "LWH", "SPN", "EBM", "JCK", "SVM", "AKE")
+
+
 # no longer at DST --------------------------------------------------------
 idents_left <- c("SMU", "ATB")
 
