@@ -59,14 +59,14 @@ library(httr)
 # save(dst_contacts, file =  "participants/dst-all-contacts.rda")
 # # save a timestamped copy for archiving
 # # UPDATE THE DATE PART
-# write_csv(dst_contacts, "participants/archive/dst-all-contacts-251024.csv")
+# write_csv(dst_contacts, "participants/archive/dst-all-contacts-260223.csv")
 
 load("participants/dst-all-contacts.rda")
 
 
 # additional -- people asked to be included via email ---------------------
 
-idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "GPM", "OWY", "JAM", "LWH", "MJS")
+idents_via_email_requests <- c("RIE", "SLF", "KLE", "AKE", "MNT", "JOC", "PSL", "LHM", "EHE", "SDN", "RJD", "ALU", "ABN", "SKR", "GPM", "OWY", "JAM", "LWH", "MJS", "KKE")
 
 
 # additional -- R course participants -------------------------------------
@@ -127,7 +127,7 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-251024.csv")
+write_csv(armen, "participants/archive/armen-260223.csv")
 
 # copy emails to clipboard
 armen |>
