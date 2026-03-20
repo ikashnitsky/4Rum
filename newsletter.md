@@ -1,3 +1,14 @@
+# March 2026
+* With the recent {dplyr} major update, if_else() and case_when() are up to 30x faster — a dedicated post explains the memory and speed engineering behind the dplyr 1.2.0 gains -- <https://tidyverse.org/blog/2026/02/dplyr-case-when-faster>
+* RStudio rolled outits own AI coding agent. Unfortunately, it's a paid plan with 14 days trial. But this may be transformatinve for those not switching to Positron/VSCode <https://posit.co/blog/introducing-ai-in-rstudio>
+* Tad -- an extremely capable small app to view CSV, parquet, duckdb, and SQLite. Open source, cross platform, fast, clean. I didn't flinch at my request to open a 1 million rows 500MB csv file. But that's not all: it can blazingly fast create pivot tables to explore your data -- <https://github.com/antonycourtney/tad>
+* Quarto v1.9 -- a fresh Quarto release lands with notable Typst improvements. Typst is a new generation tool to compile PDFs that unlike LaTeX manages in seconds rather than minutes -- <https://quarto.org/docs/blog>
+* {webRoid} and {webRios} -- two packages that allow you to run R right on you mobile phone. Yes, I know this is likely not for everyone =) but this is great option to have, especially since Android is drifting toward becoming a fully fleshed descktop OS. Did you know you can connect to a DST virtual machine via Android Microsoft app then plug the phone to you docking station and just work? -- <https://www.linkedin.com/posts/steven-mortimer_rstats-webroid-webrios-activity-7419714410864199680-9n2X>
+* {ragnar} 0.3.0 — the tidyverse's RAG (retrieval-augmented generation) package keeps evolving: faster document ingestion, new embedding providers, improved retrieval, and new integrations for using ragnar stores directly from tool calls in LLM agents -- <https://tidyverse.org/blog/2026/01/ragnar-0-3-0>
+* {orbital} -- a new development in the world of data science led by Posit -- translate model creation from R or python to bare SQL and train the models right at the database. This one is just to observe and follow <https://www.linkedin.com/posts/hadleywickham_orbital-is-a-such-tool-technology-build-share-7438300413973651456-RFpz>
+* Posit evaluation of small AI coding models -- <https://www.linkedin.com/posts/simonpcouch_i-had-wondered-how-todays-gpt-54-releases-share-7439764257778409472-A9-F>
+* A great discussion of how AI coding redefined the unspoken agreement between the actors in the Opensouce world -- <https://turso.tech/blog/what-happens-with-oss-in-the-age-of-ai>
+
 
 # February 2026
 * {labelled} -- I came across this fantastic suggestion, one can simply specify how the data variables should appear in the plots, and this info will be carried on into the outputs. Think of using this for labelles in Danish that you only need to define once -- <https://www.linkedin.com/posts/cameron-patrick-5b348013b_was-recently-reminded-of-a-cool-r-trick-activity-7423346487193153536-ltiJ>
