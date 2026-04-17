@@ -65,7 +65,7 @@ dst_contacts <- map_dfr(c(1:13, 15:18, 21:23, 29), scrape_dst_office)
 save(dst_contacts, file = "participants/dst-all-contacts.rda")
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(dst_contacts, "participants/archive/dst-all-contacts-260223.csv")
+write_csv(dst_contacts, "participants/archive/dst-all-contacts-260417.csv")
 
 load("participants/dst-all-contacts.rda")
 
@@ -95,20 +95,6 @@ idents_via_email_requests <- c(
     "KKE"
 )
 
-
-# additional -- R course participants -------------------------------------
-
-idents_r_course <- c(
-    "SMU",
-    "DCH",
-    "IMC",
-    "JKP",
-    "CJA",
-    "PLH",
-    "EMF",
-    "ABT",
-    "OEK"
-)
 
 
 # 2025-05-16 meeting ------------------------------------------------------
@@ -231,6 +217,46 @@ idents_260227 <- c(
 )
 
 
+# R course participants UPD 2026-04-17 ---------------------------------------------------
+
+idents_r_course <- c(
+    # April 2026
+    "CWB",
+    "MFS",
+    "LCR",
+    "CTI",
+    "LOP",
+    "CRS",
+    "ROV",
+    "NAV",
+    # September 2025
+    "EMF",
+    "ABT",
+    "IMC",
+    "DCH",
+    "PLH",
+    "CJA",
+    "HWK",
+    "OEK",
+    "SMU",
+    "JKP",
+    "MWC",
+    "JHO",
+    "CJA",
+    "HWK",
+    "OEK",
+    "SMU",
+    "JKP",
+    "MWC",
+    # May 2025
+    "JHO",
+    "LHA",
+    "JBE",
+    "ASF"
+)
+
+
+
 # no longer at DST --------------------------------------------------------
 idents_left <- c("SMU", "ATB")
 
@@ -264,7 +290,10 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-260223.csv")
+write_csv(armen, "participants/archive/armen-260417.csv")
+
+# load back
+load("participants/armen.rda")
 
 # copy emails to clipboard
 armen |>
