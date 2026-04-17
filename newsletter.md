@@ -1,3 +1,9 @@
+# April 2026
+* For decades the core developers of R were answering questions and helping to troubleshoot issues via R mailing lists. This throve of useful knowledge used to be hardly accessible. No more. Check out -- <https://r-mailing-lists.thecoatlessprofessor.com/>
+* You probably saw the news that Posit launched their own AI service now available in RStudio (alas, subscription based). Here is a screencast from Hadley Wickham showcasing the power of this new tool to explore a dataset -- <https://youtu.be/N_oT_8xVRXg?si=4NzZO-kHSiPs9PWI> (and just a reminder that in Posit you can have AI assistants without a Posit AI subscription)
+* Databot -- Following the previous bullet point, here's a new Positron/VScode extension specifically focused on helping you to explore datasets -- <https://open-vsx.org/extension/posit/databot>
+* Yet another package from the amazing Posit team. {pointblank} is a powerful workhorse to automate exploration and validation of datasets. This one may turn out to be invaluable for us at DST -- <https://github.com/rstudio/pointblank>
+
 # March 2026
 * With the recent {dplyr} major update, if_else() and case_when() are up to 30x faster — a dedicated post explains the memory and speed engineering behind the dplyr 1.2.0 gains -- <https://tidyverse.org/blog/2026/02/dplyr-case-when-faster>
 * RStudio rolled outits own AI coding agent. Unfortunately, it's a paid plan with 14 days trial. But this may be transformatinve for those not switching to Positron/VSCode <https://posit.co/blog/introducing-ai-in-rstudio>

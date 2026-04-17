@@ -1,0 +1,67 @@
+ident,name,title,email,phone,kontor,team
+JKP,Jørn Korsbø Petersen,Chefkonsulent,jkp@dst.dk,20 11 68 64,01,Befolkning
+JBE,Jens Bjerre,Chefkonsulent,jbe@dst.dk,29 16 99 21,01,Børnepasning
+EMF,Emil Flyger Andersen,FuldmÃ¦gtig,emf@dst.dk,24 52 43 08,02,Team indsamling og fejlsÃ¸gning
+ABT,Aron Tsegay Besrat,FuldmÃ¦gtig,abt@dst.dk,21 84 82 78,02,Team indsamling og fejlsÃ¸gning
+PLH,Pernille Leth Hougaard,FuldmÃ¦gtig,plh@dst.dk,20 34 26 74,02,Team indsamling og fejlsÃ¸gning
+CJA,Caroline Amalie Jakobsen,FuldmÃ¦gtig,cja@dst.dk,24 46 80 61,02,Team indsamling og fejlsÃ¸gning
+OEK,Ãzge Burcu KÃ¶prÃ¼lÃ¼,FuldmÃ¦gtig,oek@dst.dk,20 34 45 55,02,Team indsamling og fejlsÃ¸gning
+LCR,Lisbeth Elin Lakjer Christensen,FuldmÃ¦gtig,lcr@dst.dk,21 77 74 20,03,"Regnskabsstatistik, fiskeri og akvakultur"
+MJS,Martin Brandt Jepsen,Specialkonsulent,mjs@dst.dk,24 99 89 11,03,"Regnskabsstatistik, jordbrug"
+CWB,Charlotte Wind von Bennigsen,FuldmÃ¦gtig,cwb@dst.dk,24 21 42 30,03,"Regnskabsstatistik, jordbrug"
+MHG,Mads Haaning Andersen,FuldmÃ¦gtig,mhg@dst.dk,51 85 76 27,03,"Struktur, Produktion og Ãkologi"
+MFS,Martin Faris Sawaed Nielsen,Fuldmægtig,mfs@dst.dk,23 69 90 67,04,AKU og SILC
+MWC,Monica Wiese Christensen,Fuldmægtig,mwc@dst.dk,21 73 34 69,04,Løn og Fravær
+SLF,Sofie Lionet Faxholm,Fuldmægtig,slf@dst.dk,20 18 41 09,04,Løn og Fravær
+CRS,Christian  Ravn,Fuldmægtig,crs@dst.dk,21 15 99 36,04,Løn og Fravær
+KKE,Karen Keller,Chefkonsulent,kke@dst.dk,21 19 85 61,08,Turisme
+RIE,Annemarie Schriver,Specialkonsulent,rie@dst.dk,40 18 43 54,09,Økonomi og Projekter
+LHA,Line Neerup Handlos,Specialkonsulent,lha@dst.dk,26 64 03 00,10,"Sundhed, handicap og kriminalitet"
+EBM,Emil Tappe Bang-Mortensen,Fuldmægtig,ebm@dst.dk,24 67 85 25,11,Globalisering og firmastatistik
+JCK,Julie Cathrine Krabek Sørensen,Fuldmægtig,jck@dst.dk,23 66 46 60,11,Globalisering og firmastatistik
+CTI,Christine Petersen,Fuldmægtig,cti@dst.dk,23 66 09 93,12,Forbrugsundersøgelsen
+JHO,Jakob Holmgaard,Specialkonsulent,jho@dst.dk,24 87 64 56,12,Priser
+HWK,Helle Wallach Kildemoes,Chefkonsulent,hwk@dst.dk,21 43 61 85,13,Forskningsservice
+KLE,Morten Winkler,Specialkonsulent,kle@dst.dk,24 78 53 49,13,Forskningsservice
+AMF,Amy Frølander,Specialkonsulent,amf@dst.dk,29 46 73 77,15,Datakonsulenterne
+LOP,Louise Rasmussen,Specialkonsulent,lop@dst.dk,21 52 30 34,15,Datakonsulenterne
+ETH,Emil Thranholm,Specialkonsulent,eth@dst.dk,29 63 22 97,15,Datakonsulenterne
+GAN,Gustav Andersen,Fuldmægtig,gan@dst.dk,29 33 70 04,15,Datakonsulenterne
+SND,Sarah Neisig Andersen,Fuldmægtig,snd@dst.dk,20 35 32 12,15,Datakonsulenterne
+DCH,Doaa El-Chamma,Fuldmægtig,dch@dst.dk,21 36 66 29,15,Datakonsulenterne
+HNN,Allan Hansen,Fuldmægtig,hnn@dst.dk,23 24 93 58,15,Datakonsulenterne
+LNJ,Lonnie Graversgaard Jensen,Fuldmægtig,lnj@dst.dk,30 35 72 92,15,Datakonsulenterne
+LMI,Laurits Mikkelsen,Fuldmægtig,lmi@dst.dk,23 62 39 79,15,Datakonsulenterne
+BOO,Bodil Birkebæk Olesen,Fuldmægtig,boo@dst.dk,23 29 35 25,15,Datakonsulenterne
+MZP,Maria Porsman,Fuldmægtig,mzp@dst.dk,21 78 39 97,15,Datakonsulenterne
+NAV,Nanta Veliovits,Fuldmægtig,nav@dst.dk,21 20 98 79,15,Datakonsulenterne
+PJV,Poul Juhl Vestergaard,Chefkonsulent,pjv@dst.dk,24 81 42 20,17,Pop/Stik team
+ROV,Magnus Ørberg Rove,Fuldmægtig,rov@dst.dk,29 25 78 20,17,Pop/Stik team
+AEL,Anton Lyngvold Erenbjerg,Fuldmægtig,ael@dst.dk,20 14 57 90,18,Digital Økonomi
+ASF,Anne Sofie Hummelmose,Fuldmægtig,asf@dst.dk,21 15 35 55,18,Digital Økonomi
+HOH,Holger Rank Hassing,Studerende,hoh@dst.dk,20 23 96 92,18,Digital Økonomi
+JGM,Julius Gotthardt Møller,Fuldmægtig,jgm@dst.dk,23 74 66 48,18,Forskning og Udvikling
+AYB,Anders Yde Bentsen,Fuldmægtig,ayb@dst.dk,40 33 68 81,18,Kultur
+IMC,Isabel Maria dos Santos Cardoso,Fuldmægtig,imc@dst.dk,61 50 11 61,18,Kultur
+PSL,Peter Tibert Stoltze,Kontorchef,psl@dst.dk,26 74 35 83,22,Kontorets ledelse og fællesopgaver
+MNT,Magnus Nørtoft,Specialkonsulent,mnt@dst.dk,42 46 19 45,22,Analyse
+AKE,Aske Skov Andersen,Fuldmægtig,ake@dst.dk,20 28 51 37,22,Analyse
+EHE,Emilie Rune Hegelund,Specialkonsulent,ehe@dst.dk,20 56 47 11,22,Data Science Lab
+IKX,Ilya Kashnitsky,Specialkonsulent,ikx@dst.dk,21 13 09 82,22,Data Science Lab
+SDN,Signe Dueholm  Nielsen,Bachelor,sdn@dst.dk,42 26 22 27,22,Data Science Lab
+LWH,Laura Wismar Hansen,Studerende,lwh@dst.dk,24 62 57 44,22,Data Science Lab
+JAM,Jasper Djurs McEwan,Studerende,jam@dst.dk,24 62 45 36,22,Data Science Lab
+SKR,Søren Kristensen,Chefkonsulent,skr@dst.dk,20 51 64 42,22,Dokumentation og Metadata
+RJD,Rohan James Draper,Specialkonsulent,rjd@dst.dk,21 33 89 16,22,Dokumentation og Metadata
+ABN,Anna Dorthe Bracht Nielsen,Fuldmægtig,abn@dst.dk,29 33 59 20,22,Dokumentation og Metadata
+ALU,Anette Nymand Rasmussen,Afdelingsleder,alu@dst.dk,23 70 86 66,22,Dokumentation og Metadata
+JOC,Jolien Cremers,Chefkonsulent,joc@dst.dk,24 66 81 33,22,Metode
+HFE,Helene Birgitte Feveile,Chefkonsulent,hfe@dst.dk,21 34 72 18,22,Metode
+MIM,Mikkel Mollerup,Specialkonsulent,mim@dst.dk,23 35 55 08,22,Metode
+GPM,Georg Paludan-Müller,Specialkonsulent,gpm@dst.dk,51 53 13 84,22,Metode
+JHD,Johan Andresen,Fuldmægtig,jhd@dst.dk,23 74 62 13,22,Metode
+PHP,Philip Porter,Bachelor,php@dst.dk,20 48 26 53,22,Metode
+HKC,Henrik Michele Kock,Chefkonsulent,hkc@dst.dk,30 46 81 09,23,GEO Basisregistre
+EBA,Emil Bajlum,Fuldmægtig,eba@dst.dk,21 44 72 19,23,Indberetningsløsninger og integration
+AWH,Anders Wykow Hansen,Fuldmægtig,awh@dst.dk,40 24 05 70,23,Kommunikation og processer
+SVM,Sarah Valentina Møller,Fuldmægtig,svm@dst.dk,20 13 06 26,23,Koncerner og ESR kvalitet
