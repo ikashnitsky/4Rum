@@ -4,6 +4,10 @@ R forum at DST organization materials
 
 # Meetings
 
+## 2026-04-24 JOC & IKX -- R course feedback
+
+## 2026-03-27 IKX -- DB connection speed
+
 ## 2026-02-27 IKX -- parquet
 
 ## 2025-11-28 PHP -- dstmetadata
