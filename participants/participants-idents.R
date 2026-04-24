@@ -96,7 +96,6 @@ idents_via_email_requests <- c(
 )
 
 
-
 # 2025-05-16 meeting ------------------------------------------------------
 
 idents_250516 <- c(
@@ -217,6 +216,27 @@ idents_260227 <- c(
 )
 
 
+# 2026-04-24 meeting JOC & IKX --------------------------------------------
+
+idents_260424 <- c(
+    "IKX",
+    "LNJ",
+    "SND",
+    "LMI",
+    "AMF",
+    "PHP",
+    "JAM",
+    "MUT",
+    "EHE",
+    "CWB",
+    "LCR",
+    "AYB",
+    "AWH",
+    "JOC",
+    "AMF"
+)
+
+
 # R course participants UPD 2026-04-17 ---------------------------------------------------
 
 idents_r_course <- c(
@@ -254,7 +274,6 @@ idents_r_course <- c(
     "JBE",
     "ASF"
 )
-
 
 
 # no longer at DST --------------------------------------------------------
