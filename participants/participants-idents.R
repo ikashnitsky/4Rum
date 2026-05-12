@@ -9,6 +9,9 @@ library(janitor)
 library(magrittr)
 library(rvest)
 library(httr)
+library(glue)
+
+timestamp <- "260512"
 
 
 # all people from DST -----------------------------------------------------
@@ -65,7 +68,10 @@ dst_contacts <- map_dfr(c(1:13, 15:18, 21:23, 29), scrape_dst_office)
 save(dst_contacts, file = "participants/dst-all-contacts.rda")
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(dst_contacts, "participants/archive/dst-all-contacts-260417.csv")
+write_csv(
+    dst_contacts,
+    str_glue("participants/archive/dst-all-contacts-{timestamp}.csv")
+)
 
 load("participants/dst-all-contacts.rda")
 
@@ -73,6 +79,8 @@ load("participants/dst-all-contacts.rda")
 # additional -- people asked to be included via email ---------------------
 
 idents_via_email_requests <- c(
+    "NJN",
+    "CUZ",
     "RIE",
     "SLF",
     "KLE",
@@ -93,6 +101,40 @@ idents_via_email_requests <- c(
     "LWH",
     "MJS",
     "KKE"
+)
+
+# consultancy office 15kt ------------------------------------
+
+idents_k15 <- c(
+    "MIK",
+    "VHF",
+    "AMI",
+    "CFL",
+    "JPO",
+    "TRN",
+    "KWH",
+    "KVN",
+    "LLJ",
+    "AMF",
+    "LOP",
+    "ETH",
+    "GAN",
+    "SND",
+    "APF",
+    "DCH",
+    "HNN",
+    "LNJ",
+    "LMI",
+    "BOO",
+    "MZP",
+    "NAV",
+    "TRG",
+    "KMH",
+    "JEJ",
+    "LKE",
+    "CLN",
+    "EAP",
+    "NIM"
 )
 
 
@@ -276,8 +318,29 @@ idents_r_course <- c(
 )
 
 
+# 2606 -- dataviz course participants  ------------------------------------
+
+idents_dataviz_course <- c(
+    "EHE",
+    "MZP",
+    "AWH",
+    "MJS"
+)
+
+
 # no longer at DST --------------------------------------------------------
-idents_left <- c("SMU", "ATB")
+idents_left <- c(
+    "FSM",
+    "MBD",
+    "HOH",
+    "ATB",
+    "OWY",
+    "SPN",
+    "SUM",
+    "MUT",
+    "SMU",
+    "LHM"
+)
 
 
 # common idents -----------------------------------------------------------
@@ -297,7 +360,7 @@ armen <- dst_contacts |>
     filter(ident %in% idents) |>
     filter(!ident %in% idents_left)
 
-
+# # those who left
 # anti_join(
 #     tibble(ident = idents),
 #     armen |> select(ident),
@@ -309,7 +372,7 @@ save(armen, file = "participants/armen.rda")
 
 # save a timestamped copy for archiving
 # UPDATE THE DATE PART
-write_csv(armen, "participants/archive/armen-260417.csv")
+write_csv(armen, str_glue("participants/archive/armen-{timestamp}.csv"))
 
 # load back
 load("participants/armen.rda")
