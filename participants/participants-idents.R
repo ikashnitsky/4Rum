@@ -128,7 +128,7 @@ idents_k15 <- c(
     "BOO",
     "MZP",
     "NAV",
-    "TRG",
+    # "TRG", # asked to be removed
     "KMH",
     "JEJ",
     "LKE",
