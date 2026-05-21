@@ -11,7 +11,7 @@ library(rvest)
 library(httr)
 library(glue)
 
-timestamp <- "260512"
+timestamp <- "260521"
 
 
 # all people from DST -----------------------------------------------------
@@ -100,7 +100,8 @@ idents_via_email_requests <- c(
     "JAM",
     "LWH",
     "MJS",
-    "KKE"
+    "KKE",
+    "NIT"
 )
 
 # consultancy office 15kt ------------------------------------
