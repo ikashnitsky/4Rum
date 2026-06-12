@@ -101,7 +101,8 @@ idents_via_email_requests <- c(
     "LWH",
     "MJS",
     "KKE",
-    "NIT"
+    "NIT",
+    "GTA"
 )
 
 # consultancy office 15kt ------------------------------------
