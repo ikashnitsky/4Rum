@@ -1,8 +1,16 @@
+# September 2026
+* Our special 4R/um meeting & R Meetup Copengagen event is moved to Friday 23th October 2026 at 14:00 [NOTE unusual time!] due to an overlap with  we are joining forces with [Rasmus Bååth](https://www.linkedin.com/in/rasmus-baath), the organizer of [CopenhagenR useR Group via Meetup](https://www.meetup.com/copenhagenr-user-group). We are going to have 3 ~20min presentations, 2 from guest speakers and 1 from an internal DST speaker. 
+* Posit rolled out an Introduction course for Positron IDE -- <https://academy.posit.co/path/introduction-to-positron>
+* A no bullshit guide to LLMs -- Hadley Wickham summarized many battle learned lessons about using AI with coding <https://tidydesign.substack.com/p/a-no-bullshit-guide-to-llms>
+* R Observatory -- James Balamuta created  a really neat resource to explore package docs <https://blog.thecoatlessprofessor.com/posts/beginnings-of-the-r-observatory-project>
+* {uvr} is here to bring the best of python's wotrld pacjage management to R <https://www.linkedin.com/posts/veerlevanleemput_you-probably-heard-about-uv-for-python-share-7487847611631046656-ijTA>
+* This one is honestly a bit mind-blowing: share a bit of R code as a live executable R session with {livelink}, another masterpiece from James Balamuta <https://blog.thecoatlessprofessor.com/programming/r/data-science-as-a-reproducible-link> OR at least just check webR demo <https://webr.sh>
+
 # June 2026
 * On Tuesday 25th August 2026 at 14:00 [NOTE unusual day/time!], we are going to have a special 4R/um meeting -- we are joining forces with [Rasmus Bååth](https://www.linkedin.com/in/rasmus-baath), the organizer of [CopenhagenR useR Group via Meetup](https://www.meetup.com/copenhagenr-user-group). We are going to have 3 ~20min presentations, 2 from guest speakers and 1 from an internal DST speaker. More info will follow after summer 
 * REMINDER: On 25th September 2026 we are going to have a very special guest at 4R/um -- [Thomas Lin Pedersen](https://www.data-imaginist.com/about), one of the most influential R developers who works at Posit, the author of {ggforce}, {patchwork}, {ragg}, {ggraph}, {ggfx}, the redefined {gganimate}, maintainer and lead developer of {ggplot2}, and many many more great packages. He will present his latest major pivot -- {ggsql}. Please mark in your calendars, come, and bring your non-R colleague who works with SQL -- <https://ggsql.org>
 * Hadley Wickham [announced getting back to his Substack blog](https://tidydesign.substack.com/p/returning-to-life). And of course you can see that the dominating topic is the ongoing AI revolution. 
-* {tidypredict} is a package of the establisged tidymodels family that follows the idea of SQL revivial and enablement. It allows fitting statistical models directly on the database -- <https://tidypredict.tidymodels.org/>
+* {tidypredict} is a package of the established tidymodels family that follows the idea of SQL revival and enablement. It allows fitting statistical models directly on the database -- <https://tidypredict.tidymodels.org/>
 
 # May 2026
 * Lean R 4.6.0 installation is live and flying -- try it, you would really feel the speed boost, clearly visible even from the startup time, packages panel is usable, autocomplete is not lagging =) 

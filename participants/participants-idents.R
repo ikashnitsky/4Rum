@@ -281,6 +281,11 @@ idents_260424 <- c(
 )
 
 
+# 2026-06-26 meeting IKX --------------------------------------------------------------
+
+idents_260626 <- c("IKX", "AWH", "AYB", "X23", "NIT", "SVM", "AEL", "OOC", "PHP", "JAM", "MZP", "CAM", "AMF")
+
+
 # R course participants UPD 2026-04-17 ---------------------------------------------------
 
 idents_r_course <- c(
