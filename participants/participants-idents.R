@@ -11,7 +11,7 @@ library(rvest)
 library(httr)
 library(glue)
 
-timestamp <- "260521"
+timestamp <- "260911"
 
 
 # all people from DST -----------------------------------------------------
@@ -102,7 +102,8 @@ idents_via_email_requests <- c(
     "MJS",
     "KKE",
     "NIT",
-    "GTA"
+    "GTA",
+    "FMA"
 )
 
 # consultancy office 15kt ------------------------------------
@@ -283,12 +284,30 @@ idents_260424 <- c(
 
 # 2026-06-26 meeting IKX --------------------------------------------------------------
 
-idents_260626 <- c("IKX", "AWH", "AYB", "X23", "NIT", "SVM", "AEL", "OOC", "PHP", "JAM", "MZP", "CAM", "AMF")
+idents_260626 <- c(
+    "IKX",
+    "AWH",
+    "AYB",
+    "X23",
+    "NIT",
+    "SVM",
+    "AEL",
+    "OOC",
+    "PHP",
+    "JAM",
+    "MZP",
+    "CAM",
+    "AMF"
+)
 
 
 # R course participants UPD 2026-04-17 ---------------------------------------------------
 
 idents_r_course <- c(
+    # September 2026
+    "FMA",
+    "SKR",
+    "NIT",
     # April 2026
     "CWB",
     "MFS",
