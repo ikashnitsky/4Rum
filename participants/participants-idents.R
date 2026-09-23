@@ -103,7 +103,8 @@ idents_via_email_requests <- c(
     "KKE",
     "NIT",
     "GTA",
-    "FMA"
+    "FMA",
+    "FER"
 )
 
 # consultancy office 15kt ------------------------------------
