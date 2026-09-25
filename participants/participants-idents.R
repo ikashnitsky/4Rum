@@ -11,7 +11,7 @@ library(rvest)
 library(httr)
 library(glue)
 
-timestamp <- "260911"
+timestamp <- "260925"
 
 
 # all people from DST -----------------------------------------------------
@@ -138,7 +138,8 @@ idents_k15 <- c(
     "LKE",
     "CLN",
     "EAP",
-    "NIM"
+    "NIM",
+    "REN"
 )
 
 
@@ -300,6 +301,17 @@ idents_260626 <- c(
     "CAM",
     "AMF"
 )
+
+
+# 2026-09-25 meeting ggsql ------------------------------------------------
+
+idents_260925 <- c(
+    "JNF",
+    "EWS",
+    "CNA"
+)
+
+
 
 
 # R course participants UPD 2026-04-17 ---------------------------------------------------
