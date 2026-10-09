@@ -139,7 +139,26 @@ idents_k15 <- c(
     "CLN",
     "EAP",
     "NIM",
-    "REN"
+    "REN",
+    "NSK"
+)
+
+
+# guest researchers ------------------------------------------------------
+
+idents_guests <- c(
+    "X34", # David
+    "X30", # Anna-Vera
+    "XB4", # Asiya
+    "XC2", # Louis
+    "XL2", # Jonas
+    "XU8", # Martha
+    "X09", # Milla,
+    "X55", # # Pernille
+    "XD2", # Qinqin
+    "XX1", # Abbas
+    "X86", # Felix
+    "XH0" # Mikkel
 )
 
 
@@ -310,8 +329,6 @@ idents_260925 <- c(
     "EWS",
     "CNA"
 )
-
-
 
 
 # R course participants UPD 2026-04-17 ---------------------------------------------------

@@ -4,6 +4,13 @@ R forum at DST organization materials
 
 # Meetings
 
+## 2026-10-23 joint meeting with R Meetup Copenhagen
+ - Aksel Thomsen, Novo Nordisk
+ - Greger Dubrow, DTU Food
+ - Emil Thrandholm, Statistics Denmark
+
+## 2026-09-25 Thomas Lin Pedersen -- ggsql
+
 ## 2026-06-26 IKX -- fastverse
 
 ## 2026-05-29 IKX -- SAS to R conversion
