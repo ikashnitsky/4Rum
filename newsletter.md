@@ -1,3 +1,5 @@
+# October 2026
+
 # September 2026
 * Our special 4R/um meeting & R Meetup Copengagen event is moved to Friday 23th October 2026 at 14:00 [NOTE unusual time!] due to an overlap with  we are joining forces with [Rasmus Bååth](https://www.linkedin.com/in/rasmus-baath), the organizer of [CopenhagenR useR Group via Meetup](https://www.meetup.com/copenhagenr-user-group). We are going to have 3 ~20min presentations, 2 from guest speakers and 1 from an internal DST speaker. 
 * Posit rolled out an Introduction course for Positron IDE -- <https://academy.posit.co/path/introduction-to-positron>
