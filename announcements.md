@@ -1,6 +1,6 @@
 ## 2026-10-23 joint meeting with CopenhagenR useR Group via Meetup
 
-In two weeks we are having a very special 4R/um meeting [PLEASE NOTE the **unusual time 13:30-15:00**] -- we are joining forces with [Rasmus Bååth](https://www.sumsar.net/about), the organizer of [CopenhagenR useR Group](https://www.meetup.com/copenhagenr-user-group). We'll have 3 exciting ~20min presentations on R usage in different organizations contexts: a big corporation, university, and our owm governmental agency. The planned taks are:
+In two weeks we are having a very special 4R/um meeting [PLEASE NOTE the **unusual time 13:30-15:00**] -- we are joining forces with [Rasmus Bååth](https://www.sumsar.net/about), the organizer of [CopenhagenR useR Group](https://www.meetup.com/copenhagenr-user-group). We'll have 3 exciting ~20min presentations on R usage in different organizations contexts: a big corporation, university, and our own governmental agency. The planned talks are:
  - [Aksel Thomsen](https://www.linkedin.com/in/akselthomsen), Novo Nordisk, *Open Source R development at Novo: Why are we doing it, and a short introduction to our packages.*
  - [Greger Dubrow](https://www.gregdubrow.io), Danish Technical University,  *Using R at DTU Food - metadata, real-time analysis, and training*.
  - [Emil Thranholm](https://thranholm.github.io), Statistics Denmark, *History, current use, and future development of R at Statistics Denmark, with a focus on the local setup, when servers running the computations are detached from the internet*.
