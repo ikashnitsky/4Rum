@@ -1,0 +1,33 @@
+---
+title: "About 4R/um"
+subtitle: "The R discussion and exchange forum at Statistics Denmark"
+---
+
+::: {.hero-banner}
+![](logo/hex-logo.png){.hero-logo style="max-width: 180px;" alt="4R/um Logo"}
+:::
+
+### What is 4R/um?
+
+**4R/um** is the internal monthly R exchange meeting and community of practice at **Statistics Denmark** (Danmarks Statistik / DST).
+
+The name plays with the four R's, the most prominent being **REPRODUCIBILITY**, fostering open collaboration, modern scientific publishing, and knowledge sharing around open source data science tools.
+
+### Meeting Format & Logistics
+
+- **Frequency**: Typically held on the **4th Friday of each month**.
+- **Location**: In-person at Statistics Denmark and hybrid when possible.
+- **Audience**: Open to all colleagues across DST interested in R, from newcomers taking their first steps to seasoned developers.
+- **Guest Sessions**: We periodically host guest lectures and joint sessions with external developer communities, such as the *CopenhagenR useR Group*.
+
+### Materials & Repository
+
+- **Internal Drive**: Meeting materials, scripts, and slide decks are mirrored on the DST internal network at:
+  ```
+  Q:/Rforum
+  ```
+- **Public GitHub Repository**: Curated, open-source materials, public presentations, and links are made available on GitHub at [github.com/ikashnitsky/4Rum](https://github.com/ikashnitsky/4Rum).
+
+### Contact & Contributions
+
+Organized by Ilya Kashnitsky and the **Data Science Lab** at [Statistics Denmark (dst.dk)](https://www.dst.dk). If you have an R project, an interesting package, or a case study you would like to present at an upcoming 4R/um meeting, reach out or open an issue on the [GitHub repository](https://github.com/ikashnitsky/4Rum).

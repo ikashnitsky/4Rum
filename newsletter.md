@@ -1,3 +1,8 @@
+---
+title: "Monthly Newsletters"
+toc: true
+---
+
 # October 2026
 * Posit Conf 2026 took place in October. From the times when it was RStudio Conf, it happened to become the major global R syncing event.  Now is a good moment to catch up on announcements and talks. <https://lnkd.in/p/eEYfAN9a>
 * The R ecosystem saw an explosion of package & environment managers in the last years: {renv}, {}rix}, rv, uvr and ir -- just to name the most notable ones. Isabella Velásquez overviewed them in a nice systemizing blog post <https://rworks.dev/posts/r-managers>
