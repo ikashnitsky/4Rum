@@ -324,10 +324,41 @@ idents_260626 <- c(
 
 # 2026-09-25 meeting ggsql ------------------------------------------------
 
+# only new idents here
 idents_260925 <- c(
     "JNF",
     "EWS",
     "CNA"
+)
+
+# 2026-10-23 meeting NOVO, DTU Food, DST
+
+idents_261023 <- c(
+    "JOC",
+    "CWB",
+    "FMA",
+    "AWH",
+    "JAM",
+    "SBH",
+    "KKE",
+    "GPM",
+    "JHD",
+    "NQH",
+    "MJS",
+    "ETH",
+    "LWH",
+    "ROV",
+    "JCH",
+    "NPE",
+    "NBN",
+    "SND",
+    "LNJ",
+    "MIM",
+    "IMC",
+    "NGW",
+    "NAV",
+    "MZP",
+    "REN"
 )
 
 
@@ -437,3 +468,19 @@ load("participants/armen.rda")
 armen |>
     pull(email) |>
     clipr::write_clip()
+
+
+# external participants for open meetings --------------------------------
+
+emails_exterenal <- c(
+    # Presented at 4R/um
+    "rasmus.baath@gmail.com",
+    "dubrowg@gmail.com",
+    "thomsenaksel@gmail.com",
+    # Participated in person
+    # 2026-10-23 & CopenhagenR
+    "aran_dolan@yahoo.co.uk",
+    "Adamborsiin@gmail.com",
+    "marcelo_gindri@yahoo.com.br"
+    # Interested and asked to be informed
+)

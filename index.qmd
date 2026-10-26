@@ -20,7 +20,7 @@ A monthly R exchange meeting and discussion club at Statistics Denmark.
 
 # Meetings
 
-All 4R/um meetings are held monthly. Below is the chronological record of sessions, speakers, topics, and shared materials.
+4R/um meetings are held monthly. Below is the chronological record of sessions, speakers, topics, and shared materials.
 
 ::: {.meeting-card}
 ### 2026-10-23 -- Joint meeting with CopenhagenR useR Group
@@ -57,9 +57,7 @@ Ilya Kashnitsky presents an approach to converting SAS code to R.
 
 ::: {.meeting-card}
 ### 2026-04-24 -- JOC & IKX: R course feedback
-Joint session by JOC and IKX reviewing feedback from the in-house R onboarding course.
-
-- **Topic**: Retrospective on departmental R adoption and onboarding.
+Joint session by JOC and IKX reviewing feedback from the in-house R intro course.
 :::
 
 ::: {.meeting-card}

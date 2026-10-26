@@ -1,13 +1,12 @@
 ---
-title: "About 4R/um"
-subtitle: "The R discussion and exchange forum at Statistics Denmark"
+pagetitle: "About 4R/um"
 ---
 
 ![](logo/hex-logo.png){.logo-float-right alt="4R/um Logo"}
 
 ### What is 4R/um?
 
-**4R/um** is the internal monthly R exchange meeting and community of practice at **Statistics Denmark** (Danmarks Statistik / DST).
+**4R/um** is the monthly R exchange meeting at **Statistics Denmark** (Danmarks Statistik / DST).
 
 The name plays with the four R's, the most prominent being **REPRODUCIBILITY**, fostering open collaboration, modern scientific publishing, and knowledge sharing around open source data science tools.
 
@@ -31,4 +30,4 @@ The name plays with the four R's, the most prominent being **REPRODUCIBILITY**, 
 
 ### Contact & Contributions
 
-Organized by Ilya Kashnitsky and the **Data Science Lab** at [Statistics Denmark (dst.dk)](https://www.dst.dk). If you have an R project, an interesting package, or a case study you would like to present at an upcoming 4R/um meeting, reach out or open an issue on the [GitHub repository](https://github.com/ikashnitsky/4Rum).
+Organized by [Ilya Kashnitsky](https://ikashnitsky.phd) @ **Data Science Lab**, [Statistics Denmark](https://www.dst.dk). If you are interested, please [reach out](https://bio.link/ikx) 🤗
