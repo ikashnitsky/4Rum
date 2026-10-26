@@ -22,7 +22,7 @@ website:
         href: https://github.com/ikashnitsky/4Rum
         aria-label: GitHub Repository
   page-footer:
-    left: "4R/um &bull; Organized by Data Science Lab at [Statistics Denmark (dst.dk)](https://www.dst.dk)"
+    left: "4R/um &bull; [Ilya Kashnitsky](https://ikashnitsky.phd) @ Data Science Lab // [Statistics Denmark](https://www.dst.dk)"
     right: "Built with [Quarto](https://quarto.org/)"
 
 format:
