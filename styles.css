@@ -22,3 +22,13 @@
   background: #fff;
   box-shadow: 3px 3px 0px #333;
 }
+
+.logo-float-right {
+  float: right;
+  width: 200px;
+  max-width: 45%;
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
+}
+

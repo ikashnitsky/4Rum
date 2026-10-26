@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
   render:
     - "*.qmd"
     - "newsletter.md"
@@ -13,10 +13,6 @@ website:
     logo: logo/hex-logo.png
     title: "4R/um"
     left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Meetings"
-        href: index.qmd#meetings
       - text: "Newsletter"
         href: newsletter.md
       - text: "About"

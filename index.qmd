@@ -1,6 +1,5 @@
 ---
-title: "4R/um"
-subtitle: "A monthly R exchange meeting at Statistics Denmark (DST)"
+pagetitle: "4R/um"
 ---
 
 ::: {.hero-banner}
