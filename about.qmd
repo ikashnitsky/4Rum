@@ -3,9 +3,7 @@ title: "About 4R/um"
 subtitle: "The R discussion and exchange forum at Statistics Denmark"
 ---
 
-::: {.hero-banner}
-![](logo/hex-logo.png){.hero-logo style="max-width: 180px;" alt="4R/um Logo"}
-:::
+![](logo/hex-logo.png){.logo-float-right alt="4R/um Logo"}
 
 ### What is 4R/um?
 
@@ -27,6 +25,9 @@ The name plays with the four R's, the most prominent being **REPRODUCIBILITY**, 
   Q:/Rforum
   ```
 - **Public GitHub Repository**: Curated, open-source materials, public presentations, and links are made available on GitHub at [github.com/ikashnitsky/4Rum](https://github.com/ikashnitsky/4Rum).
+
+::: {.clearfix}
+:::
 
 ### Contact & Contributions
 
