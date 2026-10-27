@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="slides-format" content="viewport">
+    <title>SAS → R Transition — Statistics Denmark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-bg: #0b1120;
+            --color-bg-deep: #060c17;
+            --color-surface: #1a2744;
+            --color-text: #e8edf5;
+            --color-text-secondary: #b0bccc;
+            --color-text-muted: #6b7fa0;
+            --color-accent-1: #4a9eff;
+            --color-accent-2: #7dd3fc;
+            --color-accent-3: #1d4ed8;
+            --color-glass-bg: rgba(255,255,255,0.05);
+            --color-glass-border: rgba(255,255,255,0.09);
+            --color-vignette: rgba(0,0,0,0.45);
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'Work Sans', system-ui, sans-serif;
+        }
+    </style>
+
+    <style>
+        :root { --color-bg: #0b1120; --color-text: #e8edf5; --glow-color-rgb: 74,158,255; }
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { background: var(--color-bg); margin: 0; }
+        body { font-family: var(--font-body); color: var(--color-text); overflow: hidden; height: 100vh; width: 100vw; }
+        .deck { width: 100vw; height: 100vh; position: relative; }
+        .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transform: scale(0.95); transition: opacity 0.7s ease, transform 0.7s ease; pointer-events: none; overflow: hidden; }
+        .slide.active { opacity: 1; transform: scale(1); pointer-events: all; }
+        .slide > .content { position: relative; z-index: 2; width: 100%; max-width: 1100px; padding: clamp(1.5rem, 4vw, 3.5rem); }
+        .nav-controls { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 100; background: var(--color-glass-bg); backdrop-filter: blur(10px); padding: 10px 24px; border-radius: 40px; border: 1px solid var(--color-glass-border); }
+        .nav-btn { width: 40px; height: 40px; border: none; background: var(--color-glass-bg); color: var(--color-accent-1); border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
+        .nav-btn:hover { background: var(--color-glass-border); }
+        .slide-dots { display: flex; gap: 8px; }
+        .slide-dots .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-glass-border); cursor: pointer; transition: background 0.3s, transform 0.3s; }
+        .slide-dots .dot.active { background: var(--color-accent-1); transform: scale(1.3); }
+        .slide-counter { font-size: 0.8rem; color: var(--color-text-muted); min-width: 40px; text-align: center; }
+        .reveal { opacity: 0; transform: translateY(20px); }
+
+        .text-glow { text-shadow: 0 0 20px rgba(74,158,255,0.5), 0 0 40px rgba(74,158,255,0.2); }
+        .stat-glow { text-shadow: 0 0 30px rgba(74,158,255,0.6), 0 0 60px rgba(74,158,255,0.25); }
+        @keyframes glow-pulse {
+            0%, 100% { text-shadow: 0 0 20px rgba(74,158,255,0.5), 0 0 40px rgba(74,158,255,0.2); }
+            50% { text-shadow: 0 0 30px rgba(74,158,255,0.8), 0 0 60px rgba(74,158,255,0.3); }
+        }
+        .glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+        @keyframes float-slow { 0% { transform: translate(0,0) scale(1); } 25% { transform: translate(60px,-50px) scale(1.12); } 50% { transform: translate(-40px,40px) scale(0.9); } 75% { transform: translate(50px,20px) scale(1.08); } 100% { transform: translate(0,0) scale(1); } }
+        @keyframes float-drift { 0% { transform: translate(0,0) scale(1) rotate(0deg); } 33% { transform: translate(-50px,-60px) scale(1.15) rotate(3deg); } 66% { transform: translate(40px,30px) scale(0.88) rotate(-2deg); } 100% { transform: translate(0,0) scale(1) rotate(0deg); } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        .gradient-mesh { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+        .blob { position: absolute; border-radius: 50%; filter: blur(80px); animation: float-slow 10s ease-in-out infinite; }
+        .blob:nth-child(2) { animation: float-drift 14s ease-in-out infinite; }
+        .blob:nth-child(3) { animation: float-slow 18s ease-in-out infinite reverse; }
+        .slide::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 256px 256px; opacity: 0.03; mix-blend-mode: overlay; }
+        .slide::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse at center, transparent 50%, var(--color-vignette) 100%); }
+
+        /* bar fill */
+        .bar-track { background: var(--color-glass-bg); border-radius: 999px; height: 22px; width: 100%; overflow: hidden; border: 1px solid var(--color-glass-border); }
+        .bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--color-accent-3), var(--color-accent-1)); width: 0%; transition: width 0.7s ease; }
+
+        /* code tag */
+        code { font-family: 'JetBrains Mono', 'Fira Mono', monospace; background: rgba(74,158,255,0.1); border: 1px solid rgba(74,158,255,0.2); border-radius: 4px; padding: 0.1em 0.45em; font-size: 0.85em; color: var(--color-accent-2); }
+
+        /* table */
+        .data-table { width: 100%; border-collapse: collapse; font-size: clamp(0.7rem,1.2vw,0.88rem); }
+        .data-table th { background: rgba(74,158,255,0.12); color: var(--color-accent-2); font-weight: 600; text-align: left; padding: 0.55rem 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.75em; border-bottom: 1px solid var(--color-glass-border); }
+        .data-table td { padding: 0.5rem 0.9rem; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--color-text-secondary); vertical-align: top; }
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table td:first-child { color: var(--color-accent-1); font-weight: 500; }
+
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; } }
+    </style>
+</head>
+<body>
+
+<div class="mouse-spotlight" style="position:fixed;inset:0;z-index:99;pointer-events:none;"></div>
+
+<div class="deck">
+
+    <!-- SLIDE 1: TITLE -->
+    <div class="slide slide-1 active" data-slide="1">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:500px;height:500px;top:-120px;right:-100px;background:var(--color-accent-1);opacity:0.14;"></div>
+            <div class="blob" style="width:320px;height:320px;bottom:-80px;left:-60px;background:var(--color-accent-2);opacity:0.10;"></div>
+            <div class="blob" style="width:220px;height:220px;top:45%;left:12%;background:var(--color-accent-3);opacity:0.12;"></div>
+        </div>
+        <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
+        <div class="content text-center">
+            <div style="font-size:100px;margin-bottom:1.2rem;animation:float 3.5s ease-in-out infinite;" class="reveal">📊</div>
+            <h1 class="font-display text-[clamp(2.6rem,6vw,4.6rem)] font-black bg-linear-to-br from-accent-1 via-accent-2 to-accent-1 bg-clip-text text-transparent tracking-tight mb-4 reveal">SAS → R Transition</h1>
+            <p class="text-[clamp(0.85rem,1.5vw,1.1rem)] font-light text-text-muted tracking-[5px] uppercase mb-6 reveal">Hands-on Seminar · Statistics Denmark · 2026</p>
+            <p class="text-text-secondary text-[clamp(0.8rem,1.3vw,1rem)] max-w-xl mx-auto reveal">Tools, patterns, and institutional knowledge for a durable open-source migration</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: AGENDA -->
+    <div class="slide slide-2" data-slide="2">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:380px;height:380px;top:-80px;right:-80px;background:var(--color-accent-1);opacity:0.08;"></div>
+            <div class="blob" style="width:260px;height:260px;bottom:-60px;left:-50px;background:var(--color-accent-2);opacity:0.06;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Agenda</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold mb-8 reveal">What We Will Cover</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">🗺️</div>
+                    <div class="font-semibold text-accent-2 mb-1">Migration Philosophy</div>
+                    <div class="text-text-secondary text-sm">Replace the pipeline, not just the syntax</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">🔧</div>
+                    <div class="font-semibold text-accent-2 mb-1">Conversion Tools</div>
+                    <div class="text-text-secondary text-sm">AI translators, open-source accelerators</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">💊</div>
+                    <div class="font-semibold text-accent-2 mb-1">Pharmaverse Lessons</div>
+                    <div class="text-text-secondary text-sm">Pipeline packages & AGENTS.md pattern</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div style="font-size:1.8rem;margin-bottom:0.5rem;">⚠️</div>
+                    <div class="font-semibold text-accent-2 mb-1">Watch-Outs</div>
+                    <div class="text-text-secondary text-sm">Silent bugs, numerical discrepancies</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: TWO PHILOSOPHIES -->
+    <div class="slide slide-3" data-slide="3">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:400px;height:400px;top:-100px;left:-80px;background:var(--color-accent-3);opacity:0.10;"></div>
+            <div class="blob" style="width:280px;height:280px;bottom:-60px;right:-40px;background:var(--color-accent-1);opacity:0.08;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Foundation</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold mb-6 reveal">Two Approaches to Migration</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-6 reveal" style="border-left: 3px solid rgba(239,68,68,0.6);">
+                    <div class="text-sm uppercase tracking-widest text-red-400 mb-2 font-semibold">❌ Syntax Translation</div>
+                    <div class="font-semibold text-lg mb-3">Line-by-line conversion</div>
+                    <ul class="text-text-secondary text-sm space-y-2">
+                        <li>• Converts SAS DATA steps → R code mechanically</li>
+                        <li>• Produces R that "thinks in SAS"</li>
+                        <li>• Fragile — SAS idioms don't map cleanly</li>
+                        <li>• Macros encoding business rules are lost</li>
+                    </ul>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-6 reveal" style="border-left: 3px solid rgba(74,158,255,0.8);">
+                    <div class="text-sm uppercase tracking-widest text-accent-2 mb-2 font-semibold">✅ Pipeline Replacement</div>
+                    <div class="font-semibold text-lg mb-3">Rebuild each stage in idiomatic R</div>
+                    <ul class="text-text-secondary text-sm space-y-2">
+                        <li>• Map SAS <em>roles</em> to purpose-built R packages</li>
+                        <li>• Tidyverse + domain packages (survey, gt, haven)</li>
+                        <li>• Maintainable, reviewable, submission-ready</li>
+                        <li>• Pharmaverse proved this at scale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: AI CONVERSION TOOLS -->
+    <div class="slide slide-4" data-slide="4">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:420px;height:420px;top:-100px;right:-60px;background:var(--color-accent-1);opacity:0.09;"></div>
+            <div class="blob" style="width:240px;height:240px;bottom:-50px;left:-30px;background:var(--color-accent-2);opacity:0.07;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Layer 1</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-5 reveal">AI-Powered Conversion Tools</h2>
+            <table class="data-table reveal">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Type</th>
+                        <th>Best For</th>
+                        <th>License</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSO Ireland Transcompiler</td>
+                        <td>Shiny app + OpenAI API</td>
+                        <td>NSO context — built by stats office for stats office</td>
+                        <td>MIT / FOSS</td>
+                    </tr>
+                    <tr>
+                        <td>codeconvert.ai</td>
+                        <td>Browser-based, no signup</td>
+                        <td>Live seminar demos — paste SAS, get R instantly</td>
+                        <td>Free tier</td>
+                    </tr>
+                    <tr>
+                        <td>Claude 3.7 Sonnet / GPT-4o</td>
+                        <td>Direct API / chat</td>
+                        <td>Module-by-module macro decomposition</td>
+                        <td>Commercial API</td>
+                    </tr>
+                    <tr>
+                        <td>Brillio / AWS Bedrock</td>
+                        <td>Human-in-the-loop pipeline</td>
+                        <td>Large-scale batch migration with audit trail</td>
+                        <td>Commercial</td>
+                    </tr>
+                    <tr>
+                        <td>HMS Code2X</td>
+                        <td>Agentic migration tool</td>
+                        <td>Claims ~75% automation; regulated environments</td>
+                        <td>Commercial</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="text-text-muted text-xs mt-3 reveal">⚠️ All tools handle DATA steps and PROC SQL well — all fail silently on complex SAS macros</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: PACKAGE MAP -->
+    <div class="slide slide-5" data-slide="5">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:380px;height:380px;top:-80px;left:-60px;background:var(--color-accent-3);opacity:0.10;"></div>
+            <div class="blob" style="width:260px;height:260px;bottom:-50px;right:-40px;background:var(--color-accent-1);opacity:0.08;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Layer 2</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-5 reveal">SAS → R Package Crosswalk</h2>
+            <table class="data-table reveal">
+                <thead>
+                    <tr><th>SAS Concept</th><th>R Equivalent</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>DATA step</td><td><code>dplyr</code> verbs — mutate, filter, group_by, summarise</td></tr>
+                    <tr><td>PROC SQL</td><td><code>dbplyr</code>, <code>dplyr</code>, <code>sqldf</code></td></tr>
+                    <tr><td>PROC MEANS / SUMMARY</td><td><code>summarise()</code>, <code>janitor</code>, <code>gtsummary</code></td></tr>
+                    <tr><td>PROC FREQ</td><td><code>table()</code>, <code>janitor::tabyl()</code></td></tr>
+                    <tr><td>PROC SGPLOT</td><td><code>ggplot2</code></td></tr>
+                    <tr><td>ODS / RTF output</td><td><code>gt</code>, <code>flextable</code>, <code>Quarto</code></td></tr>
+                    <tr><td>SAS macros</td><td>R functions + <code>purrr</code></td></tr>
+                    <tr><td>.sas7bdat files</td><td><code>haven::read_sas()</code></td></tr>
+                    <tr><td>SAS formats / labels</td><td><code>forcats</code> (factor labels)</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: PHARMAVERSE SECTION BREAK -->
+    <div class="slide slide-6" data-slide="6">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:500px;height:500px;top:-120px;right:-100px;background:var(--color-accent-1);opacity:0.13;"></div>
+            <div class="blob" style="width:300px;height:300px;bottom:-80px;left:-60px;background:var(--color-accent-2);opacity:0.10;"></div>
+            <div class="blob" style="width:200px;height:200px;top:35%;left:10%;background:var(--color-accent-3);opacity:0.10;"></div>
+        </div>
+        <canvas class="particle-canvas-ambient" style="position:absolute;inset:0;z-index:1;"></canvas>
+        <div class="content text-center">
+            <div style="font-size:90px;margin-bottom:1.2rem;animation:float 4s ease-in-out infinite;" class="reveal">💊</div>
+            <h2 class="font-display text-[clamp(2rem,5vw,4rem)] font-black bg-linear-to-br from-accent-1 via-accent-2 to-accent-1 bg-clip-text text-transparent mb-4 reveal">Lessons from Pharmaverse</h2>
+            <p class="text-text-secondary text-[clamp(0.9rem,1.5vw,1.1rem)] max-w-2xl mx-auto reveal">The pharmaceutical industry has run the largest regulated SAS→R migrations in the world.<br>Their patterns are directly transferable to national statistics.</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: PHARMAVERSE STACK -->
+    <div class="slide slide-7" data-slide="7">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:380px;height:380px;top:-80px;right:-60px;background:var(--color-accent-1);opacity:0.08;"></div>
+            <div class="blob" style="width:250px;height:250px;bottom:-50px;left:-40px;background:var(--color-accent-3);opacity:0.07;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Pharmaverse</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-5 reveal">The Pharmaverse Package Stack</h2>
+            <table class="data-table reveal">
+                <thead>
+                    <tr><th>SAS Role</th><th>Pharmaverse R Package</th><th>Equivalent</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>PROC IMPORT / .sas7bdat</td><td><code>{haven}</code></td><td>Read SAS datasets; handles date epoch shift</td></tr>
+                    <tr><td>SDTM derivation macros</td><td><code>{sdtm.oak}</code></td><td>Map raw data to SDTM domains (DM, AE …)</td></tr>
+                    <tr><td>ADaM derivation macros</td><td><code>{admiral}</code></td><td>Build ADSL, ADAE, ADTTE with auditable derivations</td></tr>
+                    <tr><td>PROC EXPORT / XPT files</td><td><code>{xportr}</code></td><td>Submission-compliant XPT with define.xml metadata</td></tr>
+                    <tr><td>RTF/PDF output macros</td><td><code>{r2rtf}</code>, <code>{rtables}</code></td><td>Clinical-quality table output</td></tr>
+                    <tr><td>SAS log files</td><td><code>{logrx}</code></td><td>R execution logs mirroring SAS .log format</td></tr>
+                    <tr><td>Interactive data review</td><td><code>{teal}</code></td><td>Shiny ADaM explorer</td></tr>
+                </tbody>
+            </table>
+            <p class="text-text-muted text-xs mt-3 reveal">Each package replaces a <em>process role</em> — not individual lines of code</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: GenAI WORKFLOW (Merck pattern) -->
+    <div class="slide slide-8" data-slide="8">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:400px;height:400px;top:-100px;right:-80px;background:var(--color-accent-2);opacity:0.08;"></div>
+            <div class="blob" style="width:260px;height:260px;bottom:-60px;left:-40px;background:var(--color-accent-1);opacity:0.07;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Merck / PharmaSUG 2025</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-6 reveal">GenAI-Assisted Conversion Workflow</h2>
+            <div class="flex flex-col gap-3">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-start gap-4 reveal">
+                    <div class="text-accent-1 font-black text-xl min-w-[2rem] text-center">1</div>
+                    <div><span class="font-semibold text-accent-2">Import first</span> — <code>haven::read_sas()</code> to ingest <code>.sas7bdat</code> without rewriting ETL</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-start gap-4 reveal">
+                    <div class="text-accent-1 font-black text-xl min-w-[2rem] text-center">2</div>
+                    <div><span class="font-semibold text-accent-2">Decompose macros</span> — split into modules (data prep → model → output) and convert each separately; feeding the full macro to an LLM fails</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-start gap-4 reveal">
+                    <div class="text-accent-1 font-black text-xl min-w-[2rem] text-center">3</div>
+                    <div><span class="font-semibold text-accent-2">Manual parameter verification</span> — replace <code>PROC MIXED</code> → <code>lmer() + emmeans()</code>; check degrees-of-freedom method explicitly</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-start gap-4 reveal">
+                    <div class="text-accent-1 font-black text-xl min-w-[2rem] text-center">4</div>
+                    <div><span class="font-semibold text-accent-2">Numerical equivalence check</span> — run SAS and R outputs side-by-side; Merck confirmed identical PK summary results</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-start gap-4 reveal">
+                    <div class="text-accent-1 font-black text-xl min-w-[2rem] text-center">5</div>
+                    <div><span class="font-semibold text-accent-2">Output: use templates</span> — GPT-4o is weak at RTF macros; use existing <code>{r2rtf}</code> templates and adapt</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: AGENTS.MD -->
+    <div class="slide slide-9" data-slide="9">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:420px;height:420px;top:-90px;left:-70px;background:var(--color-accent-3);opacity:0.10;"></div>
+            <div class="blob" style="width:280px;height:280px;bottom:-60px;right:-50px;background:var(--color-accent-1);opacity:0.08;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Key Pattern</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-2 reveal">AGENTS.md — Encoding Institutional Knowledge</h2>
+            <p class="text-text-secondary text-sm mb-5 reveal">The <code>{admiral}</code> package publishes a 1,300-line auto-generated <code>AGENTS.md</code> — a README for AI agents, not humans</p>
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <div class="text-accent-2 font-semibold text-sm uppercase tracking-wide mb-3 reveal">What admiral's AGENTS.md contains</div>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">ADaM conventions LLMs can't infer — e.g. flag vars take <code>"Y"</code> or <code>NA</code>, never <code>"N"</code></div>
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">Full ecosystem pipeline context: sdtm.oak → admiral → xportr → XPT</div>
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">Unit testing rules, documentation workflow, compliance check comment</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-accent-2 font-semibold text-sm uppercase tracking-wide mb-3 reveal">DST equivalent would encode</div>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">StatBank table format conventions and px-file structure</div>
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">Eurostat reporting requirements and metadata standards</div>
+                        <div class="bg-glass-bg border border-glass-border rounded-lg p-3 text-sm text-text-secondary reveal">Survey weighting conventions that an LLM cannot guess</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-text-muted text-xs mt-4 reveal">rOpenSci now requires <code>AGENTS.md</code> as a peer-review artifact — this norm is arriving regardless</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: WATCH OUTS -->
+    <div class="slide slide-10" data-slide="10">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:400px;height:400px;top:-100px;right:-70px;background:rgba(239,68,68,0.6);opacity:0.08;"></div>
+            <div class="blob" style="width:260px;height:260px;bottom:-50px;left:-50px;background:var(--color-accent-1);opacity:0.06;"></div>
+        </div>
+        <div class="content">
+            <p class="text-red-400 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">⚠️ Watch Out</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-6 reveal">Silent Failure Modes</h2>
+            <div class="flex flex-col gap-4">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 reveal" style="border-left:3px solid rgba(239,68,68,0.7);">
+                    <div class="font-semibold text-red-300 mb-1">SAS Macros encode business rules, not syntax</div>
+                    <div class="text-text-secondary text-sm">LLM translators handle DATA steps and PROC SQL well but <strong>fail silently on macros</strong> — macro logic must be interpreted by a human, not translated character by character</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 reveal" style="border-left:3px solid rgba(251,191,36,0.7);">
+                    <div class="font-semibold text-yellow-300 mb-1">Missing values behave differently</div>
+                    <div class="text-text-secondary text-sm">In SAS, <code>IF x &gt; 5</code> where <code>x = .</code> evaluates to FALSE. In R, <code>x &gt; 5</code> where <code>x = NA</code> returns <code>NA</code> — propagating silently through pipelines. CAMIS working group documents all such discrepancies.</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 reveal" style="border-left:3px solid rgba(251,191,36,0.7);">
+                    <div class="font-semibold text-yellow-300 mb-1">PROC MIXED → lmer() is the hardest step</div>
+                    <div class="text-text-secondary text-sm">Kenward-Roger vs Satterthwaite degrees-of-freedom methods differ by default between SAS and R — producing different p-values for the same model. Always verify manually.</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 reveal" style="border-left:3px solid rgba(148,163,184,0.5);">
+                    <div class="font-semibold text-text-secondary mb-1">haven::read_sas() drops some format labels silently</div>
+                    <div class="text-text-secondary text-sm">Always run <code>str()</code> on imported data and cross-check variable types before any analysis step</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: RESOURCES -->
+    <div class="slide slide-11" data-slide="11">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:380px;height:380px;top:-80px;right:-60px;background:var(--color-accent-1);opacity:0.09;"></div>
+            <div class="blob" style="width:240px;height:240px;bottom:-50px;left:-40px;background:var(--color-accent-2);opacity:0.07;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Resources</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-5 reveal">Key References for the Seminar</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">admiral AGENTS.md (live)</div>
+                    <div class="text-text-muted text-xs mb-2">github.com/pharmaverse/admiral</div>
+                    <div class="text-text-secondary text-sm">1,300-line production AGENTS.md — best real-world example of encoding domain knowledge for AI</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">CSO Ireland Transcompiler</div>
+                    <div class="text-text-muted text-xs mb-2">github.com/CSOIreland/Code-Transcompiler-using-LLMs-public</div>
+                    <div class="text-text-secondary text-sm">MIT-licensed Shiny app built by a national statistics office for SAS→R; deployable on Posit Connect</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">pharmaverse/examples</div>
+                    <div class="text-text-muted text-xs mb-2">pharmaverse.github.io/examples</div>
+                    <div class="text-text-secondary text-sm">End-to-end SDTM→ADaM→TLG pipelines in R; runnable on Posit Cloud</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">CAMIS Working Group</div>
+                    <div class="text-text-muted text-xs mb-2">IAIMS / R Consortium</div>
+                    <div class="text-text-secondary text-sm">Documents numerical discrepancies between SAS, R, and Python for standard statistical procedures</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">EpiR Handbook — Transition to R</div>
+                    <div class="text-text-muted text-xs mb-2">epirhandbook.com</div>
+                    <div class="text-text-secondary text-sm">Public health / statistics-office flavored crosswalk guide; free and openly licensed</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-5 hover:-translate-y-1 transition reveal">
+                    <div class="text-accent-2 font-semibold text-sm mb-1">PharmaSUG 2025 AI-136</div>
+                    <div class="text-text-muted text-xs mb-2">pharmasug.org/proceedings/2025</div>
+                    <div class="text-text-secondary text-sm">Merck's validated GenAI-assisted PK table conversion — numerical equivalence confirmed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: SEMINAR PLAN -->
+    <div class="slide slide-12" data-slide="12">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:420px;height:420px;top:-100px;right:-80px;background:var(--color-accent-1);opacity:0.10;"></div>
+            <div class="blob" style="width:260px;height:260px;bottom:-50px;left:-40px;background:var(--color-accent-3);opacity:0.08;"></div>
+        </div>
+        <div class="content">
+            <p class="text-accent-1 uppercase tracking-[0.14em] text-sm font-semibold mb-2 reveal">Hands-On Seminar</p>
+            <h2 class="font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold mb-6 reveal">Suggested Seminar Structure</h2>
+            <div class="flex flex-col gap-3">
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-center gap-5 reveal">
+                    <div class="text-accent-1 font-black text-lg min-w-[3.5rem] text-center">🎬 Demo</div>
+                    <div><span class="font-semibold">Live translation</span> — paste a PROC MEANS + DATA step into Claude 3.7; inspect R output; fix one edge case manually to teach critical evaluation, not blind trust</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-center gap-5 reveal">
+                    <div class="text-accent-1 font-black text-lg min-w-[3.5rem] text-center">📥 Import</div>
+                    <div><span class="font-semibold">haven::read_sas()</span> — import an existing <code>.sas7bdat</code> file; run <code>str()</code>; identify any label-drop issues before touching analysis</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-center gap-5 reveal">
+                    <div class="text-accent-1 font-black text-lg min-w-[3.5rem] text-center">🔬 CAMIS</div>
+                    <div><span class="font-semibold">Equivalence check</span> — run one real procedure in both SAS and R; dramatise the "bitwise reproducibility" problem for official statistics</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-center gap-5 reveal">
+                    <div class="text-accent-1 font-black text-lg min-w-[3.5rem] text-center">🤖 AGENTS</div>
+                    <div><span class="font-semibold">Write a DST AGENTS.md stub</span> — encode one DST output convention (e.g. StatBank px-format rule) as a reusable AI instruction file</div>
+                </div>
+                <div class="bg-glass-bg backdrop-blur-xl border border-glass-border rounded-xl p-4 flex items-center gap-5 reveal">
+                    <div class="text-accent-1 font-black text-lg min-w-[3.5rem] text-center">🚀 Deploy</div>
+                    <div><span class="font-semibold">CSO Ireland transcompiler</span> — explore self-hosting the MIT-licensed app on Posit Connect as a DST internal tool</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: CLOSING -->
+    <div class="slide slide-13" data-slide="13">
+        <div class="gradient-mesh">
+            <div class="blob" style="width:520px;height:520px;top:-130px;right:-100px;background:var(--color-accent-1);opacity:0.15;"></div>
+            <div class="blob" style="width:340px;height:340px;bottom:-80px;left:-60px;background:var(--color-accent-2);opacity:0.11;"></div>
+            <div class="blob" style="width:220px;height:220px;top:40%;left:10%;background:var(--color-accent-3);opacity:0.10;"></div>
+        </div>
+        <canvas class="particle-canvas" style="position:absolute;inset:0;z-index:1;"></canvas>
+        <div class="content text-center">
+            <div style="font-size:90px;margin-bottom:1rem;animation:float 3.5s ease-in-out infinite;" class="reveal">🇩🇰</div>
+            <h2 class="font-display text-[clamp(2rem,5vw,3.8rem)] font-black bg-linear-to-br from-accent-1 via-accent-2 to-accent-1 bg-clip-text text-transparent mb-4 reveal">The Key Insight</h2>
+            <p class="text-text-secondary text-[clamp(0.95rem,1.6vw,1.2rem)] max-w-2xl mx-auto mb-6 reveal">Automated tools handle <strong class="text-accent-2">syntax</strong>.<br><code>AGENTS.md</code> handles <strong class="text-accent-2">institutional knowledge</strong>.<br>The latter determines whether migrated code is actually correct.</p>
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="bg-glass-bg border border-glass-border rounded-xl p-4 text-sm reveal">
+                    <div class="text-accent-1 font-bold mb-1">FOSS-first</div>
+                    <div class="text-text-muted">haven + tidyverse + pharmaverse patterns</div>
+                </div>
+                <div class="bg-glass-bg border border-glass-border rounded-xl p-4 text-sm reveal">
+                    <div class="text-accent-1 font-bold mb-1">Validate always</div>
+                    <div class="text-text-muted">CAMIS equivalence checks for official statistics</div>
+                </div>
+                <div class="bg-glass-bg border border-glass-border rounded-xl p-4 text-sm reveal">
+                    <div class="text-accent-1 font-bold mb-1">Encode conventions</div>
+                    <div class="text-text-muted">AGENTS.md before AI touches DST pipelines</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav-controls">
+    <button class="nav-btn" onclick="changeSlide(-1)">&#8249;</button>
+    <div class="slide-dots" id="dots"></div>
+    <button class="nav-btn" onclick="changeSlide(1)">&#8250;</button>
+    <span class="slide-counter" id="counter">1 / 13</span>
+</div>
+
+<script>
+    let current = 1;
+    const total = document.querySelectorAll('.slide').length;
+    const dotsContainer = document.getElementById('dots');
+    const counter = document.getElementById('counter');
+    for (let i = 1; i <= total; i++) { const dot = document.createElement('div'); dot.className = 'dot' + (i === 1 ? ' active' : ''); dot.onclick = () => goToSlide(i); dotsContainer.appendChild(dot); }
+    function goToSlide(n) {
+        const prev = document.querySelector('.slide.active');
+        const next = document.querySelector(`.slide[data-slide="${n}"]`);
+        if (prev) prev.classList.remove('active');
+        if (next) { next.classList.add('active'); animateSlide(next); }
+        current = n; updateNav();
+    }
+    function changeSlide(dir) { let next = current + dir; if (next < 1) next = total; if (next > total) next = 1; goToSlide(next); }
+    function updateNav() { document.querySelectorAll('.dot').forEach((d, i) => { d.classList.toggle('active', i + 1 === current); }); counter.textContent = current + ' / ' + total; }
+    document.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); changeSlide(1); } if (e.key === 'ArrowLeft') { e.preventDefault(); changeSlide(-1); } });
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+    document.addEventListener('touchend', (e) => { const diff = touchStartX - e.changedTouches[0].clientX; if (Math.abs(diff) > 50) changeSlide(diff > 0 ? 1 : -1); });
+
+    function animateSlide(slide) {
+        slide.querySelectorAll('.reveal').forEach((el, i) => {
+            el.style.transition = 'none';
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.offsetHeight;
+            const delay = i * 0.07;
+            el.style.transition = `opacity 0.35s ease ${delay}s, transform 0.35s ease ${delay}s`;
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0px)';
+        });
+        slide.querySelectorAll('.bar-fill:not(.fill-init)').forEach((bar, i) => {
+            bar.classList.add('fill-init');
+            bar.style.width = '0%'; bar.style.transition = `width 0.6s ease ${i * 0.1}s`; bar.offsetHeight; bar.style.width = bar.dataset.width + '%';
+        });
+    }
+
+    document.addEventListener('mousemove', (e) => {
+        const spotlight = document.querySelector('.mouse-spotlight');
+        if (spotlight) spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(74,158,255, 0.06), transparent 40%)`;
+    });
+
+    window.initParticles = function(canvas, options) {
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight;
+        const interactive = options.interactive !== false;
+        const count = options.count || (interactive ? 55 : 18);
+        let mx = -1000, my = -1000;
+        const particles = Array.from({ length: count }, () => ({
+            x: Math.random() * canvas.width, y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3,
+            size: Math.random() * 2.5 + 0.8, alpha: Math.random() * 0.35 + 0.1
+        }));
+        if (interactive) {
+            canvas.addEventListener('mousemove', (e) => { const rect = canvas.getBoundingClientRect(); mx = e.clientX - rect.left; my = e.clientY - rect.top; });
+            canvas.addEventListener('mouseleave', () => { mx = -1000; my = -1000; });
+        }
+        (function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                if (interactive) { const dx = p.x - mx, dy = p.y - my, dist = Math.sqrt(dx*dx+dy*dy); if (dist < 120) { const force = (120-dist)/120*2; p.vx += (dx/dist)*force*0.1; p.vy += (dy/dist)*force*0.1; } }
+                p.vx *= 0.98; p.vy *= 0.98; p.x += p.vx; p.y += p.vy;
+                if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
+                ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+                ctx.fillStyle = `rgba(74,158,255,${p.alpha})`; ctx.fill();
+            });
+            requestAnimationFrame(animate);
+        })();
+    };
+    document.querySelectorAll('.particle-canvas').forEach(c => window.initParticles(c, { interactive: true, count: 55 }));
+    document.querySelectorAll('.particle-canvas-ambient').forEach(c => window.initParticles(c, { interactive: false, count: 18 }));
+
+    try { animateSlide(document.querySelector('.slide.active')); } catch(e) {}
+</script>
+</body>
+</html>
