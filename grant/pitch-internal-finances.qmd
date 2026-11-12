@@ -1,0 +1,33 @@
+---
+title: "Posit Community Support for 4R/um Guest Speaker Series"
+subtitle: "Briefing for DST Internal Finance & Administration"
+author: "Ilya Kashnitsky, Data Science Lab"
+date: 2026-11-06
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+    include-before-body:
+      text: |
+        #show link: set text(fill: rgb("#269292"))
+---
+
+# Objective & Budget Request
+
+The Data Science Lab is applying for an external micro-grant of **$2,000 USD (~14,000 DKK)** from Posit's global [*Community Support* program](https://opensource.posit.co/about/community-support). The funding will exclusively support **4–5 guest speakers** at **4R/um** (DST's monthly R exchange and reproducibility forum) throughout 2027 (~$400–$500 per speaker honorarium or travel contribution).
+
+# Strategic Alignment with DST Goals
+
+Statistics Denmark is actively modernizing its analytical infrastructure, transitioning legacy workflows from proprietary software (SAS) toward modern, reproducible open-source tools (R, Python, Quarto).
+
+- **Internal collaboration**: 4R/um connects 90+ registered DST colleagues (with ~20-40 active participants per meeting) across departments. Inviting external package developers and industry experts brings state-of-the-art data science training directly to staff without drawing on DST internal training budgets.
+- **Technical Upskilling**: 4R/um sessions cover practical workflows, high-performance computing, technical publishing with Quarto, package development, and database engineering. Guest speakers will provide hands-on tutorials and real-world case studies to accelerate DST staff's adoption of reproducible data science practices.
+- **Institutional Impact**: Reinforces DST's commitment to reproducible, auditable statistical pipelines, while fostering external collaboration with academic and industry leaders (e.g., CopenhagenR useR Group, Novo Nordisk, DTU). A successful funding will enable DST to host a series of high-profile guest speakers from across Europe (not only Denmark), enhancing the visibility of DST's data science initiatives and its role in the broader open-source community.
+
+# Fit with Posit's Scheme & Financial Logistics
+
+**Granting scheme**: Posit funds community-led initiatives promoting reproducible data science and open public materials. 4R/um fits all evaluation criteria: code, slides, and tutorials are publicly curated at [the project website](https://dshub.dev) and [the GitHub repository](https://github.com/ikashnitsky/4Rum).
+
+**DST Administration**: The grant involves minimal administrative overhead. Funds can be received into a designated DST project account or disbursed directly against speaker expense invoices in full accordance with DST financial guidelines.
