@@ -1,0 +1,252 @@
+---
+title: "4R/um -- Posit Community Support Grant Application Draft"
+author:
+  - name: Ilya Kashnitsky
+    url: https://ikashnitsky.phd
+    orcid: 0000-0003-1835-8687
+date: today
+date-format: "D MMMM YYYY"
+
+format:
+  typst:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    fig-width: 6
+    fig-height: 4
+    mainfont: "Linux Libertine"
+    fontsize: 11pt
+    margin:
+      x: 2.5cm
+      y: 2.5cm
+    papersize: a4
+    include-before-body:
+      text: |
+        #show link: set text(fill: rgb("#269292"))
+
+execute:
+  echo: true
+  eval: false
+---
+
+
+# Posit Community Support Application Draft: 4R/um
+
+- **Organization / Initiative**: 4R/um (Statistics Denmark)
+- **Application Link**: [Google Form](https://drive.google.com/file/d/18Vud7r8GTFsLolLNEu3RfjsVR4lHmbiH/view)
+- **Target Budget**: ~$2,000 USD (to fund 4–5 guest speakers per year @ ~$400–$500 per speaker)
+- **Key Deadlines**: Rolling applications; periodic reviews throughout the year (e.g., early January cutoff for winter cycle decisions).
+
+---
+
+## Overview & Submission Guidelines
+
+Posit evaluates community support applications based on:
+1. **Mission Alignment**: Advancing reproducible, open-source data science (R, Python, Quarto).
+2. **Community Impact**: Clear benefit to local practitioners, researchers, or data scientists.
+3. **Open Sharing**: Commitment to publishing code, slide decks, and learning materials publicly.
+
+### Form Branching Logic
+In **Question 5**, selecting **"Recurring meetup series"** skips Questions 6–15 (which pertain to annual/one-off conferences) and routes directly to **Question 16**. The responses below follow this flow, with Q6–Q15 provided in an appendix section if needed.
+
+---
+
+## Form Questions and Draft Replies
+
+### Page 2: General Information
+
+#### 1. Email *
+```text
+ikx@dst.dk
+```
+
+#### 2. Your name *
+```text
+Ilya Kashnitsky
+```
+
+#### 3. Your email address *
+```text
+ikx@dst.dk
+```
+
+#### 4. Primary contact and email (if different from above)
+```text
+Ilya Kashnitsky (ikx@dst.dk), Senior Data Scientist at Data Science Lab, Statistics Denmark (Danmarks Statistik)
+```
+
+---
+
+### Page 3: Initiative Classification
+
+#### 5. Initiative type *
+```text
+- [ ] Annual/one-time event *(Skips to question 6)*
+- [x] **Recurring meetup series** *(Skips to question 16)*
+- [ ] Other *(Skips to question 16)*
+```
+
+---
+
+### Page 5 & 6: Initiative Details (Recurring Meetup Series)
+
+#### 16. Initiative name *
+```text
+4R/um (R Forum, a Monthly R Exchange & Discussion Club at Statistics Denmark)
+```
+
+#### 17. Brief initiative summary *
+```text
+4R/um is the monthly R exchange meeting and technical discussion club at Statistics Denmark (Danmarks Statistik / DST), organized by the Data Science Lab. The name read as "forum" and plays with the four R's: Relevance, Reskilling, Reproducibility, and Research.
+
+4R/um provides an open, collaborative forum to help civil servants, methodologists, and data analysts transition from legacy proprietary software (SAS) toward modern, reproducible open-source tools. Our monthly sessions cover practical workflows, high-performance computing, technical publishing with Quarto, package development, and database engineering.
+
+In addition to internal knowledge sharing, we regularly host open sessions and joint meetings with the broader developer community (such as the CopenhagenR useR Group) and feature guest lectures from leading open-source package authors.
+```
+
+#### 18. Initiative website
+```text
+https://ikashnitsky.github.io/4Rum/
+(GitHub repository: https://github.com/ikashnitsky/4Rum)
+```
+
+#### 19. Initiative location (if applicable)
+```text
+Copenhagen, Denmark (Hybrid: In-person at Statistics Denmark, Sankt Kjelds Plads 19, 2100 Copenhagen / Virtual)
+```
+
+#### 20. Current number of members (if applicable)
+```text
+88 active registered internal members across Statistics Denmark departments, plus a broader network of local R practitioners through joint events with the CopenhagenR useR Group.
+```
+
+#### 21. Average attendance per meeting (if applicable)
+```text
+15–25 attendees for regular monthly internal sessions; 40–60+ attendees for featured guest speaker sessions and joint meetups with the CopenhagenR community.
+```
+
+#### 22. Frequency of meetings (if applicable)
+```text
+Monthly (held on the 4th Friday of each month, ~10 meetings per year).
+```
+
+---
+
+### Page 7: Support Request
+
+#### 23. Support type request *
+```text
+- [x] **Monetary support**
+- [x] **Social media promotion** *(amplifies public guest lectures and joint sessions)*
+- [ ] Materials and/or swag
+- [ ] Volunteers
+- [ ] Posit Connect Cloud (for publishing Quarto, Shiny, R/Python apps)
+- [ ] Posit Cloud (for workshops in RStudio)
+- [ ] Positron licenses (for using as a server for academic purposes)
+- [ ] Posit AI credits (for using AI in RStudio or Positron during a workshop, etc.)
+- [ ] Other
+```
+
+#### 24. Monetary support request *
+```text
+$2,000 USD (Acceptable range: $1,500 – $2,000 USD)
+
+Budget Breakdown & Justification:
+• Speaker Honoraria / Travel Contributions: ~$400 USD per guest speaker (5 speakers × $400 = $2,000 USD).
+
+Inviting external open-source leaders and package maintainers to present at Statistics Denmark significantly accelerates the adoption of modern, reproducible open-source practices across the Danish public sector. Having modest travel/honorarium funds enables us to attract top-tier domain experts from Denmark and neighboring European hubs (or provide appropriate speaker stipends for virtual international guests).
+```
+
+---
+
+### Page 8: Benefits of Sponsorship & History
+
+#### 25. Benefits of sponsorship *
+```text
+We would be delighted to highlight Posit's community support across all our platforms:
+
+1. Website & Repository Recognition: Prominent placement of Posit's logo and sponsorship acknowledgement on the 4R/um website (https://ikashnitsky.github.io/4Rum) and public GitHub repository README.
+2. Meeting Slides & Openings: Posit sponsorship acknowledgment slide and verbal thank-you at the opening of each funded guest speaker session.
+3. Monthly Newsletter: Dedicated acknowledgment in our monthly email newsletter sent to all 88+ members at Statistics Denmark (which regularly highlights Posit tools, Quarto, and Positron developments).
+4. Social Media & Community Outreach: Public announcements and speaker announcements on LinkedIn and Bluesky explicitly crediting Posit's Community Support Grant for enabling the guest lecture series, tagging \@Posit.
+5. Cross-Community Reach: Recognition in joint event communications co-organized with CopenhagenR useR Group.
+```
+
+#### 26. Posit employee contact
+```text
+- I learned about the opportunity from Isabella Velazques LinkedIn and had a brief exchange.
+- Thomas Lin Pedersen delivered a guest lecture on {ggsql} at 4R/um in September 2026; we didn't discuss the opportunity with him though.
+```
+
+#### 27. Has Posit previously sponsored your event or initiative? *
+```text
+- [ ] Yes
+- [x] **No**
+- [ ] I don't know
+(Note: While Thomas Lin Pedersen kindly presented as an invited guest speaker in September 2026, this is our first formal application for grant support).
+```
+
+---
+
+### Page 9: Alignment
+
+#### 28. Will there be a recording? *
+```text
+- [x] **Yes** (Recordings are produced when speakers consent; all open Quarto slide decks, reproducible code examples, and tutorial materials are always shared publicly on GitHub).
+- [ ] No
+- [ ] I don't know
+```
+
+#### 29. Does your event/community initiative focus on R and/or Python? *
+```text
+- [x] **Yes**
+- [ ] No
+- [ ] I don't know
+(Context: The forum is centered around the modern R ecosystem—including tidyverse, ggplot2, arrow, fastverse, and spatial analysis—as well as Python interoperability like Polars and migration from legacy SAS).
+```
+
+#### 30. Does your event or initiative involve Posit software? *
+```text
+- [x] **Yes**
+- [ ] No
+- [ ] I don't know
+(Context: The initiative extensively relies on RStudio IDE, Quarto publishing system for slides and reports, Positron IDE, tidyverse packages, and recent developments like ggsql).
+```
+
+---
+
+### Page 10: Knowledge Sharing & Additional Information
+
+#### 31. How is your group's knowledge shared? *
+```text
+We are deeply committed to open science and transparent technical communication:
+
+• Public GitHub Repository: All open presentation materials, reproducible code examples, and curated tutorials are hosted at https://github.com/ikashnitsky/4Rum and rendered as a public Quarto website at https://ikashnitsky.github.io/4Rum/.
+• Open Quarto Slides: Slide decks from guest speakers and internal tutorials (e.g., sessions on Quarto, database benchmarks, arrow/Parquet, ggsql, and SAS-to-R migration) are rendered with Quarto and shared openly under permissive licenses.
+• Monthly Newsletters: Monthly digests curating advancements across the R, Quarto, and Posit ecosystems are shared with participants and archived on the public site.
+• Cross-institutional Collaboration: We actively bridge public-sector practitioners with the broader community through joint sessions with the CopenhagenR useR Group and other Danish academic/industry institutions.
+```
+
+#### 32. We know a form can't capture everything. If there is anything else you'd like us to know, please share it here.
+```text
+Statistics Denmark is at an exciting inflection point: like many national statistical institutes across Europe, we are actively modernizing our analytical infrastructure and supporting staff in moving away from proprietary legacy software (SAS) toward an open, reproducible R and Python ecosystem.
+
+4R/um is the grassroots engine driving this cultural transformation. It has grown into a vibrant community of nearly 90 civil servants, researchers, and data engineers. Bringing prominent guest speakers into this environment creates an enormous multiplier effect—it inspires colleagues, introduces best-in-class workflows directly from the package authors, and connects public-sector statisticians to the global open-source community. Support from Posit would directly empower us to sustain high-caliber guest sessions throughout 2027.
+```
+
+---
+
+## Appendix: Questions 6–15 (Annual / One-Time Event Branch)
+
+*Use only if you select "Annual/one-time event" in Question 5:*
+
+- **6. Event name \***: `4R/um Guest Speaker Series 2027`
+- **7. Brief event summary \***: `A monthly R exchange meeting and technical seminar series at Statistics Denmark fostering reproducibility, modern open-source data science in R/Python, and migration from legacy proprietary tools.`
+- **8. Event start date \***: `2027-01-22` *(or the first planned guest session date)*
+- **9. Event end date \***: `2027-11-26`
+- **10. Event website**: `https://ikashnitsky.github.io/4Rum/`
+- **11. Event location \***: `Copenhagen, Denmark (Hybrid: In-person at Statistics Denmark & Virtual)`
+- **12. Expected number of attendees \***: `25–60 per session (88+ registered members)`
+- **13. Attendee demographics \***: `Government data scientists, official statistics methodologists, public-sector economists, and local R community members from CopenhagenR useR Group.`
+- **14. Sponsorship prospectus URL**: `https://github.com/ikashnitsky/4Rum`
+- **15. Sponsorship prospectus upload**: `(Leave blank or attach a summary flyer if available)`

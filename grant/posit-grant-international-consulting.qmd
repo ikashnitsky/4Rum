@@ -1,0 +1,35 @@
+---
+title: "Posit Community Support Grants"
+subtitle: "Briefing Note for DST International Consulting Office on the funding possibility"
+author: "Ilya Kashnitsky, Data Science Lab"
+date: 2026-11-06
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+    include-before-body:
+      text: |
+        #show link: set text(fill: rgb("#269292"))
+---
+
+# Opportunity & Context
+
+Partner National Statistical Offices (NSOs) in low- and middle-income countries face severe proprietary licensing costs (SAS, SPSS, Stata) and seek sustainable pathways to modern open-source software (R, Python, Quarto).
+
+The [**Posit Community Support Granting Scheme**](https://opensource.posit.co/about/community-support) provides a low-barrier, unbureaucratic source of funding that partner statistical offices and local user groups can leverage directly to aid their open-source transitions and technical upskilling.
+
+# What Does Posit Fund?
+
+- **Financial Micro-Grants**: Small-to-medium grants averaging **~$1,000 USD** (typically $500–$2,000 USD). Ideal for covering local workshop logistics, training materials, travel stipends, or honoraria for regional guest trainers.
+- **Educational & Cloud Infrastructure**: Free access to Posit Cloud / Posit Connect Cloud for training workshops, Positron server licenses for institutional teaching, and AI compute credits.
+- **Global Visibility**: Amplification of local events through Posit's international developer network.
+
+# Practical Value for Partner NSOs
+
+Unlike complex multilateral development grants (e.g., EU Twinning, World Bank), Posit’s application is a single, lightweight rolling form requiring zero institutional co-funding. It is ideally suited for local statistical champions seeking to establish internal "R Forums", run hands-on reproducibility bootcamps, or build regional data science communities.
+
+# Suggested Action for DST Consulting
+
+DST experts can recommend this funding mechanism during bilateral advisory missions on statistical modernization and help partner NSO colleagues frame lightweight applications around open statistical workflows.
