@@ -3,9 +3,17 @@ title: "Monthly Newsletters"
 toc: true
 ---
 
+# November 2026
+* Yan Holtz published an amazing collection of simple dataviz improvements, one bit at a time <https://www.data-to-viz.com/caveats.html>. He also published a useful post with all the dataviz projects and resources that he put out in the world over the last decade <https://lnkd.in/p/eqC2Wr_m>
+* Positron added a much requested hierarchical objects explorer. Forget the pain of endless `extract2()` calls <https://lnkd.in/p/eJP-9iDb>
+* Statistical ellipses are powerful for exploratory data analysis. But did you ever feel like having slightly more control over the statistical process behind your `ggplot2::stat_ellipse()` call? If so, {gghotelling} have you covered <https://cran.r-project.org/web/packages/gghotelling/vignettes/gghotelling.html>
+* Defining a breking point in a time series is a common and pretty challenging task with multiple nunanced discussion arounf the proposed solutions. A new paper (<https://arxiv.org/html/2608.28110v1>) presents a new robust non-parametric estimation technique with an ultra fast Rust based implementation via a dedicated {scanr} package <https://cran.r-project.org/web/packages/scanr/vignettes/scanr-introduction.html>
+* What does your p-value mean? Aggggr...This innocent question keeps puzzling generations of researchers and analysts. One was to humanize the interprettion of the model results is to ask a pretty naive question: how hard wouls it be to negate the finding via messing up you data? Here comes {falsifyr}, the "Chaos Monkey for statistical claims", in author's own words <http://msaule.dev/falsifyr/articles/attacking-a-regression-claim.html>
+* Are we to be replaced? Not quite, argues Mike K. Smith in his reflection on why human judgment remains essential in the AI era <https://www.linkedin.com/pulse/age-ai-we-still-need-people-mike-k-smith-zzvbe/> 
+
 # October 2026
 * Posit Conf 2026 took place in October. From the times when it was RStudio Conf, it happened to become the major global R syncing event.  Now is a good moment to catch up on announcements and talks. <https://lnkd.in/p/eEYfAN9a>
-* The R ecosystem saw an explosion of package & environment managers in the last years: {renv}, {}rix}, rv, uvr and ir -- just to name the most notable ones. Isabella Velásquez overviewed them in a nice systemizing blog post <https://rworks.dev/posts/r-managers>
+* The R ecosystem saw an explosion of package & environment managers in the last years: {renv}, {rix}, rv, uvr and ir -- just to name the most notable ones. Isabella Velásquez overviewed them in a nice systemizing blog post <https://rworks.dev/posts/r-managers>
 * Polars 2.0 is out. The Rust-based dataframe library hits a major milestone. Curiously (and this links to our previous talk in {qqsl}), one of the major news is that now SQL is a first-class citizen on this hype train <https://pola.rs/posts/release-polars-2>
 * Some (regular, already) magic from James Balamuta -- turn an R project into a standalone  website that runs R, serverless. {webrarian} packs an R project so the analysis runs live in the browser — no server needed. <https://lnkd.in/p/e4X9XBNK>
 * Quarto is being rebuilt in Rust. So far, this is an experimental Quarto 2 (q2) implementation, but this is likely an early signal of where publishing tooling is heading -- towards even faster and more reliable execution <https://lnkd.in/p/e9ebVZez>

@@ -23,6 +23,12 @@ A monthly R exchange meeting and discussion club at Statistics Denmark.
 4R/um meetings are held monthly. Below is the chronological record of sessions, speakers, topics, and shared materials.
 
 ::: {.meeting-card}
+### 2026-11-27 -- IKX: DSTutils & loomer
+Ilya Kashnitsky presents two new packages: **{DSTutils}**, an internal toolkit for streamlining local workflows, and **{loomer}**, an outward-facing package for working with Lifelines (Danish demographic dataset and similar data structures).
+
+:::
+
+::: {.meeting-card}
 ### 2026-10-23 -- Joint meeting with CopenhagenR useR Group
 Joint meeting organized together with [CopenhagenR useR Group via Meetup](https://www.meetup.com/copenhagenr-user-group).
 
