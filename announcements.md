@@ -1,3 +1,7 @@
+## 2026-11-27 IKX -- DSTutils & loomer
+
+At the next meeting I will show two new internal packages I've been developing. **{DSTutils}** joins our family of internal packages, aimed at streamlining local workflows. **{loomer}** is an **outward-facing** auxiliary package for working with Lifelines — both our Danish dataset and, in principle, this type of demographic data representation.  
+
 ## 2026-10-23 joint meeting with CopenhagenR useR Group via Meetup
 
 In two weeks we are having a very special 4R/um meeting [PLEASE NOTE the **unusual time 13:30-15:00**] -- we are joining forces with [Rasmus Bååth](https://www.sumsar.net/about), the organizer of [CopenhagenR useR Group](https://www.meetup.com/copenhagenr-user-group). We'll have 3 exciting ~20min presentations on R usage in different organizations contexts: a big corporation, university, and our own governmental agency. The planned talks are:
