@@ -133,7 +133,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#october-2026" id="toc-october-2026" class="nav-link active" data-scroll-target="#october-2026">October 2026</a></li>
+  <li><a href="#november-2026" id="toc-november-2026" class="nav-link active" data-scroll-target="#november-2026">November 2026</a></li>
+  <li><a href="#october-2026" id="toc-october-2026" class="nav-link" data-scroll-target="#october-2026">October 2026</a></li>
   <li><a href="#september-2026" id="toc-september-2026" class="nav-link" data-scroll-target="#september-2026">September 2026</a></li>
   <li><a href="#june-2026" id="toc-june-2026" class="nav-link" data-scroll-target="#june-2026">June 2026</a></li>
   <li><a href="#may-2026" id="toc-may-2026" class="nav-link" data-scroll-target="#may-2026">May 2026</a></li>
@@ -167,11 +168,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="november-2026" class="level1">
+<h1>November 2026</h1>
+<ul>
+<li>Yan Holtz published an amazing collection of simple dataviz improvements, one bit at a time <a href="https://www.data-to-viz.com/caveats.html" class="uri">https://www.data-to-viz.com/caveats.html</a>. He also published a useful post with all the dataviz projects and resources that he put out in the world over the last decade <a href="https://lnkd.in/p/eqC2Wr_m" class="uri">https://lnkd.in/p/eqC2Wr_m</a></li>
+<li>Positron added a much requested hierarchical objects explorer. Forget the pain of endless <code>extract2()</code> calls <a href="https://lnkd.in/p/eJP-9iDb" class="uri">https://lnkd.in/p/eJP-9iDb</a></li>
+<li>Statistical ellipses are powerful for exploratory data analysis. But did you ever feel like having slightly more control over the statistical process behind your <code>ggplot2::stat_ellipse()</code> call? If so, {gghotelling} have you covered <a href="https://cran.r-project.org/web/packages/gghotelling/vignettes/gghotelling.html" class="uri">https://cran.r-project.org/web/packages/gghotelling/vignettes/gghotelling.html</a></li>
+<li>Defining a breking point in a time series is a common and pretty challenging task with multiple nunanced discussion arounf the proposed solutions. A new paper (<a href="https://arxiv.org/html/2608.28110v1" class="uri">https://arxiv.org/html/2608.28110v1</a>) presents a new robust non-parametric estimation technique with an ultra fast Rust based implementation via a dedicated {scanr} package <a href="https://cran.r-project.org/web/packages/scanr/vignettes/scanr-introduction.html" class="uri">https://cran.r-project.org/web/packages/scanr/vignettes/scanr-introduction.html</a></li>
+<li>What does your p-value mean? Aggggr…This innocent question keeps puzzling generations of researchers and analysts. One was to humanize the interprettion of the model results is to ask a pretty naive question: how hard wouls it be to negate the finding via messing up you data? Here comes {falsifyr}, the “Chaos Monkey for statistical claims”, in author’s own words <a href="http://msaule.dev/falsifyr/articles/attacking-a-regression-claim.html" class="uri">http://msaule.dev/falsifyr/articles/attacking-a-regression-claim.html</a></li>
+<li>Are we to be replaced? Not quite, argues Mike K. Smith in his reflection on why human judgment remains essential in the AI era <a href="https://www.linkedin.com/pulse/age-ai-we-still-need-people-mike-k-smith-zzvbe/" class="uri">https://www.linkedin.com/pulse/age-ai-we-still-need-people-mike-k-smith-zzvbe/</a></li>
+</ul>
+</section>
 <section id="october-2026" class="level1">
 <h1>October 2026</h1>
 <ul>
 <li>Posit Conf 2026 took place in October. From the times when it was RStudio Conf, it happened to become the major global R syncing event. Now is a good moment to catch up on announcements and talks. <a href="https://lnkd.in/p/eEYfAN9a" class="uri">https://lnkd.in/p/eEYfAN9a</a></li>
-<li>The R ecosystem saw an explosion of package &amp; environment managers in the last years: {renv}, {}rix}, rv, uvr and ir – just to name the most notable ones. Isabella Velásquez overviewed them in a nice systemizing blog post <a href="https://rworks.dev/posts/r-managers" class="uri">https://rworks.dev/posts/r-managers</a></li>
+<li>The R ecosystem saw an explosion of package &amp; environment managers in the last years: {renv}, {rix}, rv, uvr and ir – just to name the most notable ones. Isabella Velásquez overviewed them in a nice systemizing blog post <a href="https://rworks.dev/posts/r-managers" class="uri">https://rworks.dev/posts/r-managers</a></li>
 <li>Polars 2.0 is out. The Rust-based dataframe library hits a major milestone. Curiously (and this links to our previous talk in {qqsl}), one of the major news is that now SQL is a first-class citizen on this hype train <a href="https://pola.rs/posts/release-polars-2" class="uri">https://pola.rs/posts/release-polars-2</a></li>
 <li>Some (regular, already) magic from James Balamuta – turn an R project into a standalone website that runs R, serverless. {webrarian} packs an R project so the analysis runs live in the browser — no server needed. <a href="https://lnkd.in/p/e4X9XBNK" class="uri">https://lnkd.in/p/e4X9XBNK</a></li>
 <li>Quarto is being rebuilt in Rust. So far, this is an experimental Quarto 2 (q2) implementation, but this is likely an early signal of where publishing tooling is heading – towards even faster and more reliable execution <a href="https://lnkd.in/p/e9ebVZez" class="uri">https://lnkd.in/p/e9ebVZez</a></li>
