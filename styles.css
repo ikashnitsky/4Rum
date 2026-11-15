@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 /* Custom styles complementing the Bootswatch Sketchy theme */
 
 .hero-banner {
@@ -30,5 +32,37 @@
   margin-left: 1.5rem;
   margin-bottom: 1.25rem;
   filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
+}
+
+/* Inline code styling matching rud.is */
+:not(pre) > code {
+  font-family: "Syne Mono", "Courier New", monospace;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #1e2430;
+  background-color: color-mix(in oklab, #e5e9f0 75%, transparent);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  overflow-wrap: break-word;
+}
+
+:not(pre) > code::before,
+:not(pre) > code::after {
+  content: none;
+}
+
+a code,
+h1 code,
+thead th code,
+blockquote code {
+  color: inherit;
+}
+
+h2 code {
+  font-size: 0.875em;
+}
+
+h3 code {
+  font-size: 0.9em;
 }
 
