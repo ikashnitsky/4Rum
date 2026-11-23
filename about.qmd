@@ -32,4 +32,4 @@ The name plays with the four R's, the most prominent being **REPRODUCIBILITY**, 
 
 ### Contact & Contributions
 
-Organized by [Ilya Kashnitsky](https://ikashnitsky.phd) @ **Data Science Lab**, [Statistics Denmark](https://www.dst.dk). If you are interested, please [reach out](https://bio.link/ikx) 🤗
+Organized by [Ilya Kashnitsky](https://ikashnitsky.phd) @ [Data Science Lab](https://www.dst.dk/da/TilSalg/data-til-forskning/data-science-lab), [Statistics Denmark](https://www.dst.dk). If you are interested, please [reach out](https://bio.link/ikx) 🤗
