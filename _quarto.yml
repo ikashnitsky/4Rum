@@ -5,6 +5,8 @@ project:
     - "index.qmd"
     - "newsletter.md"
     - "about.qmd"
+  resources:
+    - CNAME
 
 website:
   title: "4R/um"
