@@ -481,6 +481,8 @@ emails_exterenal <- c(
     # 2026-10-23 & CopenhagenR
     "aran_dolan@yahoo.co.uk",
     "Adamborsiin@gmail.com",
-    "marcelo_gindri@yahoo.com.br"
+    "marcelo_gindri@yahoo.com.br",
+    "dicko.ahmadou@gmail.com",
     # Interested and asked to be informed
+    "assa@adm.ku.dk" # Aske @ KU
 )

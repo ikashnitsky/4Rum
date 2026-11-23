@@ -2,20 +2,98 @@
 
 /* Custom styles complementing the Bootswatch Sketchy theme */
 
+/* Hide Quarto's default title block */
+#title-block-header {
+  display: none !important;
+}
+
+/* Full-width banner just below navbar */
 .hero-banner {
   text-align: center;
-  padding: 2rem 1rem 1.5rem 1rem;
-  margin-bottom: 2rem;
-  border-bottom: 2px dashed #333;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  /* Push below fixed navbar */
+  padding-top: 4rem;
 }
 
-.hero-logo {
-  max-width: 160px;
+.hero-banner .page-banner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 1rem;
-  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
+  border-radius: 0;
 }
 
+/* For pages without hero-banner (about, newsletter) */
+main.content > p:has(> .page-banner),
+main.content > p:has(> img.page-banner) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main.content > p > img.page-banner,
+main.content > .page-banner {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  border-radius: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+}
+
+/* Also target by alt text */
+main.content > p > img[alt="4R/um Banner"],
+main.content > p > img[alt="4R/um Newsletter Banner"] {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  border-radius: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+}
+
+main.content > p:has(> img[alt="4R/um Banner"]),
+main.content > p:has(> img[alt="4R/um Newsletter Banner"]) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove default content padding at top */
+main.content {
+  padding-top: 0 !important;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+#quarto-header {
+  margin-bottom: 0 !important;
+}
+
+body.nav-fixed {
+  padding-top: 0 !important;
+}
+
+/* Meeting cards */
 .meeting-card, .seminar-card {
   border: 2px solid #333;
   border-radius: 8px;
@@ -65,4 +143,3 @@ h2 code {
 h3 code {
   font-size: 0.9em;
 }
-

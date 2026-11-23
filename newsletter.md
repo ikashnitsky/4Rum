@@ -3,6 +3,10 @@ title: "Monthly Newsletters"
 toc: true
 ---
 
+::: {.hero-banner}
+![](img/4rum-banner-news.jpg){.page-banner alt="4R/um Newsletter Banner"}
+:::
+
 # November 2026
 * Yan Holtz published an amazing collection of simple dataviz improvements, one bit at a time <https://www.data-to-viz.com/caveats.html>. He also published a useful post with all the dataviz projects and resources that he put out in the world over the last decade <https://lnkd.in/p/eqC2Wr_m>
 * Positron added a much requested hierarchical objects explorer. Forget the pain of endless `extract2()` calls <https://lnkd.in/p/eJP-9iDb>

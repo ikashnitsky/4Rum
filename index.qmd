@@ -3,7 +3,7 @@ pagetitle: "4R/um"
 ---
 
 ::: {.hero-banner}
-![](logo/hex-logo.png){.hero-logo style="max-width: 180px;" alt="4R/um Hex Logo"}
+![](img/4rum-banner.jpg){.page-banner alt="4R/um Banner"}
 
 ### Welcome to 4R/um!
 

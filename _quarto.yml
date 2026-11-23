@@ -8,9 +8,9 @@ project:
 website:
   title: "4R/um"
   description: "A monthly R exchange meeting at Statistics Denmark"
-  favicon: logo/hex-logo.png
+  favicon: logo/4rum-logo-512.jpg
   navbar:
-    logo: logo/hex-logo.png
+    logo: logo/4rum-logo-512.jpg
     title: "4R/um"
     left:
       - text: "Newsletter"

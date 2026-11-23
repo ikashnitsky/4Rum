@@ -2,7 +2,9 @@
 pagetitle: "About 4R/um"
 ---
 
-![](logo/hex-logo.png){.logo-float-right alt="4R/um Logo"}
+::: {.hero-banner}
+![](img/4rum-banner.jpg){.page-banner alt="4R/um Banner"}
+:::
 
 ### What is 4R/um?
 
