@@ -3,7 +3,7 @@ pagetitle: "About 4R/um"
 ---
 
 ::: {.hero-banner}
-![](img/4rum-banner.jpg){.page-banner alt="4R/um Banner"}
+![](img/4rum-banner.png){.page-banner alt="4R/um Banner"}
 :::
 
 ### What is 4R/um?

@@ -4,7 +4,7 @@ toc: true
 ---
 
 ::: {.hero-banner}
-![](img/4rum-banner-news.jpg){.page-banner alt="4R/um Newsletter Banner"}
+![](img/4rum-banner-newsletter.png){.page-banner alt="4R/um Newsletter Banner"}
 :::
 
 # November 2026

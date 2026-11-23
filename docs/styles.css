@@ -7,76 +7,65 @@
   display: none !important;
 }
 
-/* Full-width banner just below navbar */
+/* Ensure body has padding for fixed navbar */
+body.nav-fixed {
+  padding-top: 5rem !important;
+}
+
+/* Banner within content area (not full width) */
 .hero-banner {
   text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  /* Push below fixed navbar */
-  padding-top: 4rem;
+  padding: 1rem 0;
+  margin: 0 auto 1.5rem;
+  max-width: 100%;
 }
 
 .hero-banner .page-banner {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
-  border-radius: 0;
+  border-radius: 8px;
+  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
+  margin: 0 auto;
 }
 
 /* For pages without hero-banner (about, newsletter) */
 main.content > p:has(> .page-banner),
 main.content > p:has(> img.page-banner) {
-  margin: 0 !important;
-  padding: 0 !important;
+  text-align: center;
+  margin: 1rem auto 1.5rem !important;
+  max-width: 100%;
 }
 
 main.content > p > img.page-banner,
 main.content > .page-banner {
   display: block;
-  width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
   height: auto;
-  border-radius: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
+  border-radius: 8px;
+  margin: 0 auto !important;
+  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
 }
 
 /* Also target by alt text */
 main.content > p > img[alt="4R/um Banner"],
 main.content > p > img[alt="4R/um Newsletter Banner"] {
   display: block;
-  width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
   height: auto;
-  border-radius: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
+  border-radius: 8px;
+  margin: 0 auto !important;
+  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.15));
 }
 
 main.content > p:has(> img[alt="4R/um Banner"]),
 main.content > p:has(> img[alt="4R/um Newsletter Banner"]) {
-  margin: 0 !important;
-  padding: 0 !important;
+  text-align: center;
+  margin: 1rem auto 1.5rem !important;
+  max-width: 100%;
 }
 
-/* Remove default content padding at top */
+/* Remove default content padding at top - body handles it */
 main.content {
   padding-top: 0 !important;
 }
@@ -87,10 +76,6 @@ main.content {
 
 #quarto-header {
   margin-bottom: 0 !important;
-}
-
-body.nav-fixed {
-  padding-top: 0 !important;
 }
 
 /* Meeting cards */
