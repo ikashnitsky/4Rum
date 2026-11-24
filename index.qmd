@@ -54,7 +54,7 @@ Presentation on high-performance computing in R: speeding up data processing 20x
 
 ::: {.meeting-card}
 ### 2026-05-29 -- IKX: SAS to R conversion
-Ilya Kashnitsky presents an approach to converting SAS code to R. [slides](/slides/2605-slides-ilya.html){.btn .btn-outline-primary .btn-sm target="_blank"}
+Ilya Kashnitsky presents an approach to converting SAS code to R.
 :::
 
 ::: {.meeting-card}
