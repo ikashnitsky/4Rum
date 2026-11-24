@@ -1,5 +1,6 @@
 ---
 pagetitle: "4R/um"
+description: "Monthly R exchange meetings at Statistics Denmark: talks, speakers, and slides from every session."
 ---
 
 ::: {.hero-banner}

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Monthly 4R/um newsletter: curated R packages, Quarto and Positron news, and data science reads.">
 
 <title>Monthly Newsletters – 4R/um</title>
 <style>
@@ -36,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./logo/4rum-logo-512.jpg" rel="icon" type="image/jpeg">
+<link href="./img/4rum-logo-512.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
@@ -80,6 +81,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Monthly Newsletters – 4R/um">
+<meta property="og:description" content="Monthly 4R/um newsletter: curated R packages, Quarto and Positron news, and data science reads.">
+<meta property="og:image" content="https://dshub.dev/img/4rum-banner-newsletter.png">
+<meta property="og:site_name" content="4R/um">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="400">
+<meta property="og:image:width" content="1600">
+<meta name="twitter:title" content="Monthly Newsletters – 4R/um">
+<meta name="twitter:description" content="Monthly 4R/um newsletter: curated R packages, Quarto and Positron news, and data science reads.">
+<meta name="twitter:image" content="https://dshub.dev/img/4rum-banner-newsletter.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -90,8 +102,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo/4rum-logo-512.jpg" alt="" class="navbar-logo light-content">
-    <img src="./logo/4rum-logo-512.jpg" alt="" class="navbar-logo dark-content">
+    <img src="./img/4rum-logo-512.png" alt="4R/um logo" class="navbar-logo light-content">
+    <img src="./img/4rum-logo-512.png" alt="4R/um logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">4R/um</span>
@@ -102,6 +114,10 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#meetings"> 
+<span class="menu-text">Meetings</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./newsletter.html" aria-current="page"> 
 <span class="menu-text">Newsletter</span></a>
@@ -155,6 +171,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Monthly Newsletters</h1>
 </div>
 
+<div>
+  <div class="description">
+    Monthly 4R/um newsletter: curated R packages, Quarto and Positron news, and data science reads.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -375,7 +396,25 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/dshub\.dev");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -390,6 +429,12 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
           if (!link.classList.contains('no-external-icon')) {
           }
         }

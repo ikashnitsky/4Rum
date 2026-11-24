@@ -7,15 +7,27 @@ project:
     - "about.qmd"
   resources:
     - CNAME
+    - "slides/**"
 
 website:
   title: "4R/um"
-  description: "A monthly R exchange meeting at Statistics Denmark"
-  favicon: logo/4rum-logo-512.jpg
+  description: "4R/um is a monthly R exchange meeting at Statistics Denmark: talks, slides, and a monthly newsletter on R, Quarto, and open-source data science."
+  site-url: https://dshub.dev
+  repo-url: https://github.com/ikashnitsky/4Rum
+  image: img/4rum-banner.png
+  favicon: img/4rum-logo-512.png
+  open-graph:
+    locale: en_US
+    site-name: "4R/um"
+  twitter-card:
+    card-style: summary_large_image
   navbar:
-    logo: logo/4rum-logo-512.jpg
+    logo: img/4rum-logo-512.png
+    logo-alt: "4R/um logo"
     title: "4R/um"
     left:
+      - text: "Meetings"
+        href: index.qmd#meetings
       - text: "Newsletter"
         href: newsletter.md
       - text: "About"
@@ -32,10 +44,12 @@ format:
   html:
     theme: sketchy
     css: styles.css
+    lang: en
     toc: true
     toc-depth: 3
     toc-title: "On this page"
     smooth-scroll: true
+    link-external-newwindow: true
     include-in-header:
       - text: |
           <script src="https://cdn.counter.dev/script.js" data-id="daa70324-89c3-4b1c-8ea0-3588f29f41f5" data-utcoffset="1"></script>

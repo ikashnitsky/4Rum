@@ -1,5 +1,6 @@
 ---
 pagetitle: "About 4R/um"
+description: "What 4R/um is, how the monthly R meetings at Statistics Denmark work, and how to get in touch."
 ---
 
 ::: {.hero-banner}

@@ -1,5 +1,7 @@
 ---
 title: "Monthly Newsletters"
+description: "Monthly 4R/um newsletter: curated R packages, Quarto and Positron news, and data science reads."
+image: img/4rum-banner-newsletter.png
 toc: true
 ---
 
