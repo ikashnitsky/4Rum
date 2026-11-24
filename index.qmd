@@ -64,7 +64,7 @@ Joint session by JOC and IKX reviewing feedback from the in-house R intro course
 
 ::: {.meeting-card}
 ### 2026-03-27 -- IKX: DB connection speed
-Benchmarks for reading and writing Oracle tables from R (`ROracle` vs `ODBC`) against the STATPROD database. [slides](/slides/2603-report-ilya.html){.btn .btn-outline-primary .btn-sm target="_blank"}
+Benchmarks for reading and writing Oracle tables from R (`ROracle` vs `ODBC`) against the STATPROD database.
 :::
 
 ::: {.meeting-card}
