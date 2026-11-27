@@ -25,8 +25,7 @@ A monthly R exchange meeting and discussion club at Statistics Denmark.
 
 ::: {.meeting-card}
 ### 2026-11-27 -- IKX: DSTutils & loomer
-Ilya Kashnitsky presents two new packages: **{DSTutils}**, an internal toolkit for streamlining local workflows, and **{loomer}**, an outward-facing package for working with Lifelines (Danish demographic dataset and similar data structures).
-
+Ilya Kashnitsky presents two new packages: **{DSTutils}**, an internal toolkit for streamlining local workflows, and [**{loomer}**](https://github.com/ikashnitsky/loomer), an outward-facing package for working with Lifelines (Danish demographic dataset and similar data structures). [slides](/slides/2611-slides-ilya.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 :::
 
 ::: {.meeting-card}

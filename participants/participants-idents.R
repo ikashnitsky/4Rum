@@ -484,5 +484,9 @@ emails_exterenal <- c(
     "marcelo_gindri@yahoo.com.br",
     "dicko.ahmadou@gmail.com",
     # Interested and asked to be informed
-    "assa@adm.ku.dk" # Aske @ KU
+    "assa@adm.ku.dk", # Aske @ KU
+    "emmt@stat.gl", # Emil Malta
+    "larp@stat.gl", # Lars Pedersen
+    "abla@stat.gl", #
+    "daos@stat.gl" # Daniel from Nuuk
 )
