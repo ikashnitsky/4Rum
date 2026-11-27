@@ -15,7 +15,7 @@ website:
   site-url: https://dshub.dev
   repo-url: https://github.com/ikashnitsky/4Rum
   image: img/4rum-banner.png
-  favicon: img/4rum-logo-512.png
+  favicon: img/dshub-logo-clean.svg
   open-graph:
     locale: en_US
     site-name: "4R/um"
