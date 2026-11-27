@@ -3,6 +3,10 @@
     "edit": {
       "*.qmd": "allow",
       "*.md": "allow"
+    },
+    "bash": {
+      "cd *": "allow",
+      "git fetch *": "allow"
     }
   }
 }
